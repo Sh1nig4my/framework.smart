@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "schema_name": "SMART Case Scheme",
+    "schema_version": "1.0.0",
+    "language": "it",
+    "output_name": "case.json"
+  },
+  "initiative": {
+    "initiative_type": "seminario",
+    "initiative_goal": "orientare",
+    "context_domain": [
+      "intelligenza_artificiale",
+      "automazioni",
+      "workflow_digitali"
+    ],
+    "beneficiary_context": "pubblica_amministrazione",
+    "delivery_mode": "in_presenza"
+  },
+  "audience": {
+    "primary_audience_type": "funzionari_pubblici",
+    "audience_experience_level": "base",
+    "audience_digital_maturity": "media",
+    "audience_size": "31_60",
+    "audience_primary_need": [
+      "capire_fondamenti",
+      "vedere_casi_uso",
+      "prendere_decisioni"
+    ],
+    "audience_resistance_profile": [
+      "scetticismo",
+      "sovraccarico_informativo",
+      "mancanza_tempo"
+    ]
+  },
+  "design": {
+    "duration_format": "media_60_120_min",
+    "days_count": "1",
+    "interaction_level": "medio",
+    "didactic_style": "divulgativo",
+    "narrative_direction": "dal_problema_alle_soluzioni",
+    "practice_presence": "esempi_guidati",
+    "evaluation_mode": "domande_risposte"
+  },
+  "content": {
+    "content_depth": "base_operativo",
+    "macro_topics": [
+      "fondamenti",
+      "casi_uso",
+      "workflow",
+      "limiti_e_rischi",
+      "adozione_organizzativa"
+    ],
+    "content_priority": "capacita_decisionale",
+    "example_intensity": "alta",
+    "tool_focus": "a_supporto",
+    "tool_categories": [
+      "llm_chat",
+      "automazione",
+      "collaborazione"
+    ],
+    "responsible_ai_emphasis": "centrale"
+  },
+  "constraints": {
+    "tone_profile": [
+      "chiaro",
+      "sobrio",
+      "istituzionale",
+      "accessibile",
+      "rigoroso",
+      "non_promozionale"
+    ],
+    "complexity_limit": "bassa",
+    "policy_profile": [
+      "no_hype",
+      "no_promesse_irrealistiche",
+      "trasparenza_su_limiti",
+      "centralita_giudizio_umano",
+      "coerenza_tra_promessa_e_contenuti"
+    ],
+    "accessibility_profile": [
+      "linguaggio_semplice",
+      "esempi_concreti",
+      "passaggi_graduali",
+      "riduzione_jargon",
+      "ritmo_moderato"
+    ],
+    "excluded_elements": [
+      "eccesso_tecnico",
+      "taglio_commerciale",
+      "tono_sensazionalistico"
+    ]
+  },
+  "generation_targets": {
+    "primary_output": "script_master",
+    "secondary_outputs": [
+      "slide_brief",
+      "pagina_evento_brief",
+      "mail_brief",
+      "checklist_docente",
+      "followup_brief"
+    ],
+    "material_generation_scope": "script_master_e_brief_essenziali"
+  }
+}

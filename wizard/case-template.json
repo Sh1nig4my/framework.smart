@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "schema_name": "SMART Case Scheme",
+    "schema_version": "1.0.0",
+    "language": "it",
+    "output_name": "case.json"
+  },
+  "initiative": {
+    "initiative_type": null,
+    "initiative_goal": null,
+    "context_domain": [],
+    "beneficiary_context": null,
+    "delivery_mode": null
+  },
+  "audience": {
+    "primary_audience_type": null,
+    "audience_experience_level": null,
+    "audience_digital_maturity": null,
+    "audience_size": null,
+    "audience_primary_need": [],
+    "audience_resistance_profile": []
+  },
+  "design": {
+    "duration_format": null,
+    "days_count": null,
+    "interaction_level": null,
+    "didactic_style": null,
+    "narrative_direction": null,
+    "practice_presence": null,
+    "evaluation_mode": null
+  },
+  "content": {
+    "content_depth": null,
+    "macro_topics": [],
+    "content_priority": null,
+    "example_intensity": null,
+    "tool_focus": null,
+    "tool_categories": [],
+    "responsible_ai_emphasis": null
+  },
+  "constraints": {
+    "tone_profile": [],
+    "complexity_limit": null,
+    "policy_profile": [],
+    "accessibility_profile": [],
+    "excluded_elements": []
+  },
+  "generation_targets": {
+    "primary_output": "script_master",
+    "secondary_outputs": [],
+    "material_generation_scope": null
+  }
+}

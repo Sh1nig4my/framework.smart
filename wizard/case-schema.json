@@ -1,0 +1,532 @@
+{
+  "schema": {
+    "name": "SMART Case Scheme",
+    "version": "1.0.0",
+    "language": "it",
+    "description": "Schema guidato per la raccolta strutturata dei requisiti di un caso SMART. Tutte le risposte sono chiuse e selezionabili.",
+    "output_instance_name": "case.json"
+  },
+  "sections": [
+    {
+      "id": "initiative",
+      "label": "Identita iniziativa",
+      "fields": [
+        {
+          "id": "initiative_type",
+          "label": "Tipologia iniziativa",
+          "type": "single_select",
+          "required": true,
+          "multiple": false,
+          "options": [
+            "evento",
+            "seminario",
+            "lezione",
+            "incontro",
+            "workshop",
+            "percorso_formativo"
+          ]
+        },
+        {
+          "id": "initiative_goal",
+          "label": "Obiettivo principale",
+          "type": "single_select",
+          "required": true,
+          "multiple": false,
+          "options": [
+            "informare",
+            "sensibilizzare",
+            "orientare",
+            "formare",
+            "aggiornare",
+            "abilitare_all_uso",
+            "facilitare_adozione",
+            "supportare_decisione"
+          ]
+        },
+        {
+          "id": "context_domain",
+          "label": "Ambito principale",
+          "type": "multi_select",
+          "required": true,
+          "multiple": true,
+          "options": [
+            "intelligenza_artificiale",
+            "automazioni",
+            "workflow_digitali",
+            "produttivita_personale",
+            "strumenti_no_code",
+            "trasformazione_digitale",
+            "cultura_digitale",
+            "nuove_tecnologie"
+          ]
+        },
+        {
+          "id": "beneficiary_context",
+          "label": "Contesto applicativo",
+          "type": "single_select",
+          "required": true,
+          "multiple": false,
+          "options": [
+            "scuola",
+            "formazione_professionale",
+            "pubblica_amministrazione",
+            "impresa",
+            "terzo_settore",
+            "associazione",
+            "misto"
+          ]
+        },
+        {
+          "id": "delivery_mode",
+          "label": "Modalita di erogazione",
+          "type": "single_select",
+          "required": true,
+          "multiple": false,
+          "options": [
+            "in_presenza",
+            "online",
+            "ibrido"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "audience",
+      "label": "Pubblico",
+      "fields": [
+        {
+          "id": "primary_audience_type",
+          "label": "Pubblico principale",
+          "type": "single_select",
+          "required": true,
+          "multiple": false,
+          "options": [
+            "studenti",
+            "docenti",
+            "formatori",
+            "dirigenti",
+            "funzionari_pubblici",
+            "imprenditori",
+            "professionisti",
+            "consulenti",
+            "cittadini",
+            "misto"
+          ]
+        },
+        {
+          "id": "audience_experience_level",
+          "label": "Livello di esperienza sul tema",
+          "type": "single_select",
+          "required": true,
+          "multiple": false,
+          "options": [
+            "base",
+            "intermedio",
+            "avanzato",
+            "eterogeneo"
+          ]
+        },
+        {
+          "id": "audience_digital_maturity",
+          "label": "Maturita digitale del pubblico",
+          "type": "single_select",
+          "required": true,
+          "multiple": false,
+          "options": [
+            "bassa",
+            "media",
+            "alta",
+            "eterogenea"
+          ]
+        },
+        {
+          "id": "audience_size",
+          "label": "Dimensione del pubblico",
+          "type": "single_select",
+          "required": true,
+          "multiple": false,
+          "options": [
+            "1_10",
+            "11_30",
+            "31_60",
+            "61_100",
+            "100_plus"
+          ]
+        },
+        {
+          "id": "audience_primary_need",
+          "label": "Bisogno prevalente del pubblico",
+          "type": "multi_select",
+          "required": true,
+          "multiple": true,
+          "options": [
+            "capire_fondamenti",
+            "vedere_casi_uso",
+            "capire_strumenti",
+            "capire_limiti_rischi",
+            "imparare_metodo",
+            "migliorare_operativita",
+            "prendere_decisioni",
+            "orientarsi_nel_panorama"
+          ]
+        },
+        {
+          "id": "audience_resistance_profile",
+          "label": "Resistenze prevalenti",
+          "type": "multi_select",
+          "required": false,
+          "multiple": true,
+          "options": [
+            "timore_tecnico",
+            "scetticismo",
+            "sovraccarico_informativo",
+            "paura_sostituzione",
+            "mancanza_tempo",
+            "nessuna_resistenza_rilevante"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "design",
+      "label": "Progettazione esperienza",
+      "fields": [
+        {
+          "id": "duration_format",
+          "label": "Durata generale",
+          "type": "single_select",
+          "required": true,
+          "multiple": false,
+          "options": [
+            "breve_30_60_min",
+            "media_60_120_min",
+            "estesa_2_4_ore",
+            "mezza_giornata",
+            "giornata_intera",
+            "multi_giorno"
+          ]
+        },
+        {
+          "id": "days_count",
+          "label": "Numero giorni",
+          "type": "single_select",
+          "required": true,
+          "multiple": false,
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4_plus"
+          ],
+          "depends_on": {
+            "field": "duration_format",
+            "values": ["multi_giorno", "giornata_intera", "mezza_giornata", "estesa_2_4_ore", "media_60_120_min", "breve_30_60_min"]
+          }
+        },
+        {
+          "id": "interaction_level",
+          "label": "Livello di interazione",
+          "type": "single_select",
+          "required": true,
+          "multiple": false,
+          "options": [
+            "basso",
+            "medio",
+            "alto"
+          ]
+        },
+        {
+          "id": "didactic_style",
+          "label": "Stile didattico prevalente",
+          "type": "single_select",
+          "required": true,
+          "multiple": false,
+          "options": [
+            "divulgativo",
+            "pratico_guidato",
+            "tecnico_progressivo",
+            "laboratoriale",
+            "decisionale",
+            "ispirazionale_concreto"
+          ]
+        },
+        {
+          "id": "narrative_direction",
+          "label": "Direzione narrativa",
+          "type": "single_select",
+          "required": true,
+          "multiple": false,
+          "options": [
+            "dal_contesto_agli_strumenti",
+            "dal_problema_alle_soluzioni",
+            "dai_fondamenti_alla_pratica",
+            "dai_casi_uso_al_metodo",
+            "dai_rischi_alle_buone_pratiche"
+          ]
+        },
+        {
+          "id": "practice_presence",
+          "label": "Presenza di momenti pratici",
+          "type": "single_select",
+          "required": true,
+          "multiple": false,
+          "options": [
+            "nessuna",
+            "esempi_guidati",
+            "demo_live",
+            "esercitazione",
+            "misto"
+          ]
+        },
+        {
+          "id": "evaluation_mode",
+          "label": "Modalita di verifica finale",
+          "type": "single_select",
+          "required": true,
+          "multiple": false,
+          "options": [
+            "nessuna_verifica",
+            "riepilogo_guidato",
+            "domande_risposte",
+            "restituzione_operativa",
+            "micro_esercizio_finale"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "content",
+      "label": "Contenuti",
+      "fields": [
+        {
+          "id": "content_depth",
+          "label": "Livello di profondita contenutistica",
+          "type": "single_select",
+          "required": true,
+          "multiple": false,
+          "options": [
+            "introduttivo",
+            "base_operativo",
+            "intermedio",
+            "avanzato_divulgativo"
+          ]
+        },
+        {
+          "id": "macro_topics",
+          "label": "Macro temi da includere",
+          "type": "multi_select",
+          "required": true,
+          "multiple": true,
+          "options": [
+            "fondamenti",
+            "scenario_e_contesto",
+            "casi_uso",
+            "strumenti",
+            "metodo_operativo",
+            "workflow",
+            "automazioni",
+            "limiti_e_rischi",
+            "etica_e_responsabilita",
+            "adozione_organizzativa"
+          ]
+        },
+        {
+          "id": "content_priority",
+          "label": "Priorita contenutistica",
+          "type": "single_select",
+          "required": true,
+          "multiple": false,
+          "options": [
+            "chiarezza_concettuale",
+            "utilita_pratica",
+            "capacita_decisionale",
+            "visione_strategica",
+            "adozione_operativa"
+          ]
+        },
+        {
+          "id": "example_intensity",
+          "label": "Quantita di esempi richiesta",
+          "type": "single_select",
+          "required": true,
+          "multiple": false,
+          "options": [
+            "bassa",
+            "media",
+            "alta"
+          ]
+        },
+        {
+          "id": "tool_focus",
+          "label": "Ruolo dei tool nell'iniziativa",
+          "type": "single_select",
+          "required": true,
+          "multiple": false,
+          "options": [
+            "non_centrale",
+            "a_supporto",
+            "centrale",
+            "centrale_ma_non_esclusivo"
+          ]
+        },
+        {
+          "id": "tool_categories",
+          "label": "Categorie di tool da citare",
+          "type": "multi_select",
+          "required": false,
+          "multiple": true,
+          "options": [
+            "llm_chat",
+            "generazione_testi",
+            "generazione_immagini",
+            "presentazioni",
+            "grafica",
+            "automazione",
+            "organizzazione_contenuti",
+            "fogli_calcolo",
+            "no_code",
+            "collaborazione"
+          ]
+        },
+        {
+          "id": "responsible_ai_emphasis",
+          "label": "Enfasi su uso responsabile e limiti",
+          "type": "single_select",
+          "required": true,
+          "multiple": false,
+          "options": [
+            "bassa",
+            "media",
+            "alta",
+            "centrale"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "constraints",
+      "label": "Vincoli e limiti",
+      "fields": [
+        {
+          "id": "tone_profile",
+          "label": "Tono richiesto",
+          "type": "multi_select",
+          "required": true,
+          "multiple": true,
+          "options": [
+            "chiaro",
+            "sobrio",
+            "istituzionale",
+            "ispirazionale",
+            "pratico",
+            "accessibile",
+            "rigoroso",
+            "non_promozionale"
+          ]
+        },
+        {
+          "id": "complexity_limit",
+          "label": "Limite di complessita ammessa",
+          "type": "single_select",
+          "required": true,
+          "multiple": false,
+          "options": [
+            "molto_bassa",
+            "bassa",
+            "media",
+            "alta"
+          ]
+        },
+        {
+          "id": "policy_profile",
+          "label": "Profilo di policy divulgativa",
+          "type": "multi_select",
+          "required": true,
+          "multiple": true,
+          "options": [
+            "no_hype",
+            "no_promesse_irrealistiche",
+            "trasparenza_su_limiti",
+            "centralita_giudizio_umano",
+            "riusabilita_materiali",
+            "coerenza_tra_promessa_e_contenuti"
+          ]
+        },
+        {
+          "id": "accessibility_profile",
+          "label": "Requisiti di accessibilita comunicativa",
+          "type": "multi_select",
+          "required": true,
+          "multiple": true,
+          "options": [
+            "linguaggio_semplice",
+            "glossario_implicito",
+            "esempi_concreti",
+            "passaggi_graduali",
+            "riduzione_jargon",
+            "ritmo_moderato"
+          ]
+        },
+        {
+          "id": "excluded_elements",
+          "label": "Elementi da evitare",
+          "type": "multi_select",
+          "required": false,
+          "multiple": true,
+          "options": [
+            "eccesso_tecnico",
+            "taglio_commerciale",
+            "demo_complesse",
+            "tool_troppo_specialistici",
+            "contenuti_astratti",
+            "tono_sensazionalistico"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "generation_targets",
+      "label": "Output attesi",
+      "fields": [
+        {
+          "id": "primary_output",
+          "label": "Output principale",
+          "type": "single_select",
+          "required": true,
+          "multiple": false,
+          "options": [
+            "script_master"
+          ]
+        },
+        {
+          "id": "secondary_outputs",
+          "label": "Output secondari derivabili",
+          "type": "multi_select",
+          "required": false,
+          "multiple": true,
+          "options": [
+            "slide_brief",
+            "mail_brief",
+            "locandina_brief",
+            "pagina_evento_brief",
+            "canva_brief",
+            "checklist_docente",
+            "followup_brief"
+          ]
+        },
+        {
+          "id": "material_generation_scope",
+          "label": "Ampiezza della generazione derivata",
+          "type": "single_select",
+          "required": true,
+          "multiple": false,
+          "options": [
+            "solo_script_master",
+            "script_master_e_brief_essenziali",
+            "script_master_e_brief_completi"
+          ]
+        }
+      ]
+    }
+  ]
+}
