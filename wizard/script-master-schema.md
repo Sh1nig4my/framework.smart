@@ -140,4 +140,4 @@ Uno script master e buono quando:
 
 - `HOW_TO.md`
 - `wizard/fase-2-generazione.md`
-- `ai-context/validation-protocol.md`
+- `context-ai/validation-protocol.md`

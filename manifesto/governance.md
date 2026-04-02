@@ -10,8 +10,7 @@ Definire il modello di governo del framework SMART e le regole di evoluzione con
 - `framework/` definisce metodo, ruoli, processo e glossario;
 - `wizard/` governa il cuore operativo delle due fasi;
 - `playbooks/` applicano il metodo a scenari ricorrenti;
-- `ai-context/` governa l'uso del repository come contesto affidabile per agenti AI;
-- `archive/legacy/` conserva solo orientamento storico minimo.
+- `context-ai/` governa l'uso del repository come contesto affidabile per agenti AI;
 
 ## Principi di governo
 
@@ -26,7 +25,7 @@ Definire il modello di governo del framework SMART e le regole di evoluzione con
 2. Se cambia il significato del framework, si aggiorna prima `manifesto/` o `framework/`.
 3. Se cambia il processo operativo, si aggiorna `wizard/`.
 4. Se cambiano termini canonici, si aggiorna `framework/glossario.md`.
-5. Il legacy non puo reintrodurre regole implicite nell'area attiva.
+5. Il materiale storico non puo reintrodurre regole implicite nell'area attiva.
 
 ## Controlli richiesti per release
 
@@ -42,4 +41,4 @@ Ogni release documentale richiede:
 - `case-schema.json` e `script-master.md` cambiano raramente e solo per motivi forti;
 - il glossario va mantenuto stabile;
 - i playbook possono evolvere piu facilmente, ma senza contraddire il metodo;
-- l'AI context puo essere rifinito, ma deve restare minimale e ordinato.
+- il contesto AI puo essere rifinito, ma deve restare minimale e ordinato.

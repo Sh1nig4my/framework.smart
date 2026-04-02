@@ -49,7 +49,7 @@ Se due documenti sono in conflitto, prevalgono in questo ordine:
 2. `wizard/script-master.md` per la Fase 2;
 3. `framework/` e `manifesto/` per principi, metodo e termini;
 4. `playbooks/` come applicazioni pratiche;
-5. `archive/legacy/` solo come storico.
+5. nessuna area storica prescrittiva nel repository attivo.
 
 ## Condizione di conformita
 

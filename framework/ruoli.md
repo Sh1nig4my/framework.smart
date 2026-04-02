@@ -24,7 +24,7 @@ Controlla chiarezza, coerenza terminologica, tono e fedelta al framework.
 
 ### Assistente AI
 
-Supporta compilazione, trasformazione e derivazione, ma non sostituisce la responsabilita umana. Deve operare entro i confini documentati in `ai-context/`.
+Supporta compilazione, trasformazione e derivazione, ma non sostituisce la responsabilita umana. Deve operare entro i confini documentati in `context-ai/`.
 
 ## Matrice sintetica responsabilita
 
@@ -36,4 +36,4 @@ Supporta compilazione, trasformazione e derivazione, ma non sostituisce la respo
 
 ## Regola trasversale
 
-Nessun ruolo puo trattare il legacy come fonte primaria di verita.
+Nessun ruolo puo trattare materiali storici come fonte primaria di verita.

@@ -33,9 +33,3 @@ Azione: bloccare pubblicazione e rigenerare usando riferimento puntuale alle sez
 Sintomo: output apparentemente completo senza indicazione delle incertezze.
 
 Azione: richiedere output con sezione obbligatoria `assunzioni` e `nodi_aperti`.
-
-## Errore 6 - Uso improprio del legacy
-
-Sintomo: richiamo a materiali storici come base prescrittiva.
-
-Azione: rimuovere riferimenti legacy e ripartire da area canonica.

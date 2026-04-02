@@ -13,7 +13,7 @@ Ordine vincolante in caso di conflitto:
 3. `wizard/script-master.md` per struttura Fase 2;
 4. `framework/` e `manifesto/` per principi e terminologia;
 5. `playbooks/` come adattamento pratico;
-6. `archive/legacy/` solo per consultazione storica.
+6. nessuna area storica prescrittiva nel repository attivo.
 
 ## Regole di trasformazione Fase 1 -> Fase 2
 

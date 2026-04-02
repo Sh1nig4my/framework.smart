@@ -61,4 +61,4 @@ Prima della validazione dello script master verificare:
 
 - `HOW_TO.md`
 - `wizard/script-master-schema.md`
-- `ai-context/validation-protocol.md`
+- `context-ai/validation-protocol.md`

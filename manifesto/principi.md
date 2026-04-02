@@ -17,7 +17,7 @@ I principi sono prescrittivi e prevalgono sulle scelte locali di singolo progett
 7. La promessa comunicativa deve restare coerente con il contenuto reale.
 8. Lo script master e la sorgente primaria dei materiali derivati.
 9. Il repository deve restare leggibile da persone e agenti AI.
-10. Il legacy non deve mai guidare il lavoro attivo.
+10. I materiali storici non devono mai guidare il lavoro attivo.
 
 ## Implicazioni pratiche
 

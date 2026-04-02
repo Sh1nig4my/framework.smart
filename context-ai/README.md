@@ -1,8 +1,8 @@
-# AI Context
+# Context AI
 
 ## Scopo
 
-`ai-context/` definisce il perimetro operativo per l'uso di AI sul framework SMART. L'obiettivo e ridurre generazioni non conformi e rendere verificabile ogni output prodotto.
+`context-ai/` definisce il perimetro operativo per l'uso di AI sul framework SMART. L'obiettivo è ridurre generazioni non conformi e rendere verificabile ogni output prodotto.
 
 ## Principio di controllo
 
@@ -16,12 +16,12 @@ Un output AI e valido solo se:
 
 ## Ordine di lettura raccomandato
 
-1. `ai-context/smart-system-context.md`
-2. `ai-context/working-rules.md`
-3. `ai-context/boundaries.md`
-4. `ai-context/output-contracts.md`
-5. `ai-context/validation-protocol.md`
-6. `ai-context/failure-modes.md`
+1. `context-ai/smart-system-context.md`
+2. `context-ai/working-rules.md`
+3. `context-ai/boundaries.md`
+4. `context-ai/output-contracts.md`
+5. `context-ai/validation-protocol.md`
+6. `context-ai/failure-modes.md`
 
 Poi consultare i file canonici del wizard.
 

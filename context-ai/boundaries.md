@@ -9,7 +9,7 @@ Definire i confini non negoziabili che un'AI deve rispettare quando opera sul fr
 - non inventare campi, sezioni o categorie fuori schema;
 - non trasformare SMART in un prodotto software;
 - non introdurre codice demo, integrazioni o implementazioni applicative;
-- non usare il legacy come fonte normativa;
+- non usare materiali storici come fonte normativa;
 - non simulare dati mancanti come se fossero certi;
 - non spostare il centro del processo dai documenti canonici a prompt occasionali.
 - non produrre derivati in assenza di script master validato;

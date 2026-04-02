@@ -19,8 +19,7 @@ Ogni contributo deve rispettare gli invarianti canonici:
 - `framework/`: metodologia, modello operativo, processo, ruoli, glossario.
 - `wizard/`: processo operativo Fase 1/Fase 2 e documentazione di supporto.
 - `playbooks/`: applicazioni pratiche del metodo.
-- `ai-context/`: contesto AI, regole operative, protocolli di validazione, template.
-- `archive/legacy/`: sola gestione storico-orientativa.
+- `context-ai/`: contesto AI, regole operative, protocolli di validazione, template.
 
 ## Standard editoriali obbligatori
 
@@ -39,9 +38,9 @@ Ogni contributo deve rispettare gli invarianti canonici:
 5. verificare coerenza interna e riferimenti incrociati;
 6. aggiornare `CHANGELOG.md` se il cambiamento modifica comportamento o governance del framework.
 
-## Regole specifiche per AI context
+## Regole specifiche per contesto AI
 
-Contributi in `ai-context/` devono:
+Contributi in `context-ai/` devono:
 
 - evitare prompt generici non governati;
 - definire output attesi, assunzioni e criteri di fallimento;
@@ -52,7 +51,7 @@ Contributi in `ai-context/` devono:
 
 - codice demo o applicazioni software;
 - integrazioni specifiche con provider esterni;
-- materiale legacy ricopiato in area attiva senza razionale;
+- materiale storico ricopiato in area attiva senza razionale;
 - variazioni terminologiche non allineate al glossario canonico.
 
 ## Versioning

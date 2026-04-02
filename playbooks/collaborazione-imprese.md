@@ -60,4 +60,4 @@ Prima della derivazione verificare:
 
 - `HOW_TO.md`
 - `wizard/fase-2-generazione.md`
-- `ai-context/output-contracts.md`
+- `context-ai/output-contracts.md`

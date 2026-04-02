@@ -6,7 +6,7 @@ Riassumere in modo operativo e vincolante cosa un agente AI deve sapere prima di
 
 ## Definizione breve
 
-SMART e un framework documentale open source per progettare iniziative formative e divulgative su AI, automazioni, workflow, strumenti digitali e nuove tecnologie.
+SMART è un framework documentale open source per progettare iniziative formative e divulgative su AI, automazioni, workflow, strumenti digitali e nuove tecnologie.
 
 ## Catena del framework
 
@@ -23,7 +23,7 @@ case-schema.json
 - `wizard/script-master.md` e la source of truth della Fase 2;
 - lo script master e il documento madre;
 - i derivati vengono dopo e dipendono dallo script master;
-- il repository attivo non deve essere contaminato dal legacy.
+- il repository attivo non deve essere contaminato dai materiali storici.
 
 ## Regime di generazione consentito
 
@@ -48,7 +48,6 @@ Usa in modo stabile questi termini:
 - documento madre
 - materiali derivati
 - contesto AI
-- legacy
 
 ## Obiettivo dell'AI nel framework
 
