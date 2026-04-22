@@ -18,6 +18,10 @@ I principi sono prescrittivi e prevalgono sulle scelte locali di singolo progett
 8. Lo script master e la sorgente primaria dei materiali derivati.
 9. Il repository deve restare leggibile da persone e agenti AI.
 10. I materiali storici non devono mai guidare il lavoro attivo.
+11. Il no-code va trattato come pratica progettuale rigorosa, non come semplificazione superficiale.
+12. La sicurezza operativa e comunicativa e parte integrante della qualita.
+13. La standardizzazione (schema, gate, terminologia) prevale sulle scorciatoie locali.
+14. Gli agenti di coding devono operare entro confini dichiarati e auditabili.
 
 ## Implicazioni pratiche
 
@@ -25,6 +29,7 @@ I principi sono prescrittivi e prevalgono sulle scelte locali di singolo progett
 - nessun derivato va prodotto senza una base esplicita nello script master;
 - nessun contenuto viene aggiunto per riempire spazio o inseguire hype;
 - nessuna AI deve inventare campi, promesse o dettagli non supportati.
+- nessuna automazione no-code puo bypassare i gate di validazione.
 
 ## Criterio di verifica
 

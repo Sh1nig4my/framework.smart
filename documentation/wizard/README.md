@@ -2,16 +2,16 @@
 
 ## Scopo
 
-`wizard/` e il nucleo operativo del framework SMART. Definisce procedure, regole e criteri di qualita per completare in autonomia l'intero ciclo documentale: dalla raccolta requisiti fino alla derivazione dei materiali.
+`wizard/` e il nucleo operativo del framework SMART. Definisce procedure, regole e criteri di qualita per completare in autonomia il ciclo documentale: dalla raccolta requisiti alla derivazione controllata dei materiali.
 
 ## Catena operativa canonica
 
 ```text
-case-schema.json
+documentation/wizard/case-schema.json
 -> compilazione guidata
 -> case.json
 -> generazione Fase 2
--> script-master.md
+-> documentation/wizard/script-master.md
 -> materiali derivati
 ```
 
@@ -54,11 +54,21 @@ Il wizard e corretto quando un divulgatore puo:
 2. generare uno script master utilizzabile senza regole implicite;
 3. derivare materiali allineati senza contraddire il caso.
 
+## Guardrail no-code e sicurezza
+
+Il wizard rende possibile una progettazione no-code robusta solo se restano attivi questi vincoli:
+
+- nessun salto di fase;
+- nessuna invenzione fuori schema;
+- nessun derivato senza script master validato;
+- nessuna delega del giudizio professionale all'AI.
+
 ## Riferimenti di onboarding
 
 Per avvio guidato usare:
 
-1. `README.md`
-2. `HOW_TO.md`
-3. `wizard/case-schema.md`
-4. `wizard/script-master-schema.md`
+1. [README root](../../README.md)
+2. [Documentation README](../README.md)
+3. [HOW_TO](../../HOW_TO.md)
+4. [Case schema guide](case-schema.md)
+5. [Script master schema](script-master-schema.md)

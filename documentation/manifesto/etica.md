@@ -12,6 +12,7 @@ Definire i limiti etici minimi che SMART impone nella progettazione e nella divu
 - non trasformare l'urgenza del tema in pressione commerciale artificiale;
 - non sostituire con automatismi il giudizio professionale necessario;
 - non presentare un output AI come affidabile solo perche ben scritto.
+- non trattare il no-code come assenza di responsabilita tecnica o metodologica.
 
 ## Etica della divulgazione su AI e automazioni
 
@@ -25,6 +26,13 @@ Nel contesto SMART, parlare di AI in modo corretto significa:
 ## Effetto sul repository
 
 Ogni documento attivo del framework deve riflettere queste cautele. Se un contenuto le contraddice, va corretto o rimosso.
+
+Ogni workflow con agenti di coding deve inoltre:
+
+- dichiarare confini di autonomia;
+- rendere esplicite assunzioni e nodi aperti;
+- mantenere tracciabilita delle decisioni critiche;
+- applicare gate di sicurezza prima della pubblicazione.
 
 ## Principio di responsabilita
 

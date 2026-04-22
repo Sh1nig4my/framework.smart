@@ -4,6 +4,8 @@
 
 Questo repository accetta contributi che migliorano in modo misurabile la qualita del framework SMART sotto tre aspetti: chiarezza, coerenza, riusabilita.
 
+Entrypoint ufficiale del progetto: `README.md` in root.
+
 ## Invarianti da preservare
 
 Ogni contributo deve rispettare gli invarianti canonici:
@@ -11,7 +13,7 @@ Ogni contributo deve rispettare gli invarianti canonici:
 - `wizard/case-schema.json` resta source of truth della Fase 1;
 - `wizard/script-master.md` resta source of truth della Fase 2;
 - lo script master resta documento madre per ogni derivazione;
-- SMART resta un framework documentale, non un progetto software di implementazione.
+- SMART integra framework documentale e web app operativa in un unico sistema.
 
 ## Ambiti di modifica
 
@@ -28,6 +30,7 @@ Ogni contributo deve rispettare gli invarianti canonici:
 - sezioni tracciabili e prive di ridondanza;
 - assenza di riferimenti tecnici non pertinenti al nucleo documentale;
 - priorita a pochi documenti robusti rispetto a molti documenti deboli.
+- allineamento esplicito a no-code, sicurezza e standardizzazione quando si modificano regole o processi.
 
 ## Procedura minima di contributo
 
@@ -54,6 +57,8 @@ Contributi in `context-ai/` devono:
 - materiale storico ricopiato in area attiva senza razionale;
 - variazioni terminologiche non allineate al glossario canonico.
 
+Sono ammessi contributi alla web app (`app/`) quando migliorano esperienza, adozione e operativita del framework senza alterare gli invarianti metodologici.
+
 ## Versioning
 
-Il framework usa serie `0.x` fino al consolidamento `1.0`. In questa fase sono ammessi miglioramenti strutturali, purche non compromettano gli invarianti canonici.
+Da `v1.0.0` in avanti, ogni modifica deve preservare invarianti canonici e indicare chiaramente impatti su metodologia, app e policy dati.

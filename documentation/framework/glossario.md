@@ -54,6 +54,14 @@ Asset generati a partire dallo script master: slide, naming, brief, pagina event
 
 L'insieme di regole e documenti che aiutano un agente a lavorare correttamente sul framework SMART.
 
+### No-code agentico
+
+Progettazione di processi e framework governati da regole esplicite, senza sviluppo software custom come prerequisito operativo.
+
+### Agente di coding
+
+Assistente AI capace di leggere e modificare repository. In SMART opera come supporto esecutivo entro confini, gate e responsabilita umane definite.
+
 ### Legacy
 
 Materiale storico non canonico. Puo esistere come memoria separata, ma non guida l'area attiva del repository.
