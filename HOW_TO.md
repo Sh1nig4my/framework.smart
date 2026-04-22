@@ -80,7 +80,7 @@ Regola: nessun derivato deve introdurre regole o promesse non presenti nello scr
 ## Uso web app (supporto operativo)
 
 - `/wizard` per percorso guidato;
-- `/filosofia` per principi e governance;
+- manifesto e principi in `documentation/manifesto/`;
 - `/fase-1-json` area WIP per futura compilazione/download JSON;
 - pagine legali `/privacy`, `/cookie-policy`, `/sicurezza-dati`.
 

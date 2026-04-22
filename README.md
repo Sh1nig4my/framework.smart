@@ -50,7 +50,7 @@ Pagine attive:
 
 - `/` homepage strategica;
 - `/wizard` guida operativa;
-- `/filosofia` visione e principi;
+- manifesto e filosofia disponibili nella documentazione ufficiale (`documentation/manifesto/`);
 - `/fase-1-json` area predisposta (WIP) per compilazione/download JSON;
 - `/privacy`, `/cookie-policy`, `/sicurezza-dati` per compliance e trasparenza.
 
