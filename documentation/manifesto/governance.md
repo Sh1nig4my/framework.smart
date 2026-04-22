@@ -18,6 +18,8 @@ Definire il modello di governo del framework SMART e le regole di evoluzione con
 - modifica minima necessaria;
 - tracciabilita delle decisioni documentali;
 - separazione rigorosa tra area attiva e area storica.
+- standardizzazione come prerequisito di scalabilita no-code;
+- sicurezza by design per contenuti, prompt e derivazioni.
 
 ## Regole di cambiamento
 
@@ -26,6 +28,8 @@ Definire il modello di governo del framework SMART e le regole di evoluzione con
 3. Se cambia il processo operativo, si aggiorna `wizard/`.
 4. Se cambiano termini canonici, si aggiorna `framework/glossario.md`.
 5. Il materiale storico non puo reintrodurre regole implicite nell'area attiva.
+6. Se cambia il perimetro di autonomia degli agenti AI, si aggiorna `context-ai/` prima del rilascio.
+7. Ogni modifica che incide su sicurezza o standard deve lasciare traccia esplicita in changelog.
 
 ## Controlli richiesti per release
 
@@ -35,6 +39,7 @@ Ogni release documentale richiede:
 2. verifica integrita della catena Fase 1 -> Fase 2;
 3. verifica allineamento ai confini AI;
 4. aggiornamento changelog.
+5. verifica coerenza con principi no-code, sicurezza e standardizzazione.
 
 ## Stabilita attesa
 

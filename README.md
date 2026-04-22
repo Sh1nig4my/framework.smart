@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SMART Framework v1.0.0
 
-## Getting Started
+SMART e un framework agentico no-code per progettare, governare e diffondere iniziative formative con processi standardizzati, sicurezza operativa e uso responsabile dell'AI.
 
-First, run the development server:
+Questo `README.md` e l'entrypoint unico del progetto per persone e agenti AI.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Cosa include il repository
+
+- framework documentale in `documentation/`;
+- web app Next.js in `app/` per facilitare adozione, onboarding e operativita del framework;
+- guida operativa in `HOW_TO.md`;
+- policy contributive e rilascio in `CONTRIBUTING.md` e `CHANGELOG.md`.
+
+## Perche SMART
+
+Il framework risolve un problema ricorrente: passare da richieste frammentarie a output coerenti senza improvvisazione.
+
+Catena canonica:
+
+```text
+case-schema.json
+-> case.json
+-> script-master.md
+-> materiali derivati
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+SMART mantiene il controllo umano, rende tracciabile il lavoro degli agenti e protegge coerenza tra promessa, contenuti e diffusione.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Avvio rapido
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Leggi `HOW_TO.md`.
+2. Consulta `documentation/wizard/README.md`.
+3. Usa `documentation/wizard/case-schema.json` per la Fase 1.
+4. Usa `documentation/wizard/script-master.md` per la Fase 2.
 
-## Learn More
+Per avviare la web app locale:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm install
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Apri `http://localhost:3000`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Web app integrata al framework
 
-## Deploy on Vercel
+La web app non e separata dal framework: ne e parte operativa.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Pagine attive:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `/` homepage strategica;
+- `/wizard` guida operativa;
+- `/filosofia` visione e principi;
+- `/fase-1-json` area predisposta (WIP) per compilazione/download JSON;
+- `/privacy`, `/cookie-policy`, `/sicurezza-dati` per compliance e trasparenza.
+
+## Privacy e dati (stato attuale)
+
+- nessun database applicativo attivo;
+- nessun analytics;
+- nessuna profilazione;
+- solo storage tecnico locale per consenso cookie necessari.
+
+Evoluzione prevista: eventuale raccolta minima di metriche tecniche (es. richieste download JSON) solo per manutenzione ed evoluzione del framework, mai per vendita del dato.
+
+## Percorso documentale consigliato
+
+- `HOW_TO.md`
+- `documentation/README.md`
+- `documentation/framework/`
+- `documentation/manifesto/`
+- `documentation/wizard/`
+- `documentation/context-ai/`
+
+## Contatti e repository
+
+- Repository: `https://github.com/Sh1nig4my/framework.smart`
+- Email: `dev.emanuele.ienna@gmail.com`
+
+## Licenza
+
+MIT. Vedi `LICENSE`.
