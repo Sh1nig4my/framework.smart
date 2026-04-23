@@ -30,9 +30,11 @@ export default function PrivacyPage() {
 
           <h2 className="mt-5 text-base font-semibold text-[var(--ink-900)]">Stato attuale del trattamento</h2>
           <p className="mt-2">
-            Alla data di questo aggiornamento, l&apos;applicazione non effettua
-            raccolta di dati personali su database, non utilizza strumenti di
-            analytics e non svolge attivita di profilazione.
+            Alla data di questo aggiornamento, l&apos;applicazione raccoglie e
+            salva su database i dati inviati nel flusso `/fase-1-json` per
+            finalita di manutenzione, tracciabilita operativa e miglioramento
+            del framework. Non sono attivi strumenti analytics e non viene
+            svolta profilazione.
           </p>
 
           <h2 className="mt-5 text-base font-semibold text-[var(--ink-900)]">Dati tecnici gestiti</h2>
@@ -44,15 +46,14 @@ export default function PrivacyPage() {
 
           <h2 className="mt-5 text-base font-semibold text-[var(--ink-900)]">Evoluzione futura del servizio</h2>
           <p className="mt-2">
-            In caso di introduzione di funzionalita con raccolta minima di dati
-            tecnici (ad esempio richieste di download del JSON di Fase 1), il
-            trattamento sara limitato a finalita di manutenzione, monitoraggio
-            qualitativo ed evoluzione del framework.
+            Il salvataggio attuale include dati di contatto, contenuto della
+            richiesta e JSON completo della Fase 1. Il sistema evita il
+            salvataggio di duplicati quando email e JSON sono identici.
           </p>
           <p className="mt-2">
-            Prima dell&apos;attivazione di tali funzionalita verranno aggiornati in
-            modo preventivo: finalita, base giuridica, tempi di conservazione,
-            diritti degli interessati e modalita di consenso.
+            Eventuali estensioni future del trattamento verranno comunque
+            comunicate preventivamente, con aggiornamento puntuale di finalita,
+            tempi di conservazione e diritti degli interessati.
           </p>
 
           <h2 className="mt-5 text-base font-semibold text-[var(--ink-900)]">Limitazioni d&apos;uso del dato</h2>

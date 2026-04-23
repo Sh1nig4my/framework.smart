@@ -134,9 +134,9 @@ export default function Home() {
             <p className="text-xs font-semibold tracking-[0.16em] text-[var(--ink-600)] uppercase">
               Pipeline utente
             </p>
-            <h3 className="mt-2 text-xl font-semibold">Fase 1 JSON (WIP)</h3>
+            <h3 className="mt-2 text-xl font-semibold">Fase 1 JSON</h3>
             <p className="mt-2 text-sm text-[var(--ink-700)]">
-              Area predisposta per compilazione e download assistito del file.
+              Compilazione guidata completa con salvataggio record e download case JSON.
             </p>
           </Link>
         </section>

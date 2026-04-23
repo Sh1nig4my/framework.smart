@@ -51,17 +51,17 @@ Pagine attive:
 - `/` homepage strategica;
 - `/wizard` guida operativa;
 - manifesto e filosofia disponibili nella documentazione ufficiale (`documentation/manifesto/`);
-- `/fase-1-json` area predisposta (WIP) per compilazione/download JSON;
+- `/fase-1-json` compilazione completa della Fase 1 con salvataggio e download JSON;
 - `/privacy`, `/cookie-policy`, `/sicurezza-dati` per compliance e trasparenza.
 
 ## Privacy e dati (stato attuale)
 
-- nessun database applicativo attivo;
+- database applicativo attivo per il flusso `/fase-1-json`;
+- salvataggio record con dati richiesta, JSON completo, data e ora per manutenzione e miglioramento del framework;
+- blocco duplicati su combinazione `stessa email + stesso JSON`;
 - nessun analytics;
 - nessuna profilazione;
-- solo storage tecnico locale per consenso cookie necessari.
-
-Evoluzione prevista: eventuale raccolta minima di metriche tecniche (es. richieste download JSON) solo per manutenzione ed evoluzione del framework, mai per vendita del dato.
+- storage locale tecnico per consenso cookie necessari.
 
 ## Percorso documentale consigliato
 

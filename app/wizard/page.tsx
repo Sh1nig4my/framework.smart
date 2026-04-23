@@ -70,7 +70,7 @@ export default function WizardPage() {
               href="/fase-1-json"
               className="rounded-full bg-[var(--ink-900)] px-5 py-2.5 text-sm font-medium text-white transition hover:bg-[var(--ink-700)]"
             >
-              Fase 1 JSON (WIP)
+              Fase 1 JSON
             </Link>
             <a
               href="https://github.com/Sh1nig4my/framework.smart/blob/main/HOW_TO.md"
