@@ -40,12 +40,14 @@ export default function Home() {
               >
                 Vai al Wizard
               </Link>
-              <Link
-                href="/filosofia"
+              <a
+                href="https://github.com/Sh1nig4my/framework.smart/blob/main/HOW_TO.md"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="rounded-full border border-[var(--line-strong)] bg-white px-6 py-3 text-sm font-medium text-[var(--ink-800)] transition hover:border-[var(--ink-700)]"
               >
-                Scopri la filosofia
-              </Link>
+                Apri HOW_TO
+              </a>
             </div>
           </div>
 
@@ -94,7 +96,7 @@ export default function Home() {
           </article>
         </section>
 
-        <section className="grid gap-5 md:grid-cols-3">
+        <section className="grid gap-5 md:grid-cols-2">
           <Link
             href="/wizard"
             className="rounded-2xl border border-[var(--line)] bg-white p-6 transition hover:border-[var(--line-strong)]"
@@ -108,19 +110,23 @@ export default function Home() {
             </p>
           </Link>
 
-          <Link
-            href="/filosofia"
+          <a
+            href="https://github.com/Sh1nig4my/framework.smart/blob/main/documentation/README.md"
+            target="_blank"
+            rel="noopener noreferrer"
             className="rounded-2xl border border-[var(--line)] bg-white p-6 transition hover:border-[var(--line-strong)]"
           >
             <p className="text-xs font-semibold tracking-[0.16em] text-[var(--ink-600)] uppercase">
-              Visione
+              Documentazione
             </p>
-            <h3 className="mt-2 text-xl font-semibold">Filosofia SMART</h3>
+            <h3 className="mt-2 text-xl font-semibold">SMART Docs</h3>
             <p className="mt-2 text-sm text-[var(--ink-700)]">
-              Principi no-code, sicurezza e ruolo degli agenti di coding.
+              Percorso completo di adozione, metodo e artefatti canonici.
             </p>
-          </Link>
+          </a>
+        </section>
 
+        <section className="grid gap-5 md:grid-cols-1">
           <Link
             href="/fase-1-json"
             className="rounded-2xl border border-[var(--line)] bg-white p-6 transition hover:border-[var(--line-strong)]"
@@ -128,9 +134,9 @@ export default function Home() {
             <p className="text-xs font-semibold tracking-[0.16em] text-[var(--ink-600)] uppercase">
               Pipeline utente
             </p>
-            <h3 className="mt-2 text-xl font-semibold">Fase 1 JSON (WIP)</h3>
+            <h3 className="mt-2 text-xl font-semibold">Fase 1 JSON</h3>
             <p className="mt-2 text-sm text-[var(--ink-700)]">
-              Area predisposta per compilazione e download assistito del file.
+              Compilazione guidata completa con salvataggio record e download case JSON.
             </p>
           </Link>
         </section>
@@ -152,10 +158,10 @@ export default function Home() {
               Esplora il Wizard
             </Link>
             <Link
-              href="/filosofia"
+              href="/fase-1-json"
               className="rounded-full border border-white/35 px-5 py-2.5 text-sm font-medium text-white transition hover:border-white"
             >
-              Filosofia SMART
+              Fase 1 JSON
             </Link>
           </div>
         </section>

@@ -4,7 +4,7 @@
 
 Prima release stabile del framework SMART con integrazione completa tra metodo documentale e web app operativa.
 
-- introdotta architettura app multi-pagina (`/wizard`, `/filosofia`, `/fase-1-json`, `/privacy`, `/cookie-policy`, `/sicurezza-dati`);
+- introdotta architettura app multi-pagina (`/wizard`, `/fase-1-json`, `/privacy`, `/cookie-policy`, `/sicurezza-dati`);
 - centralizzato layout condiviso con header/footer globali e design system Tailwind/CSS variables;
 - aggiunto banner cookie con gestione "solo necessari" e persistenza locale;
 - aggiornata homepage con navigazione interna e CTA orientate all'adozione del framework-agentico;

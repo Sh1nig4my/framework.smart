@@ -31,7 +31,9 @@ export default function SicurezzaDatiPage() {
 
           <h2 className="mt-5 text-base font-semibold text-[var(--ink-900)]">Misure attive</h2>
           <ul className="mt-2 space-y-2">
-            <li>- Nessun database attivo nella versione corrente.</li>
+            <li>- Database attivo solo per il flusso operativo `/fase-1-json`.</li>
+            <li>- Salvataggio minimizzato ai dati necessari per manutenzione e tracciabilita.</li>
+            <li>- Blocco duplicati su combinazione stessa email + stesso JSON.</li>
             <li>- Nessuna profilazione individuale o finalita commerciali sul dato.</li>
             <li>- Controllo umano sulle decisioni di processo e sulle pubblicazioni.</li>
             <li>- Tracciabilita documentale delle regole operative del framework.</li>
