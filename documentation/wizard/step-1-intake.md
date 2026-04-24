@@ -1,4 +1,4 @@
-# Fase 1 - Intake strutturato
+# Step 1 - Intake strutturato
 
 ## Scopo
 
@@ -12,7 +12,7 @@ Produrre un `case.json` formalmente valido e sostanzialmente coerente.
 
 ## Output
 
-- `case.json` pronto per Fase 2
+- `case.json` pronto per Step 2
 - nodi aperti esplicitati
 - assunzioni esplicitate
 
@@ -24,9 +24,9 @@ Produrre un `case.json` formalmente valido e sostanzialmente coerente.
 4. verificare coerenza trasversale (obiettivo/pubblico/formato/limiti);
 5. salvare come `case.json` e avviare gate.
 
-## Gate Fase 1
+## Gate Step 1
 
-Il passaggio a Fase 2 e consentito solo se:
+Il passaggio a Step 2 e consentito solo se:
 
 1. tutti i campi obbligatori sono valorizzati;
 2. non ci sono valori fuori opzione;
@@ -38,4 +38,4 @@ Il passaggio a Fase 2 e consentito solo se:
 - campi inventati;
 - valori non ammessi dallo schema;
 - compilazione implicita senza assunzioni dichiarate;
-- passaggio prematuro alla Fase 2.
+- passaggio prematuro allo Step 2.

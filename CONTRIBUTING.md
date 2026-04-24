@@ -10,9 +10,9 @@ Entrypoint ufficiale del progetto: `README.md` in root.
 
 Ogni contributo deve rispettare gli invarianti canonici:
 
-- `documentation/wizard/case-schema.json` resta source of truth della Fase 1;
-- `documentation/wizard/cartella-master-template.md` + `documentation/wizard/cartella-master-schema.md` restano source of truth della Fase 2;
-- `documentation/wizard/fase-3-derivazione-pubblicazione.md` governa la Fase 3;
+- `documentation/wizard/case-schema.json` resta source of truth dello Step 1;
+- `documentation/wizard/cartella-master-template.md` + `documentation/wizard/cartella-master-schema.md` restano source of truth dello Step 2;
+- `documentation/wizard/step-3-derivazione-pubblicazione.md` governa lo Step 3;
 - la cartella master resta artefatto centrale per ogni derivazione;
 - SMART integra framework documentale e web app operativa in un unico sistema.
 
@@ -20,7 +20,7 @@ Ogni contributo deve rispettare gli invarianti canonici:
 
 - `documentation/manifesto/`: visione, principi, etica, policy, governance.
 - `documentation/framework/`: metodologia, modello operativo, processo, ruoli, glossario.
-- `documentation/wizard/`: processo operativo Fase 1/Fase 2/Fase 3 e documentazione di supporto.
+- `documentation/wizard/`: processo operativo Step 1/Step 2/Step 3 e documentazione di supporto.
 - `documentation/playbooks/`: applicazioni pratiche del metodo.
 - `documentation/context-ai/`: contesto AI, regole operative, protocolli di validazione, template.
 
@@ -53,10 +53,12 @@ Contributi in `documentation/context-ai/` devono:
 
 ## Contributi non ammessi
 
-- codice demo o applicazioni software;
-- integrazioni specifiche con provider esterni;
+- codice demo o applicazioni software non coerenti con il framework;
+- integrazioni software vendor-specific non richieste dal repository;
 - materiale storico ricopiato in area attiva senza razionale;
 - variazioni terminologiche non allineate al glossario canonico.
+
+Nota: sono ammessi aggiornamenti documentali provider-aware in Step 3 (prompt/output contract/gate) quando restano no-code e tracciabili alla cartella master.
 
 Sono ammessi contributi alla web app (`app/`) quando migliorano esperienza, adozione e operativita del framework senza alterare gli invarianti metodologici.
 

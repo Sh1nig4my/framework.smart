@@ -3,7 +3,7 @@ import { createHash } from "node:crypto";
 import { NextResponse } from "next/server";
 import { MongoServerError } from "mongodb";
 
-import { fase1Schema, getAllowedOptions } from "@/shared/lib/fase1-json";
+import { step1Schema, getAllowedOptions } from "@/shared/lib/step1-json";
 import { getDatabase } from "@/server/lib/mongodb";
 
 const HONEYPOT_FIELD_NAME = "website";
@@ -79,7 +79,7 @@ type CaseJson = {
   };
 };
 
-type Fase1ApiResponse = {
+type Step1ApiResponse = {
   status: "created" | "duplicate" | "invalid_payload" | "error";
   message: string;
   request_id?: string;
@@ -92,16 +92,16 @@ type IndexCache = {
 };
 
 declare global {
-  var fase1IndexesCache: IndexCache | undefined;
+  var step1IndexesCache: IndexCache | undefined;
 }
 
 const globalIndexesCache = globalThis as typeof globalThis & {
-  fase1IndexesCache?: IndexCache;
+  step1IndexesCache?: IndexCache;
 };
 
-const indexesCache = globalIndexesCache.fase1IndexesCache ?? { promise: null };
+const indexesCache = globalIndexesCache.step1IndexesCache ?? { promise: null };
 
-globalIndexesCache.fase1IndexesCache = indexesCache;
+globalIndexesCache.step1IndexesCache = indexesCache;
 
 function normalizeString(value: unknown) {
   return typeof value === "string" ? value.trim() : "";
@@ -186,10 +186,10 @@ function buildCaseJson(payload: FormPayload): CaseJson {
 
   return {
     meta: {
-      schema_name: fase1Schema.schema.name,
-      schema_version: fase1Schema.schema.version,
-      language: fase1Schema.schema.language,
-      output_name: fase1Schema.schema.output_instance_name,
+      schema_name: step1Schema.schema.name,
+      schema_version: step1Schema.schema.version,
+      language: step1Schema.schema.language,
+      output_name: step1Schema.schema.output_instance_name,
     },
     initiative: {
       initiative_type: validateSingleValue("initiative", "initiative_type", initiative.initiative_type),
@@ -255,7 +255,7 @@ function getValidationMessage(payload: FormPayload, caseJson: CaseJson) {
     return "Inserisci un indirizzo email valido.";
   }
 
-  for (const section of fase1Schema.sections) {
+  for (const section of step1Schema.sections) {
     for (const field of section.fields) {
       if (!field.required) {
         continue;
@@ -287,7 +287,7 @@ export async function POST(request: Request) {
   try {
     payload = (await request.json()) as FormPayload;
   } catch {
-    return NextResponse.json<Fase1ApiResponse>(
+    return NextResponse.json<Step1ApiResponse>(
       {
         status: "invalid_payload",
         message: "Payload non valido.",
@@ -297,7 +297,7 @@ export async function POST(request: Request) {
   }
 
   if (normalizeString(payload[HONEYPOT_FIELD_NAME])) {
-    return NextResponse.json<Fase1ApiResponse>(
+    return NextResponse.json<Step1ApiResponse>(
       {
         status: "created",
         message: "Richiesta acquisita.",
@@ -310,7 +310,7 @@ export async function POST(request: Request) {
   const validationError = getValidationMessage(payload, caseJson);
 
   if (validationError) {
-    return NextResponse.json<Fase1ApiResponse>(
+    return NextResponse.json<Step1ApiResponse>(
       {
         status: "invalid_payload",
         message: validationError,
@@ -330,9 +330,9 @@ export async function POST(request: Request) {
   const now = new Date();
 
   const record = {
-    schema_version: fase1Schema.schema.version,
-    wizard_schema_name: fase1Schema.schema.name,
-    wizard_schema_language: fase1Schema.schema.language,
+    schema_version: step1Schema.schema.version,
+    wizard_schema_name: step1Schema.schema.name,
+    wizard_schema_language: step1Schema.schema.language,
     request_mode: "json_download",
     request_status: "working",
     nome_cognome: nomeCognome,
@@ -360,7 +360,7 @@ export async function POST(request: Request) {
     const collection = db.collection(REQUEST_COLLECTION);
     const result = await collection.insertOne(record);
 
-    return NextResponse.json<Fase1ApiResponse>(
+    return NextResponse.json<Step1ApiResponse>(
       {
         status: "created",
         message: "Richiesta salvata. Ora puoi scaricare il case JSON.",
@@ -372,7 +372,7 @@ export async function POST(request: Request) {
     );
   } catch (error) {
     if (error instanceof MongoServerError && error.code === 11000) {
-      return NextResponse.json<Fase1ApiResponse>(
+      return NextResponse.json<Step1ApiResponse>(
         {
           status: "duplicate",
           message: "Esiste gia una richiesta identica con la stessa email e lo stesso case JSON.",
@@ -382,7 +382,7 @@ export async function POST(request: Request) {
     }
 
     if (error instanceof Error && error.message.includes("Missing MONGODB_URI")) {
-      return NextResponse.json<Fase1ApiResponse>(
+      return NextResponse.json<Step1ApiResponse>(
         {
           status: "error",
           message: "Configurazione database mancante. Imposta MONGODB_URI e riprova.",
@@ -391,9 +391,9 @@ export async function POST(request: Request) {
       );
     }
 
-    console.error("Fase 1 submit failed", error);
+    console.error("Step 1 submit failed", error);
 
-    return NextResponse.json<Fase1ApiResponse>(
+    return NextResponse.json<Step1ApiResponse>(
       {
         status: "error",
         message: "Errore durante il salvataggio. Riprova tra poco.",

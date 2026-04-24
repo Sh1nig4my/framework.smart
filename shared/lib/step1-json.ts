@@ -2,7 +2,7 @@ import caseSchemaDocument from "@/documentation/wizard/case-schema.json";
 
 export type SelectFieldType = "single_select" | "multi_select";
 
-export type Fase1SchemaField = {
+export type Step1SchemaField = {
   id: string;
   label: string;
   type: SelectFieldType;
@@ -11,23 +11,23 @@ export type Fase1SchemaField = {
   options: string[];
 };
 
-export type Fase1SchemaSection = {
+export type Step1SchemaSection = {
   id: string;
   label: string;
-  fields: Fase1SchemaField[];
+  fields: Step1SchemaField[];
 };
 
-type Fase1SchemaDocument = {
+type Step1SchemaDocument = {
   schema: {
     name: string;
     version: string;
     language: string;
     output_instance_name: string;
   };
-  sections: Fase1SchemaSection[];
+  sections: Step1SchemaSection[];
 };
 
-export const fase1Schema = caseSchemaDocument as Fase1SchemaDocument;
+export const step1Schema = caseSchemaDocument as Step1SchemaDocument;
 
 const optionLabelOverrides: Record<string, string> = {
   cartella_master: "Cartella Master",
@@ -53,7 +53,7 @@ export function optionToLabel(option: string) {
 }
 
 export function getSectionById(sectionId: string) {
-  return fase1Schema.sections.find((section) => section.id === sectionId);
+  return step1Schema.sections.find((section) => section.id === sectionId);
 }
 
 export function getFieldById(sectionId: string, fieldId: string) {

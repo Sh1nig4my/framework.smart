@@ -14,11 +14,11 @@ Contesto obbligatorio:
 - usa `wizard/cartella-master-template.md` e `wizard/cartella-master-schema.md` come struttura canonica del risultato;
 - rispetta i principi SMART e non introdurre promesse o dettagli non supportati;
 - se mancano informazioni, dichiarale come nodi aperti o assunzioni.
-- non generare derivati in questa fase.
+- non generare derivati in questo step.
 
 Obiettivo:
 - generare una cartella master completa, chiara e leggibile da divulgatore, team e agenti;
-- rendere espliciti tono, sequenza, limiti, supporti e handoff Fase 3.
+- rendere espliciti tono, sequenza, limiti, supporti e handoff Step 3.
 
 Input:
 [incolla qui `case.json`]

@@ -37,7 +37,7 @@ E un framework che:
 - rende leggibile il progetto a persone e AI;
 - protegge la coerenza tra promessa, contenuti, conduzione e derivati.
 - abilita la progettazione no-code di framework agentici governati;
-- integra sicurezza e standardizzazione fin dalla fase di intake.
+- integra sicurezza e standardizzazione fin dallo step di intake.
 
 ## Cosa produce davvero
 

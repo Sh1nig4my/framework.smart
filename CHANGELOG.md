@@ -1,13 +1,34 @@
 # Changelog
 
+## [1.4.0] - 2026-04-25
+
+Riorganizzazione prompt hub e standardizzazione `step` su framework, app e output workflow.
+
+- ridotta la sezione `prompts/` a 4 prompt essenziali: `alignment.md`, `framework-evolution.md`, `maintenance.md`, `workflow-execution.md`;
+- introdotte regole operative `workflow-output/<project-id>/` con cartella `status/` e suddivisione `step-1`, `step-2`, `step-3`;
+- aggiornata nomenclatura di progetto da `fase/phase` a `step` nei contenuti attivi framework+app;
+- rinominati asset tecnici Step 1 (`/api/step-1-json`, `step-1-json-form`, `step1-json`);
+- propagate modifiche su pagine app core (`/`, `/workflow`, `/wizard`, `/wiki`, `/privacy`, `/sicurezza-dati`) e riferimenti documentali collegati.
+
+## [1.3.0] - 2026-04-24
+
+Evoluzione breaking dello Step 3: passaggio da derivazione generica a toolchain operativa provider-aware.
+
+- aggiornata la procedura canonica Step 3 con tool standardizzati v1 (naming, immagini, riassunti, PowerPoint, pagina web statica, video);
+- introdotta modalita provider ibrida in Step 3 (preset consigliati, custom consentito, default `non specificato`);
+- estesi gate e contratti output Step 3 con campi `tool_usato`, `provider_target`, `prompt_o_output` e vincoli brand/policy;
+- aggiornato handoff Step 2 -> Step 3 in `09_step_3_handoff/` con metadati minimi su tool, provider, scope e pubblicazione;
+- riallineati wizard, framework, context-ai, root docs e prompt workflow al nuovo modello operativo Step 3;
+- chiarito `CONTRIBUTING.md`: provider-aware documentale ammesso, integrazioni software vendor-specific non richieste restano escluse.
+
 ## [1.2.0] - 2026-04-24
 
-Refactor breaking della Fase 2: passaggio da documento unico a cartella master generativa modulare.
+Refactor breaking dello Step 2: passaggio da documento unico a cartella master generativa modulare.
 
 - aggiornata la catena canonica in tutta la documentazione: `case.json -> cartella-master/`;
-- rimossi artefatti legacy Fase 2 `wizard/script-master.md` e `wizard/script-master-schema.md`;
+- rimossi artefatti legacy Step 2 `wizard/script-master.md` e `wizard/script-master-schema.md`;
 - introdotti `wizard/cartella-master-template.md`, `wizard/cartella-master-schema.md`, `wizard/cartella-master-validation.md`;
-- riallineati framework, manifesto, wizard, context-ai e playbooks al nuovo modello Fase 2/Fase 3;
+- riallineati framework, manifesto, wizard, context-ai e playbooks al nuovo modello Step 2/Step 3;
 - aggiornati prompt template AI per generazione e derivazione da cartella master;
 - aggiornati root docs (`README.md`, `HOW_TO.md`, `CONTRIBUTING.md`) e prompt workflow operativo.
 
@@ -18,9 +39,9 @@ Refactor strutturale pre-release con consolidamento metodologia agentica, rialli
 - eliminata la route `/how-to` e promosso `/wizard` come unica pagina guida setup/configurazione;
 - riscritta la pagina `/wizard` con focus installazione ambiente, prerequisiti hardware/software e verifiche tecniche;
 - aggiornata propagazione route su navbar, homepage e documentazione di supporto;
-- introdotta formalizzazione completa della Fase 3 in documentazione (`wizard/fase-3-derivazione-pubblicazione.md`);
+- introdotta formalizzazione completa dello Step 3 in documentazione (`wizard/step-3-derivazione-pubblicazione.md`);
 - rifattorizzati documenti core in `documentation/` (framework, wizard, context-ai) mantenendo logiche e artefatti canonici;
-- aggiornati `README.md`, `HOW_TO.md` e `CONTRIBUTING.md` alla catena Fase 1 -> Fase 2 -> Fase 3;
+- aggiornati `README.md`, `HOW_TO.md` e `CONTRIBUTING.md` alla catena Step 1 -> Step 2 -> Step 3;
 - evoluta la Wiki app con contenuti piu esaustivi e guida passo-passo del workflow;
 - trasformata `prompts/` in prompt hub operativo con entrypoint unico e 8 prompt specialistici.
 - estesa la pagina `/wiki` in formato guida professionale con workflow operativi, gate, anti-pattern e riferimenti canonici;

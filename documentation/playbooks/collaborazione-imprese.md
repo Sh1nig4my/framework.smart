@@ -29,7 +29,7 @@ Usare questo playbook per:
 ## Procedura operativa
 
 1. Inquadra il bisogno reale dell'impresa prima dei tool.
-2. Usa la Fase 1 per chiarire maturita del pubblico e priorita contenutistica.
+2. Usa lo Step 1 per chiarire maturita del pubblico e priorita contenutistica.
 3. Nella cartella master esplicita cosa il pubblico potra fare dopo l'iniziativa.
 4. Se i tool sono centrali, chiarisci anche limiti e variabilita.
 5. Deriva solo materiali che aiutano davvero l'adozione o la continuita.
@@ -59,7 +59,7 @@ Prima della derivazione verificare:
 ## Riferimenti
 
 - `HOW_TO.md`
-- `wizard/fase-2-generazione.md`
+- `wizard/step-2-generazione.md`
 - `wizard/cartella-master-schema.md`
 - `wizard/cartella-master-validation.md`
 - `context-ai/output-contracts.md`

@@ -8,19 +8,19 @@ Definire come SMART trasforma un bisogno iniziale in output pubblicabili con con
 
 - bisogno progettuale su divulgazione/formazione/eventi;
 - contesto e vincoli reali;
-- disponibilita a lavorare per fasi.
+- disponibilita a lavorare per step.
 
 ## Output principali
 
-- `case.json` valido (Fase 1);
-- cartella master completa (Fase 2);
-- derivati pubblicabili coerenti (Fase 3).
+- `case.json` valido (Step 1);
+- cartella master completa (Step 2);
+- derivati pubblicabili coerenti (Step 3).
 
 ## Componenti del modello
 
-1. **Intake engine (Fase 1)**: raccolta strutturata e normalizzazione requisiti.
-2. **Master engine (Fase 2)**: costruzione cartella master e controllo semantico.
-3. **Delivery engine (Fase 3)**: derivazione, adattamento canale, pre-pubblicazione.
+1. **Intake engine (Step 1)**: raccolta strutturata e normalizzazione requisiti.
+2. **Master engine (Step 2)**: costruzione cartella master e controllo semantico.
+3. **Delivery engine (Step 3)**: derivazione, adattamento canale, pre-pubblicazione.
 4. **Governance engine**: regole, terminologia, gate, auditabilita.
 
 ## Catena operativa
@@ -28,11 +28,11 @@ Definire come SMART trasforma un bisogno iniziale in output pubblicabili con con
 1. usare `wizard/case-schema.json`;
 2. compilare e validare `case.json`;
 3. generare/validare cartella master secondo `wizard/cartella-master-template.md`;
-4. produrre derivati in Fase 3 con verifiche pre-pubblicazione.
+4. produrre derivati in Step 3 con verifiche pre-pubblicazione.
 
 ## Rischi da evitare
 
-- intake incompleto con passaggio prematuro alla Fase 2;
+- intake incompleto con passaggio prematuro allo Step 2;
 - cartella master incoerente o incompleta;
 - derivati costruiti da appunti non canonici;
 - drift lessicale rispetto al glossario;

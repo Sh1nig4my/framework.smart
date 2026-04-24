@@ -7,7 +7,7 @@ import smartLogo from "@/documentation/framework/logo/smart-img-text.png";
 export const metadata: Metadata = {
   title: "Home",
   description:
-    "SMART Framework: standard no-code e AI-native per progettare iniziative divulgative, creare eventi e generare contenuti strutturati personalizzabili.",
+    "SMART Framework: standard operativo no-code e AI-native con percorso Wizard, Workflow SMART, Wiki SMART e catena Step 1-2-3 governata da gate.",
   keywords: [
     "framework smart",
     "standard smart",
@@ -28,7 +28,7 @@ const standardAreas = [
   },
   {
     title: "Contenuti strutturati",
-    body: "Usa una catena unica che riduce contraddizioni e mantiene allineati script, derivati e comunicazione.",
+    body: "Usa una catena unica che riduce contraddizioni e mantiene allineati case, cartella master e output tool di Step 3.",
   },
 ];
 
@@ -49,6 +49,10 @@ const faqs = [
     q: "Perche usarlo oggi?",
     a: "Perche gli agenti accelerano l'esecuzione, ma senza standard aumentano errori e incoerenze. SMART imposta confini, gate e qualita.",
   },
+  {
+    q: "Come funziona lo Step 3 aggiornato?",
+    a: "Dopo la validazione della cartella master, SMART usa tool standardizzati per produrre output finali o prompt provider-specific, con default provider 'non specificato' quando la scelta non e ancora definita.",
+  },
 ];
 
 export default function HomePage() {
@@ -64,7 +68,11 @@ export default function HomePage() {
             </h1>
             <p className="max-w-2xl text-base leading-relaxed text-[var(--ink-700)] md:text-lg">
               SMART unisce metodo documentale, workflow guidato e customizzazione tramite agenti. In pratica: meno
-              ambiguita, piu controllo, output riusabili e qualitativamente stabili.
+               ambiguita, piu controllo, output riusabili e qualitativamente stabili tra Step 1, Step 2 e Step 3.
+            </p>
+            <p className="max-w-2xl text-sm leading-relaxed text-[var(--ink-600)] md:text-base">
+              Nuovo percorso consigliato: Wizard per il setup, Workflow SMART per la storia operativa completa, Wiki
+              SMART per le regole canoniche e i gate di qualita.
             </p>
             <div className="flex flex-wrap gap-3">
               <Link href="/wizard" className="sf-button-primary">
@@ -73,8 +81,8 @@ export default function HomePage() {
               <Link href="/wiki#what-is-smart" className="sf-button-secondary">
                 Esplora la Wiki
               </Link>
-              <Link href="/download" className="sf-button-secondary">
-                Vai al Download
+              <Link href="/workflow" className="sf-button-secondary">
+                Apri Workflow
               </Link>
             </div>
           </div>
@@ -90,21 +98,24 @@ export default function HomePage() {
             </div>
             <p className="text-xs font-semibold tracking-[0.16em] text-[var(--ink-700)] uppercase">Catena SMART</p>
             <ol className="mt-4 space-y-3 text-sm leading-relaxed text-[var(--ink-700)]">
-              <li>1. Standardizza l&apos;intake con lo schema di Fase 1.</li>
+              <li>1. Standardizza l&apos;intake con lo schema di Step 1.</li>
               <li>2. Consolida un case JSON verificabile.</li>
               <li>3. Genera una cartella master governabile.</li>
-              <li>4. Deriva materiali coerenti e personalizzati.</li>
+              <li>4. Esegui tool Step 3 per output coerenti (prompt/materiali).</li>
             </ol>
+            <p className="text-xs leading-relaxed text-[var(--ink-600)]">
+              Step 3 provider-aware: preset consigliati, provider custom consentito, default `non specificato`.
+            </p>
             <p className="text-sm leading-relaxed text-[var(--ink-700)]">
               Ogni passaggio ha regole, gate e criteri di validazione. Nella Wiki trovi la guida completa sezione per
               sezione, con riferimenti pratici per lavorare in modo conforme.
             </p>
             <p className="text-sm leading-relaxed text-[var(--ink-700)]">
-              Parti dalla mappa delle fasi per capire il flusso generale e passa poi ai dettagli operativi in base al
+              Parti dalla mappa degli step per capire il flusso generale e passa poi ai dettagli operativi in base al
               tuo obiettivo.
             </p>
             <Link
-              href="/wiki#phase-map"
+              href="/wiki#step-map"
               className="mt-2 inline-flex text-sm font-medium text-[var(--brand-700)] hover:text-[var(--ink-900)]"
             >
               Approfondisci il metodo nella Wiki
@@ -154,7 +165,7 @@ export default function HomePage() {
           <h2 className="text-2xl font-semibold md:text-3xl">Inizia dal percorso piu adatto alle tue esigenze</h2>
           <p className="mt-3 max-w-3xl text-sm leading-relaxed text-white/80 md:text-base">
             Se vuoi configurare ambiente e strumenti parti dal Wizard. Se vuoi le regole complete vai in Wiki. Se vuoi
-            applicarlo subito passa al Download della Fase 1.
+            applicarlo subito passa al Workflow e avvia Create JSON Master.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link
@@ -167,10 +178,10 @@ export default function HomePage() {
               Vai alla Wiki
             </Link>
             <Link
-              href="/download"
+              href="/workflow"
               className="rounded-full border border-white/35 px-5 py-2.5 text-sm font-medium text-white transition hover:border-white"
             >
-              Apri Download
+              Apri Workflow
             </Link>
           </div>
         </section>

@@ -2,7 +2,7 @@
 
 ## Uso
 
-Usa questo template per validare un `case.json` prima della Fase 2.
+Usa questo template per validare un `case.json` prima dello Step 2.
 
 ## Template
 

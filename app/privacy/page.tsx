@@ -31,7 +31,7 @@ export default function PrivacyPage() {
           <h2 className="mt-5 text-base font-semibold text-[var(--ink-900)]">Stato attuale del trattamento</h2>
           <p className="mt-2">
             Alla data di questo aggiornamento, l&apos;applicazione raccoglie e
-            salva su database i dati inviati nel flusso `/download` per
+            salva su database i dati inviati nel flusso `/create-json-master` per
             finalita di manutenzione, tracciabilita operativa e miglioramento
             del framework. Non sono attivi strumenti analytics e non viene
             svolta profilazione.
@@ -47,7 +47,7 @@ export default function PrivacyPage() {
           <h2 className="mt-5 text-base font-semibold text-[var(--ink-900)]">Evoluzione futura del servizio</h2>
           <p className="mt-2">
             Il salvataggio attuale include dati di contatto, contenuto della
-            richiesta e JSON completo della Fase 1. Il sistema evita il
+            richiesta e JSON completo dello Step 1. Il sistema evita il
             salvataggio di duplicati quando email e JSON sono identici.
           </p>
           <p className="mt-2">
