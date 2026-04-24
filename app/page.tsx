@@ -7,7 +7,7 @@ import smartLogo from "@/documentation/framework/logo/smart-img-text.png";
 export const metadata: Metadata = {
   title: "Home",
   description:
-    "SMART Framework: standard no-code e AI-native per progettare iniziative, governare la catena Fase 1-2-3 e produrre output tool provider-aware.",
+    "SMART Framework: standard operativo no-code e AI-native con percorso Wizard, Workflow SMART, Wiki SMART e catena Fase 1-2-3 governata da gate.",
   keywords: [
     "framework smart",
     "standard smart",
@@ -70,6 +70,10 @@ export default function HomePage() {
               SMART unisce metodo documentale, workflow guidato e customizzazione tramite agenti. In pratica: meno
               ambiguita, piu controllo, output riusabili e qualitativamente stabili tra Fase 1, Fase 2 e Fase 3.
             </p>
+            <p className="max-w-2xl text-sm leading-relaxed text-[var(--ink-600)] md:text-base">
+              Nuovo percorso consigliato: Wizard per il setup, Workflow SMART per la storia operativa completa, Wiki
+              SMART per le regole canoniche e i gate di qualita.
+            </p>
             <div className="flex flex-wrap gap-3">
               <Link href="/wizard" className="sf-button-primary">
                 Apri Wizard
@@ -77,8 +81,8 @@ export default function HomePage() {
               <Link href="/wiki#what-is-smart" className="sf-button-secondary">
                 Esplora la Wiki
               </Link>
-              <Link href="/download" className="sf-button-secondary">
-                Apri Download Fase 1
+              <Link href="/workflow" className="sf-button-secondary">
+                Apri Workflow
               </Link>
             </div>
           </div>
@@ -161,7 +165,7 @@ export default function HomePage() {
           <h2 className="text-2xl font-semibold md:text-3xl">Inizia dal percorso piu adatto alle tue esigenze</h2>
           <p className="mt-3 max-w-3xl text-sm leading-relaxed text-white/80 md:text-base">
             Se vuoi configurare ambiente e strumenti parti dal Wizard. Se vuoi le regole complete vai in Wiki. Se vuoi
-            applicarlo subito passa al Download della Fase 1.
+            applicarlo subito passa al Workflow e avvia Create JSON Master.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link
@@ -174,10 +178,10 @@ export default function HomePage() {
               Vai alla Wiki
             </Link>
             <Link
-              href="/download"
+              href="/workflow"
               className="rounded-full border border-white/35 px-5 py-2.5 text-sm font-medium text-white transition hover:border-white"
             >
-              Apri Download Fase 1
+              Apri Workflow
             </Link>
           </div>
         </section>

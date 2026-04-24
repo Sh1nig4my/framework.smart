@@ -61,15 +61,16 @@ Condividi con team/agente almeno:
 ## Uso web app
 
 - `/wizard`: setup wizard (configurazione e installazione ambiente)
+- `/workflow`: percorso guidato con storia standard + accesso alla Fase 1
 - `/wiki`: documentazione interna navigabile
-- `/download`: compilazione/salvataggio/download `case.json`
+- `/create-json-master`: compilazione/salvataggio/download `case.json`
 - `/privacy`, `/cookie-policy`, `/sicurezza-dati`: compliance
 
 ## Privacy e dati
 
 Stato corrente:
 
-- DB attivo sul flusso `/download`;
+- DB attivo sul flusso `/create-json-master`;
 - nessun analytics/profilazione;
 - storage tecnico locale per consenso cookie;
 - blocco duplicati su stessa email + stesso JSON.

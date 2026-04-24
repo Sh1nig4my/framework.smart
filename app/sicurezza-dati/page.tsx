@@ -31,7 +31,7 @@ export default function SicurezzaDatiPage() {
 
           <h2 className="mt-5 text-base font-semibold text-[var(--ink-900)]">Misure attive</h2>
           <ul className="mt-2 space-y-2">
-            <li>- Database attivo solo per il flusso operativo `/download`.</li>
+            <li>- Database attivo solo per il flusso operativo `/create-json-master`.</li>
             <li>- Salvataggio minimizzato ai dati necessari per manutenzione e tracciabilita.</li>
             <li>- Blocco duplicati su combinazione stessa email + stesso JSON.</li>
             <li>- Nessuna profilazione individuale o finalita commerciali sul dato.</li>

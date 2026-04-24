@@ -23,7 +23,7 @@ export const wikiChapters: WikiChapter[] = [
   { id: "intro", title: "Introduzione", description: "Visione, scopo e valore del framework SMART." },
   { id: "architecture", title: "Architettura", description: "Fasi, artefatti e precedenze canoniche." },
   { id: "workflow", title: "Workflow guidato", description: "Guida operativa step-by-step dalla Fase 1 alla Fase 3." },
-  { id: "operations", title: "Operativita", description: "Wizard setup, Download e uso pratico con agenti." },
+  { id: "operations", title: "Operativita", description: "Wizard setup, Workflow e uso pratico con agenti." },
   { id: "quality", title: "Qualita e governance", description: "Gate, best practice, limiti e sicurezza operativa." },
 ];
 
@@ -231,7 +231,7 @@ export const wikiSections: WikiSection[] = [
       "documentation/wizard/fase-1-intake.md",
       "documentation/wizard/case-schema.md",
       "documentation/wizard/case-schema.json",
-      "app/download/page.tsx",
+      "app/create-json-master/page.tsx",
     ],
     related: ["download-guide", "phase-two-guide"],
   },
@@ -333,7 +333,7 @@ export const wikiSections: WikiSection[] = [
       "Verifica prerequisiti software e versione runtime richieste dal progetto.",
       "Installa dipendenze e avvia ambiente locale con i comandi ufficiali.",
       "Esegui check minimi (lint/build/dev) per validare lo stato di partenza.",
-      "Conferma che route chiave (/wizard, /wiki, /download) siano raggiungibili.",
+      "Conferma che route chiave (/wizard, /wiki, /workflow, /create-json-master) siano raggiungibili.",
     ],
     highlights: [
       "Copre prerequisiti hardware/software e setup locale.",
@@ -361,9 +361,9 @@ export const wikiSections: WikiSection[] = [
   {
     id: "download-guide",
     chapterId: "operations",
-    title: "Download e compilazione Fase 1",
+    title: "Create JSON Master e compilazione Fase 1",
     intro:
-      "La pagina `/download` e il punto operativo per generare e scaricare `case.json` dopo validazione e salvataggio. E l'interfaccia applicativa principale della Fase 1.",
+      "La pagina `/create-json-master` e il punto operativo per generare e scaricare `case.json` dopo validazione e salvataggio. E l'interfaccia applicativa principale della Fase 1.",
     purpose:
       "Consentire compilazione guidata del caso in modo conforme allo schema canonico, con persistenza controllata e prevenzione duplicati.",
     workflow: [
@@ -393,7 +393,7 @@ export const wikiSections: WikiSection[] = [
       "Tracciabilita minima del caso per manutenzione framework.",
       "Riduzione errori di handoff tra Fase 1 e Fase 2.",
     ],
-    references: ["app/download/page.tsx", "app/api/", "documentation/wizard/fase-1-intake.md"],
+    references: ["app/create-json-master/page.tsx", "app/api/", "documentation/wizard/fase-1-intake.md"],
     related: ["phase-one-guide", "quality-gates"],
   },
   {

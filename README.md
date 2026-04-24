@@ -42,6 +42,25 @@ npm run dev
 
 Apri `http://localhost:3000`.
 
+## Se entri per la prima volta (persone e agenti)
+
+Percorso consigliato per evitare errori di scope:
+
+1. leggi questo `README.md` per capire struttura e obiettivi;
+2. apri `prompts/README.md` e scegli il prompt corretto (A-H) in base al tipo di task;
+3. usa il formato standard:
+
+```text
+Leggi prompts/README.md.
+Esegui prompts/<nome-prompt>.md.
+Istruzioni custom: <obiettivo, vincoli, output atteso>.
+```
+
+4. prima di modificare file, verifica scope consentito/vietato del prompt selezionato;
+5. esegui validazioni tecniche coerenti con il task (`npm run lint`, `npm run build`, test disponibili).
+
+Quando hai dubbi sul prompt da usare, inizia da `prompts/README.md`: contiene mappa decisionale rapida e catalogo ufficiale aggiornato.
+
 ## Web app integrata al framework
 
 La web app non e separata dal framework: ne e parte operativa.
@@ -50,8 +69,9 @@ Pagine principali attive:
 
 - `/` homepage strategica;
 - `/wizard` setup wizard (configurazione e installazione ambiente);
+- `/workflow` pagina guida con storia standard e accesso operativo alle fasi;
 - `/wiki` documentazione interna ufficiale;
-- `/download` compilazione completa della Fase 1 con salvataggio e download JSON.
+- `/create-json-master` compilazione completa della Fase 1 con salvataggio e download JSON.
 
 Pagine legali di supporto:
 
@@ -59,7 +79,7 @@ Pagine legali di supporto:
 
 ## Privacy e dati (stato attuale)
 
-- database applicativo attivo per il flusso `/download`;
+- database applicativo attivo per il flusso `/create-json-master`;
 - salvataggio record con dati richiesta, JSON completo, data e ora per manutenzione e miglioramento del framework;
 - blocco duplicati su combinazione `stessa email + stesso JSON`;
 - nessun analytics;
