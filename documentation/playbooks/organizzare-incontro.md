@@ -50,3 +50,5 @@ Prima dell'erogazione verificare:
 
 - `HOW_TO.md`
 - `wizard/decision-rules.md`
+- `wizard/cartella-master-schema.md`
+- `wizard/cartella-master-validation.md`

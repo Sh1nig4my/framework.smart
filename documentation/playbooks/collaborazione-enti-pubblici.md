@@ -61,4 +61,5 @@ Prima della validazione della cartella master verificare:
 
 - `HOW_TO.md`
 - `wizard/cartella-master-schema.md`
+- `wizard/cartella-master-validation.md`
 - `context-ai/validation-protocol.md`

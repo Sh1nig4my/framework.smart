@@ -67,3 +67,6 @@ Prima dei derivati verificare:
 - `HOW_TO.md`
 - `wizard/fase-1-intake.md`
 - `wizard/fase-2-generazione.md`
+- `wizard/cartella-master-template.md`
+- `wizard/cartella-master-validation.md`
+- `context-ai/prompt-templates/case-json-a-cartella-master.md`

@@ -60,4 +60,6 @@ Prima della derivazione verificare:
 
 - `HOW_TO.md`
 - `wizard/fase-2-generazione.md`
+- `wizard/cartella-master-schema.md`
+- `wizard/cartella-master-validation.md`
 - `context-ai/output-contracts.md`

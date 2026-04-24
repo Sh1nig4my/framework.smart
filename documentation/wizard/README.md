@@ -48,3 +48,10 @@ Il wizard e corretto quando consente di:
 - nessuna invenzione fuori schema;
 - nessun derivato senza validazione Fase 2;
 - nessuna pubblicazione senza gate Fase 3.
+
+## Link incrociati operativi
+
+- Prompt AI Fase 2: `context-ai/prompt-templates/case-json-a-cartella-master.md`
+- Prompt AI Fase 3: `context-ai/prompt-templates/derivati-da-cartella-master.md`
+- Gate pre-derivazione: `context-ai/prompt-templates/gate-pre-derivazione.md`
+- Scenari applicativi: `wizard/scenari.md` e `playbooks/`

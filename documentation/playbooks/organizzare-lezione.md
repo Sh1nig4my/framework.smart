@@ -51,3 +51,5 @@ Prima della validazione finale verificare:
 - `HOW_TO.md`
 - `wizard/fase-1-intake.md`
 - `wizard/fase-2-generazione.md`
+- `wizard/cartella-master-schema.md`
+- `wizard/cartella-master-validation.md`
