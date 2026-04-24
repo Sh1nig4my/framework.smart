@@ -49,7 +49,7 @@ Indice rapido (A-H):
 - B - `app-evolution.md` (Evolution)
 - C - `framework-evolution.md` (Evolution)
 - D - `framework-maintenance.md` (Maintenance)
-- E - `framework-status.md` (Evolution)
+- E - `smart-status.md` (Evolution)
 - F - `homepage-wizard-alignment.md` (Alignment)
 - G - `wiki-alignment.md` (Alignment)
 - H - `workflow-execution.md` (Workflow)
@@ -60,8 +60,8 @@ Ordine alfabetico file:
 - `app-evolution.md`
 - `framework-evolution.md`
 - `framework-maintenance.md`
-- `framework-status.md`
 - `homepage-wizard-alignment.md`
+- `smart-status.md`
 - `wiki-alignment.md`
 - `workflow-execution.md`
 
@@ -69,9 +69,9 @@ Ordine alfabetico file:
 
 - A `app-maintenance`: manutenzione app + root docs operative, senza modifiche in `documentation/`
 - B `app-evolution`: evoluzione app con possibilita di aggiornare `documentation/` se necessario
-- C `framework-evolution`: evoluzione framework con possibilita di aggiornare `documentation/` se necessario
+- C `framework-evolution`: evoluzione framework docs-first su `documentation/`; lato app solo dopo, se necessario, e previa richiesta informazioni
 - D `framework-maintenance`: manutenzione framework operativo fuori `documentation/`
-- E `framework-status`: genera/aggiorna `FRAMEWORK-STATUS.md` (puo aggiornare `documentation/` se indispensabile)
+- E `smart-status`: genera/aggiorna `FRAMEWORK-STATUS.md` (puo aggiornare `documentation/` se indispensabile)
 - F `homepage-wizard-alignment`: allinea `/` e `/wizard`, con possibilita di riallineare `documentation/` se necessario
 - G `wiki-alignment`: allinea `/wiki` e puo aggiornare `documentation/` se necessario
 - H `workflow-execution`: esecuzione operativa Fase 1/2/3 senza modifiche a `documentation/`
