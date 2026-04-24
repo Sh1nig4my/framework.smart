@@ -29,7 +29,7 @@ documentation/
 ```text
 Fase 1: case-schema.json -> case.json
 Fase 2: case.json -> cartella-master/
-Fase 3: cartella-master validata -> derivati/materiali pubblicabili
+Fase 3: cartella-master validata -> output tool (prompt/materiali) pubblicabili
 ```
 
 ## Artefatti canonici

@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Wizard",
   description:
-    "Wizard SMART: orientamento, configurazione ambiente e strumenti consigliati per iniziare a lavorare con il framework.",
+    "Wizard SMART: orientamento e setup tecnico per iniziare, senza sostituire la guida metodologica completa del workflow.",
 };
 
 const softwareChecklist = [
@@ -31,12 +31,16 @@ export default function WizardPage() {
             L&apos;obiettivo e metterti nelle condizioni di lavorare in modo ordinato, evitando setup improvvisati che poi
             rallentano il workflow.
           </p>
+          <p className="mt-3 max-w-3xl text-sm leading-relaxed text-[var(--ink-600)] md:text-base">
+            Nota di perimetro: questa pagina copre setup e avvio. La procedura completa Fase 1 -&gt; Fase 2 -&gt; Fase 3 e
+            gestita nella Wiki e nella documentazione canonica.
+          </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link href="/wiki#wizard-setup" className="sf-button-primary">
               Apri guida completa in Wiki
             </Link>
             <Link href="/download" className="sf-button-secondary">
-              Vai a Download
+              Apri Download Fase 1
             </Link>
           </div>
         </header>
@@ -51,8 +55,8 @@ export default function WizardPage() {
               dalla Wiki interna, con percorso completo fase per fase.
             </p>
             <p className="mt-3 text-sm leading-relaxed text-[var(--ink-700)] md:text-base">
-              In pratica: questa pagina ti aiuta ad accendere il motore; la Wiki ti guida nella guida avanzata del
-              framework; Download ti permette di avviare subito la compilazione della Fase 1.
+              In pratica: questa pagina ti aiuta ad accendere il motore; la Wiki governa i gate e i passaggi
+              metodologici; Download ti permette di avviare subito la compilazione della Fase 1.
             </p>
           </article>
 
@@ -95,7 +99,7 @@ export default function WizardPage() {
               href="/download"
               className="rounded-full border border-white/35 px-5 py-2.5 text-sm font-medium text-white transition hover:border-white"
             >
-              Apri Download
+              Apri Download Fase 1
             </Link>
           </div>
         </section>

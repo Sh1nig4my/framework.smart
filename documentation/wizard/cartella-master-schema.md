@@ -74,7 +74,7 @@ File sintetici ad alta usabilita per agenti e task successivi.
 
 ### `09_phase_3_handoff`
 
-Autorizzazioni di derivazione, limiti, checklist pre-pubblicazione.
+Autorizzazioni di derivazione, richieste tool, provider target, vincoli brand, scope filters, limiti e checklist pre-pubblicazione.
 
 ## Criteri di compilazione
 
@@ -103,6 +103,17 @@ La cartella master e validata solo se:
 3. contiene limiti, rischi e confini in modo esplicito;
 4. permette la derivazione senza introdurre nuove regole implicite;
 5. include handoff Fase 3 completo.
+
+## Metadati minimi handoff Fase 3
+
+Ogni handoff in `09_phase_3_handoff/` deve esplicitare almeno:
+
+1. `tool_requests` (quali tool Fase 3 attivare e per quale finalita);
+2. `provider_preferences` (preset consigliato oppure custom);
+3. `provider_target_default` con valore `non specificato` se assente scelta utente;
+4. `brand_constraints` (palette, logo SMART, stile comunicativo);
+5. `scope_filters` (giorni, blocchi o porzioni da trattare);
+6. `publication_limits` (vincoli e blocchi pre-rilascio).
 
 ## Cosa non deve contenere
 

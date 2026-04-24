@@ -83,7 +83,10 @@ cartella-master/
 
 ### `09_phase_3_handoff/`
 
-- derivati autorizzati;
+- derivati/tool autorizzati;
+- provider preferences (preset/custom/default `non specificato`);
+- vincoli brand (palette, logo SMART, stile);
+- scope filters (giorni/parti/blocchi);
 - limiti di pubblicazione;
 - checklist handoff Fase 3.
 

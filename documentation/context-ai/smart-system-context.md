@@ -13,7 +13,7 @@ SMART è un framework documentale open source per progettare iniziative formativ
 ```text
 Fase 1: case-schema.json -> case.json
 Fase 2: case.json -> cartella-master/
-Fase 3: cartella-master validata -> materiali derivati
+Fase 3: cartella-master validata -> output tool (prompt/materiali)
 ```
 
 ## Fatti da trattare come stabili
@@ -22,7 +22,7 @@ Fase 3: cartella-master validata -> materiali derivati
 - `wizard/cartella-master-template.md` + `wizard/cartella-master-schema.md` sono la source of truth della Fase 2;
 - `wizard/fase-3-derivazione-pubblicazione.md` governa la Fase 3;
 - la cartella master e l'artefatto centrale della Fase 2;
-- i derivati vengono dopo e dipendono dalla cartella master;
+- gli output tool Fase 3 vengono dopo e dipendono dalla cartella master;
 - il repository attivo non deve essere contaminato dai materiali storici.
 
 ## Regime di generazione consentito
@@ -32,7 +32,7 @@ Un agente AI puo operare solo in questo ordine:
 1. validazione input del caso;
 2. generazione o revisione `case.json`;
 3. generazione o revisione cartella master;
-4. derivazione e controllo output secondari (Fase 3).
+4. esecuzione tool Fase 3 e controllo output secondari.
 
 Ogni salto di fase e considerato non conforme.
 

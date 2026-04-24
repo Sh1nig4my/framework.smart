@@ -1,8 +1,8 @@
-# HOW TO - Uso operativo SMART v1.2.0
+# HOW TO - Uso operativo SMART v1.3.0
 
 ## Scopo
 
-Guida pratica per applicare SMART in modo conforme, dalla preparazione del contesto alla pubblicazione dei derivati.
+Guida pratica per applicare SMART in modo conforme, dalla preparazione del contesto alla pubblicazione degli output Fase 3.
 
 ## Entrypoint
 
@@ -15,7 +15,7 @@ Guida pratica per applicare SMART in modo conforme, dalla preparazione del conte
 ```text
 Fase 1: case-schema.json -> case.json
 Fase 2: case.json -> cartella-master/
-Fase 3: cartella-master validata -> derivati/materiali pubblicabili
+Fase 3: cartella-master validata -> output tool (prompt/materiali) pubblicabili
 ```
 
 ## Prerequisiti minimi
@@ -53,9 +53,10 @@ Condividi con team/agente almeno:
 
 ### Passo 4 - Fase 3
 
-1. deriva materiali solo dalla cartella master validata;
-2. valida ogni derivato prima della pubblicazione;
-3. blocca output con promesse non supportate.
+1. esegui tool Fase 3 solo dalla cartella master validata;
+2. definisci provider target (o usa default `non specificato`);
+3. valida ogni output Fase 3 prima della pubblicazione;
+4. blocca output con promesse non supportate.
 
 ## Uso web app
 
@@ -78,7 +79,7 @@ Stato corrente:
 - saltare gate di fase;
 - trattare schema come output finale;
 - delegare all'AI decisioni critiche non documentate;
-- pubblicare derivati non validati.
+- pubblicare output Fase 3 non validati.
 
 ## Riferimenti
 

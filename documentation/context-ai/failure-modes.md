@@ -33,3 +33,9 @@ Azione: bloccare pubblicazione e rigenerare usando riferimento puntuale alle sez
 Sintomo: output apparentemente completo senza indicazione delle incertezze.
 
 Azione: richiedere output con sezione obbligatoria `assunzioni` e `nodi_aperti`.
+
+## Errore 6 - Provider non dichiarato o incoerente
+
+Sintomo: output Fase 3 senza `provider_target` o con struttura incompatibile col provider dichiarato.
+
+Azione: bloccare rilascio, valorizzare `provider_target` (default `non specificato` se non deciso) e rigenerare output coerente.

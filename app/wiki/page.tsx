@@ -5,7 +5,7 @@ import { WikiBrowser } from "@/app/components/wiki-browser";
 export const metadata: Metadata = {
   title: "Wiki",
   description:
-    "Wiki interna SMART: guida professionale del framework con workflow operativi, gate di qualita e riferimenti canonici tracciabili.",
+    "Wiki interna SMART: guida professionale con workflow Fase 1-2-3, gate di qualita e standard Fase 3 provider-aware tracciabili.",
 };
 
 export default function WikiPage() {

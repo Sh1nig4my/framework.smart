@@ -9,7 +9,7 @@ Definire il processo SMART in forma compatta, con fasi, gate e precedenze uffici
 ```text
 Fase 1: case-schema.json -> case.json
 Fase 2: case.json -> cartella-master/
-Fase 3: cartella-master validata -> derivati e materiali pubblicabili
+Fase 3: cartella-master validata -> output tool (prompt/materiali) pubblicabili
 ```
 
 ## Lettura del processo
@@ -21,8 +21,9 @@ Fase 3: cartella-master validata -> derivati e materiali pubblicabili
    - usa il `case.json` come sorgente primaria;
    - produce `cartella-master/` completa, con assunzioni e nodi aperti.
 3. **Fase 3 - Derivazione e pubblicazione**
-   - usa solo cartella master validata;
-   - produce derivati coerenti (slide, pagina evento, email, checklist, asset supporto).
+    - usa solo cartella master validata;
+    - esegue tool standardizzati con modalita provider-aware;
+    - produce output coerenti (prompt provider-specific o materiali finali).
 
 ## Gate minimi obbligatori
 

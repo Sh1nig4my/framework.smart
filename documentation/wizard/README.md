@@ -9,7 +9,7 @@
 ```text
 Fase 1: case-schema.json -> case.json
 Fase 2: case.json -> cartella-master/
-Fase 3: cartella-master validata -> derivati e materiali pubblicabili
+Fase 3: cartella-master validata -> output tool (prompt/materiali) pubblicabili
 ```
 
 ## Documenti principali
@@ -40,7 +40,7 @@ Il wizard e corretto quando consente di:
 
 1. produrre un `case.json` robusto;
 2. produrre una cartella master pienamente utilizzabile;
-3. produrre derivati pubblicabili senza conflitti con la cartella master.
+3. produrre output Fase 3 pubblicabili senza conflitti con la cartella master.
 
 ## Guardrail no-code
 

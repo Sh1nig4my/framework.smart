@@ -1,4 +1,4 @@
-# SMART Framework v1.2.0
+# SMART Framework v1.3.0
 
 SMART e un framework agentico no-code per progettare, governare e diffondere iniziative formative con processi standardizzati, sicurezza operativa e uso responsabile dell'AI.
 
@@ -20,7 +20,7 @@ Catena canonica:
 ```text
 Fase 1: case-schema.json -> case.json
 Fase 2: case.json -> cartella-master/
-Fase 3: cartella-master validata -> materiali derivati
+Fase 3: cartella-master validata -> output tool (prompt/materiali)
 ```
 
 SMART mantiene il controllo umano, rende tracciabile il lavoro degli agenti e protegge coerenza tra promessa, contenuti e diffusione.

@@ -33,6 +33,7 @@ In alternativa puoi indicare il prompt per lettera (A-H) usando l'indice rapido.
 - non inventare regole fuori documentazione;
 - eseguire verifiche finali coerenti con lo scope;
 - non toccare aree vietate dal prompt selezionato.
+- per task Fase 3, applicare sempre output contract e gate canonici provider-aware.
 
 ## Regole globali per categoria
 

@@ -16,7 +16,7 @@ Trasformare `case.json` in `cartella-master/` completa, coerente, modulare e pro
 - `cartella-master/` completa secondo struttura canonica
 - assunzioni dichiarate e tracciate nei file di sezione
 - nodi aperti con impatto operativo
-- handoff Fase 3 compilato
+- handoff Fase 3 compilato con richieste tool/provider
 
 ## Regola centrale
 
@@ -30,7 +30,7 @@ La Fase 2 non produce un singolo documento: produce una cartella strutturata in 
 4. generare sezioni core (`01_overview/`, `02_event_structure/`) con tracciabilita al caso;
 5. generare sezioni specialistiche (`03_daily_events/`, `04_multi_day_events/`, `05_collections/`, `06_seminars/`, `07_content_types/`) in modo modulare;
 6. produrre i file per agenti in `08_agent_ready_files/`;
-7. completare handoff in `09_phase_3_handoff/`;
+7. completare handoff in `09_phase_3_handoff/` includendo tool richiesti, provider e vincoli brand;
 8. validare la cartella con `wizard/cartella-master-validation.md`.
 
 ## Gate Fase 2
@@ -41,7 +41,7 @@ Il passaggio a Fase 3 e consentito solo se:
 2. ogni file obbligatorio e compilato in forma operativa;
 3. ogni sezione e tracciabile al `case.json` o ad assunzioni esplicite;
 4. non esistono contraddizioni tra file della cartella;
-5. `09_phase_3_handoff/` autorizza in modo esplicito la derivazione.
+5. `09_phase_3_handoff/` autorizza in modo esplicito la derivazione e specifica i metadati minimi Fase 3.
 
 ## Errori da bloccare
 

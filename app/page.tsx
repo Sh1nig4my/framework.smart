@@ -7,7 +7,7 @@ import smartLogo from "@/documentation/framework/logo/smart-img-text.png";
 export const metadata: Metadata = {
   title: "Home",
   description:
-    "SMART Framework: standard no-code e AI-native per progettare iniziative divulgative, creare eventi e generare contenuti strutturati personalizzabili.",
+    "SMART Framework: standard no-code e AI-native per progettare iniziative, governare la catena Fase 1-2-3 e produrre output tool provider-aware.",
   keywords: [
     "framework smart",
     "standard smart",
@@ -28,7 +28,7 @@ const standardAreas = [
   },
   {
     title: "Contenuti strutturati",
-    body: "Usa una catena unica che riduce contraddizioni e mantiene allineati script, derivati e comunicazione.",
+    body: "Usa una catena unica che riduce contraddizioni e mantiene allineati case, cartella master e output tool di Fase 3.",
   },
 ];
 
@@ -49,6 +49,10 @@ const faqs = [
     q: "Perche usarlo oggi?",
     a: "Perche gli agenti accelerano l'esecuzione, ma senza standard aumentano errori e incoerenze. SMART imposta confini, gate e qualita.",
   },
+  {
+    q: "Come funziona la Fase 3 aggiornata?",
+    a: "Dopo la validazione della cartella master, SMART usa tool standardizzati per produrre output finali o prompt provider-specific, con default provider 'non specificato' quando la scelta non e ancora definita.",
+  },
 ];
 
 export default function HomePage() {
@@ -64,7 +68,7 @@ export default function HomePage() {
             </h1>
             <p className="max-w-2xl text-base leading-relaxed text-[var(--ink-700)] md:text-lg">
               SMART unisce metodo documentale, workflow guidato e customizzazione tramite agenti. In pratica: meno
-              ambiguita, piu controllo, output riusabili e qualitativamente stabili.
+              ambiguita, piu controllo, output riusabili e qualitativamente stabili tra Fase 1, Fase 2 e Fase 3.
             </p>
             <div className="flex flex-wrap gap-3">
               <Link href="/wizard" className="sf-button-primary">
@@ -74,7 +78,7 @@ export default function HomePage() {
                 Esplora la Wiki
               </Link>
               <Link href="/download" className="sf-button-secondary">
-                Vai al Download
+                Apri Download Fase 1
               </Link>
             </div>
           </div>
@@ -93,8 +97,11 @@ export default function HomePage() {
               <li>1. Standardizza l&apos;intake con lo schema di Fase 1.</li>
               <li>2. Consolida un case JSON verificabile.</li>
               <li>3. Genera una cartella master governabile.</li>
-              <li>4. Deriva materiali coerenti e personalizzati.</li>
+              <li>4. Esegui tool Fase 3 per output coerenti (prompt/materiali).</li>
             </ol>
+            <p className="text-xs leading-relaxed text-[var(--ink-600)]">
+              Fase 3 provider-aware: preset consigliati, provider custom consentito, default `non specificato`.
+            </p>
             <p className="text-sm leading-relaxed text-[var(--ink-700)]">
               Ogni passaggio ha regole, gate e criteri di validazione. Nella Wiki trovi la guida completa sezione per
               sezione, con riferimenti pratici per lavorare in modo conforme.
@@ -170,7 +177,7 @@ export default function HomePage() {
               href="/download"
               className="rounded-full border border-white/35 px-5 py-2.5 text-sm font-medium text-white transition hover:border-white"
             >
-              Apri Download
+              Apri Download Fase 1
             </Link>
           </div>
         </section>

@@ -39,7 +39,7 @@ export const wikiSections: WikiSection[] = [
     workflow: [
       "Inquadra il bisogno reale: problema, pubblico, vincoli, risultato atteso.",
       "Normalizza il bisogno in artefatti standard (Fase 1 e Fase 2).",
-      "Deriva materiali finali solo da fonti validate, con gate obbligatori.",
+      "Esegui output tool Fase 3 solo da fonti validate, con gate obbligatori.",
       "Consegna output pubblicabili mantenendo promessa, tono e limiti dichiarati.",
     ],
     highlights: [
@@ -60,7 +60,7 @@ export const wikiSections: WikiSection[] = [
     outputs: [
       "Processo replicabile e leggibile da team misti umani+AI.",
       "Riduzione dei rework causati da ambiguita iniziali.",
-      "Materiali finali consistenti tra canali diversi.",
+      "Output finali consistenti tra canali diversi.",
     ],
     references: [
       "documentation/README.md",
@@ -115,29 +115,29 @@ export const wikiSections: WikiSection[] = [
     chapterId: "architecture",
     title: "Mappa delle fasi",
     intro:
-      "Il framework segue una sequenza canonica a 3 fasi: intake strutturato, cartella master modulare, derivazione pubblicabile. La sequenza non e opzionale: e il meccanismo che preserva coerenza e responsabilita.",
+      "Il framework segue una sequenza canonica a 3 fasi: intake strutturato, cartella master modulare, output tool pubblicabili. La sequenza non e opzionale: e il meccanismo che preserva coerenza e responsabilita.",
     purpose:
       "Offrire una mappa unica per capire in pochi minuti cosa entra in ogni fase, cosa esce e quali controlli servono prima del passaggio successivo.",
     workflow: [
       "Fase 1: raccogli e normalizza dati con schema ufficiale.",
       "Fase 2: trasforma il caso validato in cartella master completa.",
-      "Fase 3: crea derivati canale-specifici solo da cartella master validata.",
+      "Fase 3: crea output tool canale-specifici solo da cartella master validata.",
       "Esegui gate di fase prima di qualsiasi handoff.",
     ],
     highlights: [
       "Fase 1: case-schema.json -> case.json.",
       "Fase 2: case.json -> cartella-master/.",
-      "Fase 3: cartella-master validata -> derivati/materiali pubblicabili.",
+      "Fase 3: cartella-master validata -> output tool (prompt/materiali) pubblicabili.",
     ],
     qualityGates: [
       "Nessun salto di fase e nessun bypass dei gate.",
       "Ogni output intermedio deve essere completo e leggibile.",
-      "Ogni derivato finale deve essere semanticamente coerente con la cartella master validata.",
+      "Ogni output Fase 3 deve essere semanticamente coerente con la cartella master validata.",
     ],
     antiPatterns: [
       "Entrare in Fase 2 con un case.json incompleto.",
       "Produrre output pubblicabili direttamente dalla Fase 1.",
-      "Aggiornare derivati senza allineare prima la cartella master.",
+      "Aggiornare output Fase 3 senza allineare prima la cartella master.",
     ],
     outputs: [
       "Pipeline prevedibile end-to-end.",
@@ -240,9 +240,9 @@ export const wikiSections: WikiSection[] = [
     chapterId: "workflow",
     title: "Guida Fase 2 passo-passo",
     intro:
-      "La Fase 2 costruisce una cartella master modulare da cui dipendono tutti i materiali successivi. Qui si decide qualita narrativa, confini di promessa e robustezza editoriale.",
+      "La Fase 2 costruisce una cartella master modulare da cui dipendono tutti gli output successivi. Qui si decide qualita narrativa, confini di promessa e robustezza editoriale.",
     purpose:
-      "Convertire il dato strutturato della Fase 1 in una cartella strategico-operativa che possa governare derivati coerenti su canali diversi.",
+      "Convertire il dato strutturato della Fase 1 in una cartella strategico-operativa che possa governare output tool coerenti su canali diversi.",
     workflow: [
       "1) Leggi integralmente `case.json` validato e marca eventuali lacune residue.",
       "2) Mappa ogni blocco del caso sulle directory e sui file canonici della cartella master.",
@@ -266,7 +266,7 @@ export const wikiSections: WikiSection[] = [
       "Iniziare derivazione prima della validazione finale della cartella master.",
     ],
     outputs: [
-      "Cartella master pronta per derivazioni multi-canale.",
+      "Cartella master pronta per esecuzioni multi-canale in Fase 3.",
       "Registro chiaro di assunzioni e nodi aperti.",
       "Riduzione degli errori semantici in Fase 3.",
     ],
@@ -283,24 +283,25 @@ export const wikiSections: WikiSection[] = [
     chapterId: "workflow",
     title: "Guida Fase 3 passo-passo",
     intro:
-      "La Fase 3 deriva e prepara i materiali pubblicabili mantenendo coerenza piena con cartella master validata. E la fase in cui forma e canale cambiano, ma il significato deve restare stabile.",
+      "La Fase 3 esegue tool operativi e prepara output pubblicabili mantenendo coerenza piena con cartella master validata. E la fase in cui forma e canale cambiano, ma il significato deve restare stabile.",
     purpose:
-      "Produrre asset finali efficaci per ciascun canale, preservando contenuto, tono, limiti e promessa definiti nella fase strategica.",
+      "Produrre output finali efficaci per ciascun canale, preservando contenuto, tono, limiti, vincoli brand e promessa definiti nella fase strategica.",
     workflow: [
-      "1) Definisci elenco derivati, canali target e obiettivo di ciascun output.",
-      "2) Deriva ogni contenuto esclusivamente dalla cartella master validata.",
-      "3) Adatta struttura e lunghezza al canale senza cambiare significato.",
-      "4) Applica checklist pre-pubblicazione su coerenza, promesse e policy.",
+      "1) Leggi handoff Fase 3 e seleziona tool richiesti, scope e vincoli.",
+      "2) Definisci `provider_target` (`preset`, `custom`, default `non specificato`).",
+      "3) Genera `prompt_o_output` solo da fonti cartella master validate.",
+      "4) Applica checklist pre-pubblicazione su coerenza, promesse, policy e brand.",
       "5) Completa revisione finale umana prima del rilascio esterno.",
     ],
     highlights: [
-      "Definisci derivati richiesti e finalita di ciascun canale.",
-      "Adatta forma senza alterare significato, limiti e promessa.",
-      "Esegui controllo pre-pubblicazione su ogni output.",
+      "Usa tool standardizzati v1 (naming, immagini, riassunti, PowerPoint, pagina web, video).",
+      "Dichiara sempre `tool_usato` e `provider_target`.",
+      "Adatta forma senza alterare significato, limiti, promessa e policy.",
     ],
     qualityGates: [
       "Coerenza semantica completa con cartella master validata.",
       "Assenza di nuove regole, promesse o claim non supportati.",
+      "Coerenza tra provider dichiarato e struttura output.",
       "Revisione umana conclusiva con esito esplicito.",
     ],
     antiPatterns: [
@@ -309,13 +310,13 @@ export const wikiSections: WikiSection[] = [
       "Pubblicare output non verificati per urgenza di canale.",
     ],
     outputs: [
-      "Derivati pronti alla pubblicazione e coerenti tra loro.",
+      "Output tool pronti alla pubblicazione e coerenti tra loro.",
       "Checklist pre-release compilata.",
-      "Storico revisioni utile per audit e miglioramento continuo.",
+      "Tracciato completo (`tool_usato`, `provider_target`, fonti master, esito validazione).",
     ],
     references: [
       "documentation/wizard/fase-3-derivazione-pubblicazione.md",
-      "documentation/playbooks/",
+      "documentation/context-ai/output-contracts.md",
       "documentation/context-ai/validation-protocol.md",
     ],
     related: ["quality-gates", "use-cases"],
@@ -414,10 +415,12 @@ export const wikiSections: WikiSection[] = [
       "Ogni prompt ha scope consentito e vietato.",
       "Maintenance, Alignment, Evolution e Workflow sono separati e governati da regole di categoria.",
       "L'agente deve restare conforme al perimetro del prompt scelto.",
+      "Per Fase 3, contract e gate provider-aware sono obbligatori.",
     ],
     qualityGates: [
       "Nessuna modifica fuori scope rispetto al prompt selezionato.",
       "Coerenza tra obiettivo utente, categoria prompt e file aggiornati.",
+      "Per task Fase 3: presenza di `tool_usato`, `provider_target` e `prompt_o_output`.",
       "Verifiche tecniche o documentali coerenti col tipo di intervento.",
     ],
     antiPatterns: [
@@ -450,7 +453,7 @@ export const wikiSections: WikiSection[] = [
     highlights: [
       "Gate Fase 1: validazione schema e coerenza caso.",
       "Gate Fase 2: validazione cartella master.",
-      "Gate Fase 3: validazione derivati pre-pubblicazione.",
+      "Gate Fase 3: validazione output tool pre-pubblicazione.",
     ],
     qualityGates: [
       "Ogni gate deve avere criteri espliciti e verificabili.",
@@ -486,18 +489,18 @@ export const wikiSections: WikiSection[] = [
     workflow: [
       "Seleziona lo scenario piu vicino dal catalogo playbook.",
       "Identifica personalizzazioni di tono, profondita e canali.",
-      "Applica personalizzazioni nella cartella master, non direttamente nei derivati.",
+      "Applica personalizzazioni nella cartella master, non direttamente negli output Fase 3.",
       "Valida risultati con gli stessi gate standard delle tre fasi.",
     ],
     highlights: [
       "Scegli tono e profondita in base al pubblico reale.",
       "Evita promessa eccessiva e claim non verificabili.",
-      "Mantieni tracciabilita dalla cartella master ai derivati.",
+      "Mantieni tracciabilita dalla cartella master agli output tool.",
     ],
     qualityGates: [
       "Scenario scelto coerente con obiettivo e stakeholder.",
       "Adattamenti locali compatibili con principi e glossario.",
-      "Derivati finali aderenti a policy e limiti del caso.",
+      "Output finali aderenti a policy e limiti del caso.",
     ],
     antiPatterns: [
       "Copiare playbook senza contestualizzazione minima.",

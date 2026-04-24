@@ -10,12 +10,13 @@ Definire regole operative obbligatorie per agenti AI su SMART.
 2. usa solo valori ammessi in `case.json`;
 3. tratta `case.json` come fonte primaria del caso;
 4. tratta `wizard/cartella-master-template.md` + `wizard/cartella-master-schema.md` come struttura canonica Fase 2;
-5. deriva materiali solo da cartella master validata (Fase 3);
-6. esplicita sempre assunzioni e nodi aperti se mancano dati;
-7. non introdurre promesse o policy non supportate;
-8. mantieni tono sobrio, chiaro, non sensazionalistico;
-9. non alterare lessico canonico senza richiesta esplicita;
-10. blocca avanzamento se il gate di fase non e superato.
+5. esegue tool Fase 3 solo da cartella master validata;
+6. per i tool Fase 3 dichiara sempre `tool_usato` e `provider_target` (default `non specificato`);
+7. esplicita sempre assunzioni e nodi aperti se mancano dati;
+8. non introdurre promesse o policy non supportate;
+9. mantieni tono sobrio, chiaro, non sensazionalistico;
+10. non alterare lessico canonico senza richiesta esplicita;
+11. blocca avanzamento se il gate di fase non e superato.
 
 ## Regole prompt hub (A-H)
 

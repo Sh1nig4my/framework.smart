@@ -33,10 +33,11 @@ Definire i controlli obbligatori per validare la Fase 2 prima dell'handoff a Fas
 
 ## Checklist handoff Fase 3
 
-1. `09_phase_3_handoff/` elenca derivati autorizzati;
-2. limiti di pubblicazione sono espliciti;
-3. vincoli di tono/pubblico/promessa sono riassunti;
-4. gate Fase 2 marcato come `approved`.
+1. `09_phase_3_handoff/` elenca derivati/tool autorizzati;
+2. provider preferences sono dichiarate (oppure default `non specificato`);
+3. limiti di pubblicazione sono espliciti;
+4. vincoli di tono/pubblico/promessa/brand sono riassunti;
+5. gate Fase 2 marcato come `approved`.
 
 ## Esito gate
 

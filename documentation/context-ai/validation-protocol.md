@@ -42,14 +42,16 @@ Verificare:
 Verificare:
 
 1. cartella master validata;
-2. elenco derivati richiesto e motivato;
-3. conformita a policy SMART.
+2. elenco tool/derivati richiesto e motivato;
+3. provider target dichiarato (`preset`, `custom` o `non specificato`);
+4. conformita a policy SMART.
 
 ## Gate F - Post-Fase 3
 
 Verificare:
 
-1. allineamento derivati alla cartella master;
-2. coerenza promessa/tono/pubblico;
+1. allineamento output Fase 3 alla cartella master;
+2. coerenza promessa/tono/pubblico/brand;
 3. assenza di nuove affermazioni non supportate;
-4. idoneita pre-pubblicazione.
+4. coerenza tra provider dichiarato e struttura output;
+5. idoneita pre-pubblicazione.

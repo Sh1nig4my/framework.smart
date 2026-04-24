@@ -34,17 +34,20 @@ Sezioni minime:
 3. `nodi_aperti`
 4. `esito_validazione_coerenza`
 
-## Contratto Fase 3 - derivati
+## Contratto Fase 3 - output tool
 
 Vincoli:
 
 - origine esplicita da cartella master validata;
-- coerenza con tono, pubblico, promessa e limiti;
+- coerenza con tono, pubblico, promessa, limiti e vincoli brand;
+- dichiarazione obbligatoria di tool usato e provider target;
 - assenza di nuove affermazioni non supportate.
 
 Sezioni minime:
 
-1. `derivati`
-2. `fonti_cartella_master`
-3. `limiti_pubblicazione`
-4. `esito_validazione_derivati`
+1. `tool_usato`
+2. `provider_target`
+3. `prompt_o_output`
+4. `fonti_cartella_master`
+5. `vincoli_brand_policy`
+6. `esito_validazione_derivati`

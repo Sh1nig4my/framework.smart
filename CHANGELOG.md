@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.3.0] - 2026-04-24
+
+Evoluzione breaking della Fase 3: passaggio da derivazione generica a toolchain operativa provider-aware.
+
+- aggiornata la procedura canonica Fase 3 con tool standardizzati v1 (naming, immagini, riassunti, PowerPoint, pagina web statica, video);
+- introdotta modalita provider ibrida in Fase 3 (preset consigliati, custom consentito, default `non specificato`);
+- estesi gate e contratti output Fase 3 con campi `tool_usato`, `provider_target`, `prompt_o_output` e vincoli brand/policy;
+- aggiornato handoff Fase 2 -> Fase 3 in `09_phase_3_handoff/` con metadati minimi su tool, provider, scope e pubblicazione;
+- riallineati wizard, framework, context-ai, root docs e prompt workflow al nuovo modello operativo Fase 3;
+- chiarito `CONTRIBUTING.md`: provider-aware documentale ammesso, integrazioni software vendor-specific non richieste restano escluse.
+
 ## [1.2.0] - 2026-04-24
 
 Refactor breaking della Fase 2: passaggio da documento unico a cartella master generativa modulare.

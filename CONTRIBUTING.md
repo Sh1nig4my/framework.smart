@@ -53,10 +53,12 @@ Contributi in `documentation/context-ai/` devono:
 
 ## Contributi non ammessi
 
-- codice demo o applicazioni software;
-- integrazioni specifiche con provider esterni;
+- codice demo o applicazioni software non coerenti con il framework;
+- integrazioni software vendor-specific non richieste dal repository;
 - materiale storico ricopiato in area attiva senza razionale;
 - variazioni terminologiche non allineate al glossario canonico.
+
+Nota: sono ammessi aggiornamenti documentali provider-aware in Fase 3 (prompt/output contract/gate) quando restano no-code e tracciabili alla cartella master.
 
 Sono ammessi contributi alla web app (`app/`) quando migliorano esperienza, adozione e operativita del framework senza alterare gli invarianti metodologici.
 

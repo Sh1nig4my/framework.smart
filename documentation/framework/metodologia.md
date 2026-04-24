@@ -24,9 +24,9 @@ SMART non ottimizza la velocita a scapito della coerenza: ottimizza la qualita r
 
 ### Fase 3 - Derivazione e pubblicazione
 
-- genera materiali secondari solo da cartella master validata;
-- adatta il formato senza alterare significato e promesse;
-- valida i derivati prima della pubblicazione.
+- esegue tool standardizzati solo da cartella master validata;
+- produce output finali o prompt provider-specific senza alterare significato e promesse;
+- valida ogni output Fase 3 prima della pubblicazione.
 
 ## Regole metodologiche non negoziabili
 

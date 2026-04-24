@@ -25,6 +25,8 @@ Stabilire regole di precedenza e criteri di accettazione output per tutte le fas
 - i derivati devono riferirsi a file/section source nella cartella master;
 - il significato non puo essere alterato nel cambio canale;
 - nessuna nuova promessa e nessuna nuova regola implicita.
+- ogni output Fase 3 deve dichiarare `tool_usato` e `provider_target`;
+- modalita provider ibrida: preset consigliati, custom consentito, default `non specificato`.
 
 ## Regole di qualita comuni
 

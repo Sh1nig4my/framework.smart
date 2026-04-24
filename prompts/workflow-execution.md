@@ -23,13 +23,14 @@ Non passare alla fase successiva senza validazione della fase corrente, anche qu
 
 1. **Fase 1**: raccogli/valida requisiti contro schema canonico e produci o correggi `case.json`.
 2. **Fase 2**: genera o valida cartella master dal `case.json`.
-3. **Fase 3**: genera o revisiona derivati/materiali pubblicabili dalla cartella master validata.
+3. **Fase 3**: esegue o revisiona output tool (prompt/materiali) dalla cartella master validata, dichiarando `tool_usato` e `provider_target` (default `non specificato`).
 
 ## Funzioni obbligatorie
 
 - revisione puntuale di singoli documenti di una fase gia eseguita;
 - revisione di gruppi di documenti senza perdere tracciabilita;
 - controllo coerenza tra promesse, contenuti e limiti.
+- per task Fase 3, uso esplicito del contratto output canonico (`tool_usato`, `provider_target`, `prompt_o_output`, `fonti_cartella_master`, `vincoli_brand_policy`, `esito_validazione_derivati`).
 
 ## Output atteso
 

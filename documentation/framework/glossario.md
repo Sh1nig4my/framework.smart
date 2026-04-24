@@ -28,7 +28,15 @@ Artefatto centrale dell'iniziativa in Fase 2. Governa tono, limiti, promesse, st
 
 ### Fase 3
 
-Derivazione e pubblicazione controllata di materiali secondari a partire da cartella master validata.
+Esecuzione di tool operativi standardizzati e pubblicazione controllata di output a partire da cartella master validata.
+
+### Tool Fase 3
+
+Set canonico di strumenti operativi che genera output diretti o prompt per provider esterni mantenendo tracciabilita alla cartella master.
+
+### Provider target
+
+Informazione usata in Fase 3 per indicare il provider di destinazione dell'output. Modalita ibrida: preset consigliati, valore custom consentito, default `non specificato`.
 
 ### Derivati
 
