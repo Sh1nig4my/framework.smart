@@ -8,10 +8,10 @@ Definire confini e protocolli per usare agenti AI in modo conforme al framework 
 
 Un output AI e valido solo se:
 
-1. rispetta schema e vincoli Fase 1;
+1. rispetta schema e vincoli Step 1;
 2. resta tracciabile al `case.json`;
-3. rispetta la struttura della cartella master in Fase 2;
-4. rispetta la coerenza derivativa in Fase 3;
+3. rispetta la struttura della cartella master in Step 2;
+4. rispetta la coerenza derivativa in Step 3;
 5. supera i gate del validation protocol.
 
 ## Ordine di lettura
@@ -29,11 +29,11 @@ L'AI supporta il processo ma non sostituisce giudizio e responsabilita umane.
 
 ## Nota operativa prompt
 
-Quando il task e guidato da prompt, applicare il protocollo in `prompts/README.md` (indice A-H) e rispettare i vincoli di categoria su `documentation/`.
+Quando il task e guidato da prompt, applicare il protocollo in `prompts/README.md` (indice A-D) e rispettare i vincoli di categoria su `documentation/`.
 
 ## Template principali
 
-Per uso operativo sulla catena Fase 1 -> Fase 2 -> Fase 3:
+Per uso operativo sulla catena Step 1 -> Step 2 -> Step 3:
 
 1. `context-ai/prompt-templates/compilazione-case-schema.md`
 2. `context-ai/prompt-templates/validazione-case-json.md`
@@ -44,6 +44,6 @@ Per uso operativo sulla catena Fase 1 -> Fase 2 -> Fase 3:
 
 Riferimenti wizard allineati:
 
-- `wizard/fase-2-generazione.md`
+- `wizard/step-2-generazione.md`
 - `wizard/cartella-master-schema.md`
 - `wizard/cartella-master-validation.md`

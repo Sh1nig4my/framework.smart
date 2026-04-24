@@ -20,9 +20,9 @@ export function WorkflowStepActions() {
     return () => window.clearTimeout(timer);
   }, [toast]);
 
-  function showUnavailableToast(phaseLabel: string) {
+  function showUnavailableToast(stepLabel: string) {
     setToast({
-      title: `${phaseLabel} in aggiornamento`,
+      title: `${stepLabel} in aggiornamento`,
     });
   }
 
@@ -31,17 +31,17 @@ export function WorkflowStepActions() {
       <div className="flex flex-wrap gap-3">
         <button
           type="button"
-          onClick={() => showUnavailableToast("Fase 2")}
+          onClick={() => showUnavailableToast("Step 2")}
           className="sf-button-secondary"
         >
-          Fase 2 - In aggiornamento
+          Step 2 - In aggiornamento
         </button>
         <button
           type="button"
-          onClick={() => showUnavailableToast("Fase 3")}
+          onClick={() => showUnavailableToast("Step 3")}
           className="sf-button-secondary"
         >
-          Fase 3 - In aggiornamento
+          Step 3 - In aggiornamento
         </button>
       </div>
 

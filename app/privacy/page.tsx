@@ -47,7 +47,7 @@ export default function PrivacyPage() {
           <h2 className="mt-5 text-base font-semibold text-[var(--ink-900)]">Evoluzione futura del servizio</h2>
           <p className="mt-2">
             Il salvataggio attuale include dati di contatto, contenuto della
-            richiesta e JSON completo della Fase 1. Il sistema evita il
+            richiesta e JSON completo dello Step 1. Il sistema evita il
             salvataggio di duplicati quando email e JSON sono identici.
           </p>
           <p className="mt-2">

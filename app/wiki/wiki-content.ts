@@ -22,7 +22,7 @@ export type WikiChapter = {
 export const wikiChapters: WikiChapter[] = [
   { id: "intro", title: "Introduzione", description: "Visione, scopo e valore del framework SMART." },
   { id: "architecture", title: "Architettura", description: "Fasi, artefatti e precedenze canoniche." },
-  { id: "workflow", title: "Workflow guidato", description: "Guida operativa step-by-step dalla Fase 1 alla Fase 3." },
+  { id: "workflow", title: "Workflow guidato", description: "Guida operativa step-by-step dallo Step 1 allo Step 3." },
   { id: "operations", title: "Operativita", description: "Wizard setup, Workflow e uso pratico con agenti." },
   { id: "quality", title: "Qualita e governance", description: "Gate, best practice, limiti e sicurezza operativa." },
 ];
@@ -38,8 +38,8 @@ export const wikiSections: WikiSection[] = [
       "Definire un sistema operativo comune tra team, stakeholder e agenti AI, in cui ogni decisione resta auditabile e ogni output puo essere verificato contro fonti canoniche.",
     workflow: [
       "Inquadra il bisogno reale: problema, pubblico, vincoli, risultato atteso.",
-      "Normalizza il bisogno in artefatti standard (Fase 1 e Fase 2).",
-      "Esegui output tool Fase 3 solo da fonti validate, con gate obbligatori.",
+      "Normalizza il bisogno in artefatti standard (Step 1 e Step 2).",
+      "Esegui output tool Step 3 solo da fonti validate, con gate obbligatori.",
       "Consegna output pubblicabili mantenendo promessa, tono e limiti dichiarati.",
     ],
     highlights: [
@@ -50,7 +50,7 @@ export const wikiSections: WikiSection[] = [
     qualityGates: [
       "Ogni output deve essere tracciabile a una fonte canonica SMART.",
       "Ogni passaggio deve esplicitare assunzioni e nodi aperti, senza impliciti.",
-      "Ogni rilascio deve rispettare il lessico del glossario e la catena Fase 1 -> Fase 2 -> Fase 3.",
+      "Ogni rilascio deve rispettare il lessico del glossario e la catena Step 1 -> Step 2 -> Step 3.",
     ],
     antiPatterns: [
       "Usare SMART come raccolta di template scollegati dal processo.",
@@ -67,7 +67,7 @@ export const wikiSections: WikiSection[] = [
       "documentation/framework/process-overview.md",
       "documentation/framework/metodologia.md",
     ],
-    related: ["smart-standard", "phase-map"],
+    related: ["smart-standard", "step-map"],
   },
   {
     id: "smart-standard",
@@ -90,7 +90,7 @@ export const wikiSections: WikiSection[] = [
     ],
     qualityGates: [
       "Un termine nuovo e valido solo se non confligge con il glossario.",
-      "Una variante locale e accettabile solo se non rompe la catena delle fasi.",
+      "Una variante locale e accettabile solo se non rompe la catena degli step.",
       "Ogni aggiornamento deve mantenere compatibilita con i playbook principali.",
     ],
     antiPatterns: [
@@ -111,33 +111,33 @@ export const wikiSections: WikiSection[] = [
     related: ["precedence", "quality-gates"],
   },
   {
-    id: "phase-map",
+    id: "step-map",
     chapterId: "architecture",
-    title: "Mappa delle fasi",
+    title: "Mappa degli step",
     intro:
-      "Il framework segue una sequenza canonica a 3 fasi: intake strutturato, cartella master modulare, output tool pubblicabili. La sequenza non e opzionale: e il meccanismo che preserva coerenza e responsabilita.",
+      "Il framework segue una sequenza canonica a 3 step: intake strutturato, cartella master modulare, output tool pubblicabili. La sequenza non e opzionale: e il meccanismo che preserva coerenza e responsabilita.",
     purpose:
-      "Offrire una mappa unica per capire in pochi minuti cosa entra in ogni fase, cosa esce e quali controlli servono prima del passaggio successivo.",
+      "Offrire una mappa unica per capire in pochi minuti cosa entra in ogni step, cosa esce e quali controlli servono prima del passaggio successivo.",
     workflow: [
-      "Fase 1: raccogli e normalizza dati con schema ufficiale.",
-      "Fase 2: trasforma il caso validato in cartella master completa.",
-      "Fase 3: crea output tool canale-specifici solo da cartella master validata.",
-      "Esegui gate di fase prima di qualsiasi handoff.",
+      "Step 1: raccogli e normalizza dati con schema ufficiale.",
+      "Step 2: trasforma il caso validato in cartella master completa.",
+      "Step 3: crea output tool canale-specifici solo da cartella master validata.",
+      "Esegui gate di step prima di qualsiasi handoff.",
     ],
     highlights: [
-      "Fase 1: case-schema.json -> case.json.",
-      "Fase 2: case.json -> cartella-master/.",
-      "Fase 3: cartella-master validata -> output tool (prompt/materiali) pubblicabili.",
+      "Step 1: case-schema.json -> case.json.",
+      "Step 2: case.json -> cartella-master/.",
+      "Step 3: cartella-master validata -> output tool (prompt/materiali) pubblicabili.",
     ],
     qualityGates: [
-      "Nessun salto di fase e nessun bypass dei gate.",
+      "Nessun salto di step e nessun bypass dei gate.",
       "Ogni output intermedio deve essere completo e leggibile.",
-      "Ogni output Fase 3 deve essere semanticamente coerente con la cartella master validata.",
+      "Ogni output Step 3 deve essere semanticamente coerente con la cartella master validata.",
     ],
     antiPatterns: [
-      "Entrare in Fase 2 con un case.json incompleto.",
-      "Produrre output pubblicabili direttamente dalla Fase 1.",
-      "Aggiornare output Fase 3 senza allineare prima la cartella master.",
+      "Entrare in Step 2 con un case.json incompleto.",
+      "Produrre output pubblicabili direttamente dallo Step 1.",
+      "Aggiornare output Step 3 senza allineare prima la cartella master.",
     ],
     outputs: [
       "Pipeline prevedibile end-to-end.",
@@ -149,7 +149,7 @@ export const wikiSections: WikiSection[] = [
       "documentation/wizard/README.md",
       "HOW_TO.md",
     ],
-    related: ["phase-one-guide", "phase-two-guide", "phase-three-guide"],
+    related: ["step-one-guide", "step-two-guide", "step-three-guide"],
   },
   {
     id: "precedence",
@@ -166,9 +166,9 @@ export const wikiSections: WikiSection[] = [
       "Propaga il fix alle sezioni collegate.",
     ],
     highlights: [
-      "Case schema prevale sulla struttura Fase 1.",
+      "Case schema prevale sulla struttura Step 1.",
       "Case JSON prevale sul contenuto del caso.",
-      "Cartella master governa struttura Fase 2 e base della Fase 3.",
+      "Cartella master governa struttura Step 2 e base dello Step 3.",
     ],
     qualityGates: [
       "Ogni conflitto risolto deve citare esplicitamente la fonte prevalente.",
@@ -190,14 +190,14 @@ export const wikiSections: WikiSection[] = [
       "documentation/framework/process-overview.md",
       "documentation/manifesto/governance.md",
     ],
-    related: ["quality-gates", "phase-map"],
+    related: ["quality-gates", "step-map"],
   },
   {
-    id: "phase-one-guide",
+    id: "step-one-guide",
     chapterId: "workflow",
-    title: "Guida Fase 1 passo-passo",
+    title: "Guida Step 1 passo-passo",
     intro:
-      "La Fase 1 raccoglie requisiti in formato strutturato per produrre un case JSON validabile e pronto alla Fase 2. E la fase che determina la qualita di tutto il ciclo successivo.",
+      "Lo Step 1 raccoglie requisiti in formato strutturato per produrre un case JSON validabile e pronto allo Step 2. E lo step che determina la qualita di tutto il ciclo successivo.",
     purpose:
       "Trasformare informazioni spesso frammentarie in un artefatto coerente, completo e formalmente corretto, eliminando ambiguita prima della generazione editoriale.",
     workflow: [
@@ -219,41 +219,41 @@ export const wikiSections: WikiSection[] = [
     ],
     antiPatterns: [
       "Compilare direttamente da intuizioni non confermate.",
-      "Confondere schema di fase con caso reale.",
-      "Mandare in Fase 2 un case incompleto solo per rispettare una scadenza.",
+      "Confondere schema di step con caso reale.",
+      "Mandare in Step 2 un case incompleto solo per rispettare una scadenza.",
     ],
     outputs: [
-      "`case.json` pronto per il mapping in Fase 2.",
+      "`case.json` pronto per il mapping in Step 2.",
       "Log di assunzioni e nodi aperti con impatto operativo.",
       "Base solida per evitare promesse non supportate a valle.",
     ],
     references: [
-      "documentation/wizard/fase-1-intake.md",
+      "documentation/wizard/step-1-intake.md",
       "documentation/wizard/case-schema.md",
       "documentation/wizard/case-schema.json",
       "app/create-json-master/page.tsx",
     ],
-    related: ["download-guide", "phase-two-guide"],
+    related: ["download-guide", "step-two-guide"],
   },
   {
-    id: "phase-two-guide",
+    id: "step-two-guide",
     chapterId: "workflow",
-    title: "Guida Fase 2 passo-passo",
+    title: "Guida Step 2 passo-passo",
     intro:
-      "La Fase 2 costruisce una cartella master modulare da cui dipendono tutti gli output successivi. Qui si decide qualita narrativa, confini di promessa e robustezza editoriale.",
+      "Lo Step 2 costruisce una cartella master modulare da cui dipendono tutti gli output successivi. Qui si decide qualita narrativa, confini di promessa e robustezza editoriale.",
     purpose:
-      "Convertire il dato strutturato della Fase 1 in una cartella strategico-operativa che possa governare output tool coerenti su canali diversi.",
+      "Convertire il dato strutturato dello Step 1 in una cartella strategico-operativa che possa governare output tool coerenti su canali diversi.",
     workflow: [
       "1) Leggi integralmente `case.json` validato e marca eventuali lacune residue.",
       "2) Mappa ogni blocco del caso sulle directory e sui file canonici della cartella master.",
       "3) Compila sezioni core e specialistiche in modo modulare, includendo limiti, cautele e assunzioni.",
       "4) Verifica coerenza narrativa, tono, policy e aderenza al pubblico target.",
-      "5) Esegui gate Fase 2 e prepara handoff con evidenze tracciabili per Fase 3.",
+      "5) Esegui gate Step 2 e prepara handoff con evidenze tracciabili per Step 3.",
     ],
     highlights: [
       "Mappa `case.json` sulla struttura canonica della cartella master.",
       "Esplicita assunzioni, nodi aperti, limiti e cautele.",
-      "Supera gate Fase 2 prima di ogni derivazione.",
+      "Supera gate Step 2 prima di ogni derivazione.",
     ],
     qualityGates: [
       "Documento completo: nessuna sezione canonica lasciata implicita.",
@@ -266,28 +266,28 @@ export const wikiSections: WikiSection[] = [
       "Iniziare derivazione prima della validazione finale della cartella master.",
     ],
     outputs: [
-      "Cartella master pronta per esecuzioni multi-canale in Fase 3.",
+      "Cartella master pronta per esecuzioni multi-canale in Step 3.",
       "Registro chiaro di assunzioni e nodi aperti.",
-      "Riduzione degli errori semantici in Fase 3.",
+      "Riduzione degli errori semantici in Step 3.",
     ],
     references: [
-      "documentation/wizard/fase-2-generazione.md",
+      "documentation/wizard/step-2-generazione.md",
       "documentation/wizard/cartella-master-template.md",
       "documentation/wizard/cartella-master-schema.md",
       "documentation/wizard/cartella-master-validation.md",
     ],
-    related: ["phase-three-guide", "quality-gates"],
+    related: ["step-three-guide", "quality-gates"],
   },
   {
-    id: "phase-three-guide",
+    id: "step-three-guide",
     chapterId: "workflow",
-    title: "Guida Fase 3 passo-passo",
+    title: "Guida Step 3 passo-passo",
     intro:
-      "La Fase 3 esegue tool operativi e prepara output pubblicabili mantenendo coerenza piena con cartella master validata. E la fase in cui forma e canale cambiano, ma il significato deve restare stabile.",
+      "Lo Step 3 esegue tool operativi e prepara output pubblicabili mantenendo coerenza piena con cartella master validata. E lo step in cui forma e canale cambiano, ma il significato deve restare stabile.",
     purpose:
-      "Produrre output finali efficaci per ciascun canale, preservando contenuto, tono, limiti, vincoli brand e promessa definiti nella fase strategica.",
+      "Produrre output finali efficaci per ciascun canale, preservando contenuto, tono, limiti, vincoli brand e promessa definiti nello step strategico.",
     workflow: [
-      "1) Leggi handoff Fase 3 e seleziona tool richiesti, scope e vincoli.",
+      "1) Leggi handoff Step 3 e seleziona tool richiesti, scope e vincoli.",
       "2) Definisci `provider_target` (`preset`, `custom`, default `non specificato`).",
       "3) Genera `prompt_o_output` solo da fonti cartella master validate.",
       "4) Applica checklist pre-pubblicazione su coerenza, promesse, policy e brand.",
@@ -315,7 +315,7 @@ export const wikiSections: WikiSection[] = [
       "Tracciato completo (`tool_usato`, `provider_target`, fonti master, esito validazione).",
     ],
     references: [
-      "documentation/wizard/fase-3-derivazione-pubblicazione.md",
+      "documentation/wizard/step-3-derivazione-pubblicazione.md",
       "documentation/context-ai/output-contracts.md",
       "documentation/context-ai/validation-protocol.md",
     ],
@@ -328,7 +328,7 @@ export const wikiSections: WikiSection[] = [
     intro:
       "La pagina `/wizard` e la guida di configurazione e installazione ambiente prima del lavoro operativo. Serve a rendere replicabile il setup e ridurre errori tecnici all'avvio.",
     purpose:
-      "Portare ogni contributor, tecnico o non tecnico, in uno stato di ambiente affidabile prima dell'esecuzione delle fasi metodologiche.",
+      "Portare ogni contributor, tecnico o non tecnico, in uno stato di ambiente affidabile prima dell'esecuzione degli step metodologici.",
     workflow: [
       "Verifica prerequisiti software e versione runtime richieste dal progetto.",
       "Installa dipendenze e avvia ambiente locale con i comandi ufficiali.",
@@ -338,7 +338,7 @@ export const wikiSections: WikiSection[] = [
     highlights: [
       "Copre prerequisiti hardware/software e setup locale.",
       "Definisce controlli minimi (lint/build/dev) prima dell'operativita.",
-      "Riduce errori tecnici prima di avviare Fase 1.",
+      "Riduce errori tecnici prima di avviare Step 1.",
     ],
     qualityGates: [
       "Comandi base eseguiti senza errori bloccanti.",
@@ -348,7 +348,7 @@ export const wikiSections: WikiSection[] = [
     antiPatterns: [
       "Iniziare workflow con ambiente non verificato.",
       "Applicare workaround locali non documentati.",
-      "Confondere setup tecnico con fase metodologica di contenuto.",
+      "Confondere setup tecnico con step metodologico di contenuto.",
     ],
     outputs: [
       "Ambiente pronto per lavorare in modo prevedibile.",
@@ -361,9 +361,9 @@ export const wikiSections: WikiSection[] = [
   {
     id: "download-guide",
     chapterId: "operations",
-    title: "Create JSON Master e compilazione Fase 1",
+    title: "Create JSON Master e compilazione Step 1",
     intro:
-      "La pagina `/create-json-master` e il punto operativo per generare e scaricare `case.json` dopo validazione e salvataggio. E l'interfaccia applicativa principale della Fase 1.",
+      "La pagina `/create-json-master` e il punto operativo per generare e scaricare `case.json` dopo validazione e salvataggio. E l'interfaccia applicativa principale dello Step 1.",
     purpose:
       "Consentire compilazione guidata del caso in modo conforme allo schema canonico, con persistenza controllata e prevenzione duplicati.",
     workflow: [
@@ -371,10 +371,10 @@ export const wikiSections: WikiSection[] = [
       "Esegui validazione applicativa lato client e lato server.",
       "Persisti il record e verifica controllo duplicati email+JSON.",
       "Scarica `case.json` solo dopo conferma di salvataggio riuscito.",
-      "Riusa il file come input unico della Fase 2.",
+      "Riusa il file come input unico dello Step 2.",
     ],
     highlights: [
-      "Il form e allineato allo schema canonico Fase 1.",
+      "Il form e allineato allo schema canonico Step 1.",
       "Il backend blocca duplicati su stessa email + stesso JSON.",
       "Il file viene scaricato solo dopo persistenza riuscita.",
     ],
@@ -391,10 +391,10 @@ export const wikiSections: WikiSection[] = [
     outputs: [
       "`case.json` valido, persistito e scaricabile.",
       "Tracciabilita minima del caso per manutenzione framework.",
-      "Riduzione errori di handoff tra Fase 1 e Fase 2.",
+      "Riduzione errori di handoff tra Step 1 e Step 2.",
     ],
-    references: ["app/create-json-master/page.tsx", "app/api/", "documentation/wizard/fase-1-intake.md"],
-    related: ["phase-one-guide", "quality-gates"],
+    references: ["app/create-json-master/page.tsx", "app/api/", "documentation/wizard/step-1-intake.md"],
+    related: ["step-one-guide", "quality-gates"],
   },
   {
     id: "prompt-method",
@@ -405,7 +405,7 @@ export const wikiSections: WikiSection[] = [
     purpose:
       "Standardizzare il lavoro agentico in task ripetibili e verificabili, con confini espliciti di modifica e criteri di conformita finali.",
     workflow: [
-      "Leggi `prompts/README.md` e identifica categoria e lettera del prompt (A-H).",
+      "Leggi `prompts/README.md` e identifica il prompt corretto (A-D).",
       "Apri il prompt selezionato e verifica scope consentito/vietato.",
       "Applica le istruzioni custom dell'utente senza violare i vincoli di categoria.",
       "Esegui verifiche finali coerenti con il perimetro del prompt.",
@@ -413,14 +413,14 @@ export const wikiSections: WikiSection[] = [
     ],
     highlights: [
       "Ogni prompt ha scope consentito e vietato.",
-      "Maintenance, Alignment, Evolution e Workflow sono separati e governati da regole di categoria.",
+      "Maintenance, Alignment, Framework Evolution e Workflow sono separati e governati da regole di categoria.",
       "L'agente deve restare conforme al perimetro del prompt scelto.",
-      "Per Fase 3, contract e gate provider-aware sono obbligatori.",
+      "Per Step 3, contract e gate provider-aware sono obbligatori.",
     ],
     qualityGates: [
       "Nessuna modifica fuori scope rispetto al prompt selezionato.",
       "Coerenza tra obiettivo utente, categoria prompt e file aggiornati.",
-      "Per task Fase 3: presenza di `tool_usato`, `provider_target` e `prompt_o_output`.",
+      "Per task Step 3: presenza di `tool_usato`, `provider_target` e `prompt_o_output`.",
       "Verifiche tecniche o documentali coerenti col tipo di intervento.",
     ],
     antiPatterns: [
@@ -433,7 +433,7 @@ export const wikiSections: WikiSection[] = [
       "Riduzione errori di scope nelle collaborazioni con AI.",
       "Maggiore facilita nel rieseguire task simili in futuro.",
     ],
-    references: ["prompts/README.md", "prompts/app-evolution.md", "prompts/workflow-execution.md"],
+    references: ["prompts/README.md", "prompts/framework-evolution.md", "prompts/workflow-execution.md"],
     related: ["quality-gates", "wizard-setup"],
   },
   {
@@ -441,19 +441,19 @@ export const wikiSections: WikiSection[] = [
     chapterId: "quality",
     title: "Gate di qualita",
     intro:
-      "I gate sono il meccanismo che garantisce affidabilita tra le fasi e blocca output non conformi. Senza gate, il framework perde valore operativo e non e piu auditabile.",
+      "I gate sono il meccanismo che garantisce affidabilita tra gli step e blocca output non conformi. Senza gate, il framework perde valore operativo e non e piu auditabile.",
     purpose:
-      "Imporre criteri di uscita chiari a ogni fase, evitando propagazione di errori semantici o strutturali verso gli output pubblicabili.",
+      "Imporre criteri di uscita chiari a ogni step, evitando propagazione di errori semantici o strutturali verso gli output pubblicabili.",
     workflow: [
-      "Definisci criteri di superamento prima di iniziare la fase.",
+      "Definisci criteri di superamento prima di iniziare lo step.",
       "Esegui controllo formale su completezza, coerenza e tracciabilita.",
       "Blocca il passaggio se un criterio obbligatorio fallisce.",
       "Registra esito del gate e azioni correttive richieste.",
     ],
     highlights: [
-      "Gate Fase 1: validazione schema e coerenza caso.",
-      "Gate Fase 2: validazione cartella master.",
-      "Gate Fase 3: validazione output tool pre-pubblicazione.",
+      "Gate Step 1: validazione schema e coerenza caso.",
+      "Gate Step 2: validazione cartella master.",
+      "Gate Step 3: validazione output tool pre-pubblicazione.",
     ],
     qualityGates: [
       "Ogni gate deve avere criteri espliciti e verificabili.",
@@ -466,17 +466,17 @@ export const wikiSections: WikiSection[] = [
       "Confondere quality gate con revisione stilistica opzionale.",
     ],
     outputs: [
-      "Meno errori a cascata tra fasi.",
+      "Meno errori a cascata tra step.",
       "Maggiore affidabilita nei rilasci finali.",
       "Processo di revisione piu oggettivo e ripetibile.",
     ],
     references: [
       "documentation/context-ai/validation-protocol.md",
-      "documentation/wizard/fase-1-intake.md",
-      "documentation/wizard/fase-2-generazione.md",
-      "documentation/wizard/fase-3-derivazione-pubblicazione.md",
+      "documentation/wizard/step-1-intake.md",
+      "documentation/wizard/step-2-generazione.md",
+      "documentation/wizard/step-3-derivazione-pubblicazione.md",
     ],
-    related: ["precedence", "phase-three-guide"],
+    related: ["precedence", "step-three-guide"],
   },
   {
     id: "use-cases",
@@ -489,8 +489,8 @@ export const wikiSections: WikiSection[] = [
     workflow: [
       "Seleziona lo scenario piu vicino dal catalogo playbook.",
       "Identifica personalizzazioni di tono, profondita e canali.",
-      "Applica personalizzazioni nella cartella master, non direttamente negli output Fase 3.",
-      "Valida risultati con gli stessi gate standard delle tre fasi.",
+      "Applica personalizzazioni nella cartella master, non direttamente negli output Step 3.",
+      "Valida risultati con gli stessi gate standard dei tre step.",
     ],
     highlights: [
       "Scegli tono e profondita in base al pubblico reale.",

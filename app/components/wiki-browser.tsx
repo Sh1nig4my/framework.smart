@@ -4,6 +4,13 @@ import { useEffect, useMemo, useState } from "react";
 
 import { wikiChapters, wikiSections } from "@/app/wiki/wiki-content";
 
+const legacyHashMap: Record<string, string> = {
+  "phase-map": "step-map",
+  "phase-one-guide": "step-one-guide",
+  "phase-two-guide": "step-two-guide",
+  "phase-three-guide": "step-three-guide",
+};
+
 function isKnownSection(id: string) {
   return wikiSections.some((section) => section.id === id);
 }
@@ -15,7 +22,8 @@ export function WikiBrowser() {
     }
 
     const hash = window.location.hash.replace("#", "");
-    return hash && isKnownSection(hash) ? hash : (wikiSections[0]?.id ?? "");
+    const normalizedHash = legacyHashMap[hash] ?? hash;
+    return normalizedHash && isKnownSection(normalizedHash) ? normalizedHash : (wikiSections[0]?.id ?? "");
   });
 
   useEffect(() => {

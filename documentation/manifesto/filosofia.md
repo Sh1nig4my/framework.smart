@@ -14,11 +14,11 @@ SMART e anche una proposta no-code: prima si progetta la logica, poi si abilita 
 
 ## Cosa significa in pratica
 
-- la Fase 1 non cerca di scrivere il progetto finale, ma di raccogliere i requisiti giusti;
-- la Fase 2 non compila una scheda amministrativa, ma costruisce una cartella di regia;
+- lo Step 1 non cerca di scrivere il progetto finale, ma di raccogliere i requisiti giusti;
+- lo Step 2 non compila una scheda amministrativa, ma costruisce una cartella di regia;
 - i derivati non sono output indipendenti, ma conseguenze controllate della cartella master.
 - gli agenti di coding sono strumenti di esecuzione, non fonte di regole;
-- sicurezza e standardizzazione sono requisiti progettuali, non fasi opzionali.
+- sicurezza e standardizzazione sono requisiti progettuali, non step opzionali.
 
 ## Perche questa scelta e importante
 

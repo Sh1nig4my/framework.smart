@@ -6,32 +6,32 @@ import { WorkflowStepActions } from "@/app/components/workflow-step-actions";
 export const metadata: Metadata = {
   title: "Workflow",
   description:
-    "Workflow SMART: storia operativa completa Fase 1-2-3, vantaggi del metodo, link Wiki essenziali e accesso guidato a Create JSON Master.",
+    "Workflow SMART: storia operativa completa Step 1-2-3, vantaggi del metodo, link Wiki essenziali e accesso guidato a Create JSON Master.",
 };
 
-const phaseCards = [
+const stepCards = [
   {
-    phase: "Fase 1",
+    step: "Step 1",
     title: "Create JSON Master",
     body: "Compila il caso con schema SMART, salva il record e genera il JSON validato che governa gli step successivi.",
   },
   {
-    phase: "Fase 2",
+    step: "Step 2",
     title: "Folder Master",
     body: "Consolida l'output in una cartella modulare con contenuti, vincoli, cautele e struttura pronta alla derivazione.",
   },
   {
-    phase: "Fase 3",
+    step: "Step 3",
     title: "Output Tool",
     body: "Deriva materiali canale-specifici dalla cartella master validata, con gate provider-aware prima della pubblicazione.",
   },
 ];
 
 const wikiLinks = [
-  { href: "/wiki#phase-map", label: "Mappa delle fasi" },
-  { href: "/wiki#phase-one-guide", label: "Guida Fase 1" },
-  { href: "/wiki#phase-two-guide", label: "Guida Fase 2" },
-  { href: "/wiki#phase-three-guide", label: "Guida Fase 3" },
+  { href: "/wiki#step-map", label: "Mappa degli step" },
+  { href: "/wiki#step-one-guide", label: "Guida Step 1" },
+  { href: "/wiki#step-two-guide", label: "Guida Step 2" },
+  { href: "/wiki#step-three-guide", label: "Guida Step 3" },
   { href: "/wiki#prompt-method", label: "Prompt Hub e metodo agentico" },
   { href: "/wiki#quality-gates", label: "Gate di qualita" },
 ];
@@ -47,7 +47,7 @@ export default function WorkflowPage() {
             La storia standard del framework: da idea iniziale a output governabili
           </h1>
           <p className="mt-4 max-w-4xl text-base leading-relaxed text-[var(--ink-700)] md:text-lg">
-            SMART nasce per evitare improvvisazione e ridurre rework: ogni fase ha uno scopo preciso, un output
+            SMART nasce per evitare improvvisazione e ridurre rework: ogni step ha uno scopo preciso, un output
             verificabile e un gate prima del passaggio successivo. Questa pagina rende chiaro il perche della
             metodologia e cosa fare in ogni step.
           </p>
@@ -58,9 +58,9 @@ export default function WorkflowPage() {
         </header>
 
         <section className="grid gap-5 md:grid-cols-3">
-          {phaseCards.map((item) => (
-            <article key={item.phase} className="rounded-2xl border border-[var(--line)] bg-white/92 p-6">
-              <p className="text-xs font-semibold tracking-[0.16em] text-[var(--ink-600)] uppercase">{item.phase}</p>
+          {stepCards.map((item) => (
+            <article key={item.step} className="rounded-2xl border border-[var(--line)] bg-white/92 p-6">
+              <p className="text-xs font-semibold tracking-[0.16em] text-[var(--ink-600)] uppercase">{item.step}</p>
               <h2 className="mt-2 text-xl font-semibold text-[var(--ink-900)]">{item.title}</h2>
               <p className="mt-3 text-sm leading-relaxed text-[var(--ink-700)]">{item.body}</p>
             </article>
@@ -72,17 +72,17 @@ export default function WorkflowPage() {
           <h2 className="mt-2 text-2xl font-semibold text-[var(--ink-900)]">Dal clone locale all&apos;esecuzione completa</h2>
           <ol className="mt-4 space-y-2 text-sm leading-relaxed text-[var(--ink-700)] md:text-base">
             <li>- 1) Clona il repository in locale e verifica i prerequisiti tecnici dal Wizard.</li>
-            <li>- 2) Apri la Wiki per capire mappa fasi, precedenze e gate di qualita.</li>
+            <li>- 2) Apri la Wiki per capire mappa step, precedenze e gate di qualita.</li>
             <li>- 3) Usa il Prompt Hub per scegliere prompt e categoria corretta per il task.</li>
-            <li>- 4) Avvia Fase 1 con Create JSON Master e consolida il case JSON validato.</li>
-            <li>- 5) Prosegui con Fase 2 e Fase 3 solo quando i gate sono soddisfatti.</li>
+            <li>- 4) Avvia Step 1 con Create JSON Master e consolida il case JSON validato.</li>
+            <li>- 5) Prosegui con Step 2 e Step 3 solo quando i gate sono soddisfatti.</li>
           </ol>
         </section>
 
         <section className="grid gap-5 lg:grid-cols-[1.2fr_1fr]">
           <article className="rounded-2xl border border-[var(--line)] bg-[var(--surface-1)] p-6">
             <p className="text-xs font-semibold tracking-[0.16em] text-[var(--ink-600)] uppercase">Accesso operativo</p>
-            <h2 className="mt-2 text-2xl font-semibold text-[var(--ink-900)]">Avvia subito la Fase 1</h2>
+            <h2 className="mt-2 text-2xl font-semibold text-[var(--ink-900)]">Avvia subito lo Step 1</h2>
             <p className="mt-3 text-sm leading-relaxed text-[var(--ink-700)] md:text-base">
               Se vuoi partire subito con un caso reale, usa Create JSON Master. Da questa pagina trovi il punto di
               accesso ufficiale alla compilazione del JSON.
@@ -95,10 +95,10 @@ export default function WorkflowPage() {
           </article>
 
           <article className="rounded-2xl border border-[var(--line)] bg-white p-6">
-            <p className="text-xs font-semibold tracking-[0.16em] text-[var(--ink-600)] uppercase">Fase 2 e Fase 3</p>
+            <p className="text-xs font-semibold tracking-[0.16em] text-[var(--ink-600)] uppercase">Step 2 e Step 3</p>
             <h2 className="mt-2 text-2xl font-semibold text-[var(--ink-900)]">Servizio temporaneamente non disponibile</h2>
             <p className="mt-3 text-sm leading-relaxed text-[var(--ink-700)] md:text-base">
-              In questa versione i pulsanti Fase 2 e Fase 3 sono in aggiornamento. Al click mostriamo un avviso con
+              In questa versione i pulsanti Step 2 e Step 3 sono in aggiornamento. Al click mostriamo un avviso con
               il contatto diretto per supporto operativo.
             </p>
             <div className="mt-5">

@@ -6,7 +6,7 @@ import packageJson from "@/package.json";
 export const metadata: Metadata = {
   title: "Wiki",
   description:
-    "Wiki SMART: guida ufficiale versionata con capitoli operativi, gate di qualita, regole canoniche e riferimenti tracciabili per Fase 1-2-3.",
+    "Wiki SMART: guida ufficiale versionata con capitoli operativi, gate di qualita, regole canoniche e riferimenti tracciabili per Step 1-2-3.",
 };
 
 export default function WikiPage() {

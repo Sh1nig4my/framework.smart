@@ -2,7 +2,7 @@
 
 ## Scopo
 
-Definire ruoli e responsabilita per mantenere il framework affidabile in tutte le fasi.
+Definire ruoli e responsabilita per mantenere il framework affidabile in tutti gli step.
 
 ## Ruoli principali
 
@@ -10,17 +10,17 @@ Definire ruoli e responsabilita per mantenere il framework affidabile in tutte l
 
 - fornisce obiettivi, vincoli, priorita e criteri di successo.
 
-### Progettista del caso (Fase 1 owner)
+### Progettista del caso (Step 1 owner)
 
 - guida compilazione schema;
 - produce e valida `case.json`.
 
-### Editor Strategico (Fase 2 owner)
+### Editor Strategico (Step 2 owner)
 
 - produce/valida cartella master;
 - controlla coerenza narrativa, limiti e promesse.
 
-### Delivery Editor (Fase 3 owner)
+### Delivery Editor (Step 3 owner)
 
 - crea e valida derivati;
 - garantisce coerenza tra canali e aderenza a cartella master.
@@ -38,9 +38,9 @@ Definire ruoli e responsabilita per mantenere il framework affidabile in tutte l
 ## Matrice sintetica
 
 - accuratezza input: committente + progettista;
-- conformita Fase 1: progettista + revisore;
-- conformita Fase 2: editor strategico + revisore;
-- conformita Fase 3: delivery editor + revisore;
+- conformita Step 1: progettista + revisore;
+- conformita Step 2: editor strategico + revisore;
+- conformita Step 3: delivery editor + revisore;
 - supporto operativo: assistente AI entro confini `context-ai/`.
 
 ## Regola trasversale

@@ -2,28 +2,28 @@
 
 ## Scopo
 
-`wizard/` e il nucleo operativo del framework SMART: definisce procedure ufficiali, gate e criteri di conformita per Fase 1, Fase 2 e Fase 3.
+`wizard/` e il nucleo operativo del framework SMART: definisce procedure ufficiali, gate e criteri di conformita per Step 1, Step 2 e Step 3.
 
 ## Catena canonica
 
 ```text
-Fase 1: case-schema.json -> case.json
-Fase 2: case.json -> cartella-master/
-Fase 3: cartella-master validata -> output tool (prompt/materiali) pubblicabili
+Step 1: case-schema.json -> case.json
+Step 2: case.json -> cartella-master/
+Step 3: cartella-master validata -> output tool (prompt/materiali) pubblicabili
 ```
 
 ## Documenti principali
 
-- `case-schema.json`: schema vincolante Fase 1.
+- `case-schema.json`: schema vincolante Step 1.
 - `case-schema.md`: guida interpretativa dello schema.
 - `case-template.json`: template compilazione.
 - `case-example.json`: esempio valido.
-- `fase-1-intake.md`: procedura operativa Fase 1.
-- `fase-2-generazione.md`: procedura operativa Fase 2.
+- `step-1-intake.md`: procedura operativa Step 1.
+- `step-2-generazione.md`: procedura operativa Step 2.
 - `cartella-master-template.md`: struttura canonica della cartella master.
 - `cartella-master-schema.md`: regole qualitative e semantiche della cartella master.
-- `cartella-master-validation.md`: checklist e gate di validazione Fase 2.
-- `fase-3-derivazione-pubblicazione.md`: procedura operativa Fase 3.
+- `cartella-master-validation.md`: checklist e gate di validazione Step 2.
+- `step-3-derivazione-pubblicazione.md`: procedura operativa Step 3.
 - `decision-rules.md`: precedenze e regole di conflitto.
 - `scenari.md`: scenari applicativi ricorrenti.
 
@@ -32,7 +32,7 @@ Fase 3: cartella-master validata -> output tool (prompt/materiali) pubblicabili
 - lo schema non e il caso;
 - il caso non e la cartella master;
 - la cartella master non e il derivato;
-- ogni fase ha gate prima della successiva.
+- ogni step ha gate prima del successivo.
 
 ## Criterio di successo wizard
 
@@ -40,18 +40,18 @@ Il wizard e corretto quando consente di:
 
 1. produrre un `case.json` robusto;
 2. produrre una cartella master pienamente utilizzabile;
-3. produrre output Fase 3 pubblicabili senza conflitti con la cartella master.
+3. produrre output Step 3 pubblicabili senza conflitti con la cartella master.
 
 ## Guardrail no-code
 
-- nessun salto di fase;
+- nessun salto di step;
 - nessuna invenzione fuori schema;
-- nessun derivato senza validazione Fase 2;
-- nessuna pubblicazione senza gate Fase 3.
+- nessun derivato senza validazione Step 2;
+- nessuna pubblicazione senza gate Step 3.
 
 ## Link incrociati operativi
 
-- Prompt AI Fase 2: `context-ai/prompt-templates/case-json-a-cartella-master.md`
-- Prompt AI Fase 3: `context-ai/prompt-templates/derivati-da-cartella-master.md`
+- Prompt AI Step 2: `context-ai/prompt-templates/case-json-a-cartella-master.md`
+- Prompt AI Step 3: `context-ai/prompt-templates/derivati-da-cartella-master.md`
 - Gate pre-derivazione: `context-ai/prompt-templates/gate-pre-derivazione.md`
 - Scenari applicativi: `wizard/scenari.md` e `playbooks/`

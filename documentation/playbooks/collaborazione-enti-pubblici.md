@@ -29,7 +29,7 @@ Usare questo playbook per:
 
 ## Procedura operativa
 
-1. In Fase 1 seleziona con attenzione `beneficiary_context` e `tone_profile`.
+1. In Step 1 seleziona con attenzione `beneficiary_context` e `tone_profile`.
 2. Privilegia obiettivi come `orientare`, `aggiornare` o `supportare_decisione` quando appropriato.
 3. Mantieni alta l'enfasi su limiti e uso responsabile di AI.
 4. Nella cartella master esplicita sempre cosa resta fuori perimetro.

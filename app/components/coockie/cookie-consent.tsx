@@ -25,7 +25,7 @@ export function CookieConsent() {
       <p className="text-sm font-semibold text-[var(--ink-900)]">Cookie necessari</p>
       <p className="mt-2 text-sm leading-relaxed text-[var(--ink-700)]">
         Questa app usa solo cookie tecnici necessari al funzionamento. Non
-        utilizza cookie di profilazione o analytics in questa fase.
+        utilizza cookie di profilazione o analytics in questo step.
       </p>
       <p className="mt-2 text-xs leading-relaxed text-[var(--ink-600)]">
         In caso di evoluzione futura della raccolta dati, policy e meccanismi di

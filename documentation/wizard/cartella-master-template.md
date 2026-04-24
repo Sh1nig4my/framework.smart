@@ -2,7 +2,7 @@
 
 ## Scopo
 
-Definire la struttura canonica minima della cartella master prodotta in Fase 2.
+Definire la struttura canonica minima della cartella master prodotta in Step 2.
 
 ## Regola strutturale
 
@@ -23,7 +23,7 @@ cartella-master/
 |- 06_seminars/
 |- 07_content_types/
 |- 08_agent_ready_files/
-`- 09_phase_3_handoff/
+`- 09_step_3_handoff/
 ```
 
 ## Requisiti minimi per directory
@@ -81,14 +81,14 @@ cartella-master/
 - punti chiave, limiti e blocchi;
 - formato orientato a task successivi.
 
-### `09_phase_3_handoff/`
+### `09_step_3_handoff/`
 
 - derivati/tool autorizzati;
 - provider preferences (preset/custom/default `non specificato`);
 - vincoli brand (palette, logo SMART, stile);
 - scope filters (giorni/parti/blocchi);
 - limiti di pubblicazione;
-- checklist handoff Fase 3.
+- checklist handoff Step 3.
 
 ## Regola di naming
 
@@ -98,6 +98,6 @@ cartella-master/
 
 ## Riferimenti
 
-- `wizard/fase-2-generazione.md`
+- `wizard/step-2-generazione.md`
 - `wizard/cartella-master-schema.md`
 - `wizard/cartella-master-validation.md`

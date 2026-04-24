@@ -2,13 +2,13 @@
 
 ## Scopo
 
-Definire in modo formale il ruolo della cartella master, i criteri di compilazione e le condizioni minime per considerare la Fase 2 completata.
+Definire in modo formale il ruolo della cartella master, i criteri di compilazione e le condizioni minime per considerare lo Step 2 completato.
 
 ## Cos'e la cartella master
 
 La cartella master e l'artefatto centrale dell'iniziativa.
 
-E il principale output della Fase 2 e il riferimento operativo per preparazione, conduzione, allineamento del team e derivazione materiali.
+E il principale output dello Step 2 e il riferimento operativo per preparazione, conduzione, allineamento del team e derivazione materiali.
 
 ## A chi e destinata
 
@@ -72,7 +72,7 @@ Tipologie divulgative interne al medesimo perimetro evento.
 
 File sintetici ad alta usabilita per agenti e task successivi.
 
-### `09_phase_3_handoff`
+### `09_step_3_handoff`
 
 Autorizzazioni di derivazione, richieste tool, provider target, vincoli brand, scope filters, limiti e checklist pre-pubblicazione.
 
@@ -92,7 +92,7 @@ Durante la compilazione della cartella master:
 1. Genera la struttura canonica a partire dal template.
 2. Compila sezione per sezione con tracciabilita al caso.
 3. Rivedi coerenza interna con giudizio umano.
-4. Usa la cartella come base per Fase 3.
+4. Usa la cartella come base per Step 3.
 
 ## Definition of done - Cartella master
 
@@ -102,13 +102,13 @@ La cartella master e validata solo se:
 2. mantiene coerenza integrale con il `case.json`;
 3. contiene limiti, rischi e confini in modo esplicito;
 4. permette la derivazione senza introdurre nuove regole implicite;
-5. include handoff Fase 3 completo.
+5. include handoff Step 3 completo.
 
-## Metadati minimi handoff Fase 3
+## Metadati minimi handoff Step 3
 
-Ogni handoff in `09_phase_3_handoff/` deve esplicitare almeno:
+Ogni handoff in `09_step_3_handoff/` deve esplicitare almeno:
 
-1. `tool_requests` (quali tool Fase 3 attivare e per quale finalita);
+1. `tool_requests` (quali tool Step 3 attivare e per quale finalita);
 2. `provider_preferences` (preset consigliato oppure custom);
 3. `provider_target_default` con valore `non specificato` se assente scelta utente;
 4. `brand_constraints` (palette, logo SMART, stile comunicativo);
@@ -136,7 +136,7 @@ Una cartella master e buona quando:
 ## Riferimenti
 
 - `HOW_TO.md`
-- `wizard/fase-2-generazione.md`
+- `wizard/step-2-generazione.md`
 - `wizard/cartella-master-template.md`
 - `wizard/cartella-master-validation.md`
-- `wizard/fase-3-derivazione-pubblicazione.md`
+- `wizard/step-3-derivazione-pubblicazione.md`

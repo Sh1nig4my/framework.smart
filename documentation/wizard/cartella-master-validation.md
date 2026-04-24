@@ -2,7 +2,7 @@
 
 ## Scopo
 
-Definire i controlli obbligatori per validare la Fase 2 prima dell'handoff a Fase 3.
+Definire i controlli obbligatori per validare lo Step 2 prima dell'handoff a Step 3.
 
 ## Input di validazione
 
@@ -29,21 +29,21 @@ Definire i controlli obbligatori per validare la Fase 2 prima dell'handoff a Fas
 1. ogni sezione critica ha riferimento al `case.json`;
 2. assunzioni dichiarate quando i dati non bastano;
 3. nodi aperti dichiarati con impatto operativo;
-4. nessuna regola implicita introdotta in Fase 2.
+4. nessuna regola implicita introdotta in Step 2.
 
-## Checklist handoff Fase 3
+## Checklist handoff Step 3
 
-1. `09_phase_3_handoff/` elenca derivati/tool autorizzati;
+1. `09_step_3_handoff/` elenca derivati/tool autorizzati;
 2. provider preferences sono dichiarate (oppure default `non specificato`);
 3. limiti di pubblicazione sono espliciti;
 4. vincoli di tono/pubblico/promessa/brand sono riassunti;
-5. gate Fase 2 marcato come `approved`.
+5. gate Step 2 marcato come `approved`.
 
 ## Esito gate
 
 Formato minimo:
 
-1. `esito_gate_fase_2` (`approved`/`rejected`)
+1. `esito_gate_step_2` (`approved`/`rejected`)
 2. `errori_bloccanti`
 3. `warning`
 4. `azioni_correttive`
@@ -52,5 +52,5 @@ Formato minimo:
 
 - assenza di una o piu directory canoniche;
 - conflitti sostanziali tra file interni;
-- handoff Fase 3 incompleto;
+- handoff Step 3 incompleto;
 - contenuto non tracciabile al caso.

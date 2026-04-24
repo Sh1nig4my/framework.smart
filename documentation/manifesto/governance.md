@@ -8,7 +8,7 @@ Definire il modello di governo del framework SMART e le regole di evoluzione con
 
 - `manifesto/` definisce i principi piu stabili;
 - `framework/` definisce metodo, ruoli, processo e glossario;
-- `wizard/` governa il cuore operativo delle tre fasi;
+- `wizard/` governa il cuore operativo dei tre step;
 - `playbooks/` applicano il metodo a scenari ricorrenti;
 - `context-ai/` governa l'uso del repository come contesto affidabile per agenti AI;
 
@@ -36,7 +36,7 @@ Definire il modello di governo del framework SMART e le regole di evoluzione con
 Ogni release documentale richiede:
 
 1. verifica coerenza inter-documentale;
-2. verifica integrita della catena Fase 1 -> Fase 2 -> Fase 3;
+2. verifica integrita della catena Step 1 -> Step 2 -> Step 3;
 3. verifica allineamento ai confini AI;
 4. aggiornamento changelog.
 5. verifica coerenza con principi no-code, sicurezza e standardizzazione.

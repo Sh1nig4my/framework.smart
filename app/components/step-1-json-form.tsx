@@ -2,7 +2,7 @@
 
 import { useMemo, useState, type FormEvent } from "react";
 
-import { fase1Schema, optionToLabel } from "@/shared/lib/fase1-json";
+import { step1Schema, optionToLabel } from "@/shared/lib/step1-json";
 
 type FeedbackTone = "success" | "error" | "info";
 
@@ -48,7 +48,7 @@ function buildInitialFormState(): FormState {
   const single: SingleValues = {};
   const multi: MultiValues = {};
 
-  for (const section of fase1Schema.sections) {
+  for (const section of step1Schema.sections) {
     for (const field of section.fields) {
       if (field.multiple) {
         multi[field.id] = [];
@@ -73,7 +73,7 @@ function buildInitialFormState(): FormState {
 }
 
 function isSectionCompleted(state: FormState, sectionId: SectionId) {
-  const section = fase1Schema.sections.find((entry) => entry.id === sectionId);
+  const section = step1Schema.sections.find((entry) => entry.id === sectionId);
 
   if (!section) {
     return false;
@@ -96,7 +96,7 @@ function isSectionCompleted(state: FormState, sectionId: SectionId) {
   return true;
 }
 
-export function Fase1JsonForm() {
+export function Step1JsonForm() {
   const [state, setState] = useState<FormState>(() => buildInitialFormState());
   const [openSections, setOpenSections] = useState<Record<SectionId, boolean>>({
     initiative: true,
@@ -178,7 +178,7 @@ export function Fase1JsonForm() {
       return "Inserisci email.";
     }
 
-    for (const section of fase1Schema.sections) {
+    for (const section of step1Schema.sections) {
       for (const field of section.fields) {
         if (!field.required) {
           continue;
@@ -274,7 +274,7 @@ export function Fase1JsonForm() {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("/api/fase-1-json", {
+      const response = await fetch("/api/step-1-json", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -387,7 +387,7 @@ export function Fase1JsonForm() {
       </section>
 
       {sectionOrder.map((sectionId, index) => {
-        const section = fase1Schema.sections.find((entry) => entry.id === sectionId);
+        const section = step1Schema.sections.find((entry) => entry.id === sectionId);
 
         if (!section) {
           return null;
@@ -422,7 +422,7 @@ export function Fase1JsonForm() {
                     return (
                       <div key={field.id} className="sf-note">
                         <p className="sf-note-title">Output principale</p>
-                        <p>{optionToLabel("cartella_master")}. E l&apos;unico output principale ammesso in Fase 1.</p>
+                        <p>{optionToLabel("cartella_master")}. E l&apos;unico output principale ammesso in Step 1.</p>
                       </div>
                     );
                   }

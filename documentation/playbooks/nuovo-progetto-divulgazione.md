@@ -30,14 +30,14 @@ Questo playbook e indicato quando:
 1. Chiarisci perche l'iniziativa deve esistere.
 2. Identifica il pubblico principale.
 3. Definisci l'obiettivo prevalente del progetto.
-4. Compila la Fase 1 partendo da `wizard/case-schema.json`.
+4. Compila lo Step 1 partendo da `wizard/case-schema.json`.
 5. Produci un `case.json` coerente.
-6. Genera la cartella master in Fase 2.
+6. Genera la cartella master in Step 2.
 7. Deriva solo i materiali davvero necessari.
 
 ## Gate di controllo
 
-Prima della Fase 2 verificare:
+Prima dello Step 2 verificare:
 
 - completezza e coerenza del `case.json`;
 - assenza di conflitti tra obiettivo, pubblico e formato;
@@ -65,8 +65,8 @@ Prima dei derivati verificare:
 ## Riferimenti
 
 - `HOW_TO.md`
-- `wizard/fase-1-intake.md`
-- `wizard/fase-2-generazione.md`
+- `wizard/step-1-intake.md`
+- `wizard/step-2-generazione.md`
 - `wizard/cartella-master-template.md`
 - `wizard/cartella-master-validation.md`
 - `context-ai/prompt-templates/case-json-a-cartella-master.md`

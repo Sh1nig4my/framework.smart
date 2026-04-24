@@ -11,18 +11,18 @@ SMART è un framework documentale open source per progettare iniziative formativ
 ## Catena del framework
 
 ```text
-Fase 1: case-schema.json -> case.json
-Fase 2: case.json -> cartella-master/
-Fase 3: cartella-master validata -> output tool (prompt/materiali)
+Step 1: case-schema.json -> case.json
+Step 2: case.json -> cartella-master/
+Step 3: cartella-master validata -> output tool (prompt/materiali)
 ```
 
 ## Fatti da trattare come stabili
 
-- `wizard/case-schema.json` e la source of truth della Fase 1;
-- `wizard/cartella-master-template.md` + `wizard/cartella-master-schema.md` sono la source of truth della Fase 2;
-- `wizard/fase-3-derivazione-pubblicazione.md` governa la Fase 3;
-- la cartella master e l'artefatto centrale della Fase 2;
-- gli output tool Fase 3 vengono dopo e dipendono dalla cartella master;
+- `wizard/case-schema.json` e la source of truth dello Step 1;
+- `wizard/cartella-master-template.md` + `wizard/cartella-master-schema.md` sono la source of truth dello Step 2;
+- `wizard/step-3-derivazione-pubblicazione.md` governa lo Step 3;
+- la cartella master e l'artefatto centrale dello Step 2;
+- gli output tool Step 3 vengono dopo e dipendono dalla cartella master;
 - il repository attivo non deve essere contaminato dai materiali storici.
 
 ## Regime di generazione consentito
@@ -32,9 +32,9 @@ Un agente AI puo operare solo in questo ordine:
 1. validazione input del caso;
 2. generazione o revisione `case.json`;
 3. generazione o revisione cartella master;
-4. esecuzione tool Fase 3 e controllo output secondari.
+4. esecuzione tool Step 3 e controllo output secondari.
 
-Ogni salto di fase e considerato non conforme.
+Ogni salto di step e considerato non conforme.
 
 ## Lessico preferito
 

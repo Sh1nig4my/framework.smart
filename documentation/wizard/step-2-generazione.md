@@ -1,12 +1,12 @@
-# Fase 2 - Generazione della cartella master
+# Step 2 - Generazione della cartella master
 
 ## Scopo
 
-Trasformare `case.json` in `cartella-master/` completa, coerente, modulare e pronta all'handoff verso Fase 3.
+Trasformare `case.json` in `cartella-master/` completa, coerente, modulare e pronta all'handoff verso Step 3.
 
 ## Input
 
-- `case.json` validato (gate Fase 1 superato)
+- `case.json` validato (gate Step 1 superato)
 - `wizard/cartella-master-template.md`
 - `wizard/cartella-master-schema.md`
 - `wizard/cartella-master-validation.md`
@@ -16,11 +16,11 @@ Trasformare `case.json` in `cartella-master/` completa, coerente, modulare e pro
 - `cartella-master/` completa secondo struttura canonica
 - assunzioni dichiarate e tracciate nei file di sezione
 - nodi aperti con impatto operativo
-- handoff Fase 3 compilato con richieste tool/provider
+- handoff Step 3 compilato con richieste tool/provider
 
 ## Regola centrale
 
-La Fase 2 non produce un singolo documento: produce una cartella strutturata in sezioni indipendenti, leggibili e generabili anche in task separati.
+Lo Step 2 non produce un singolo documento: produce una cartella strutturata in sezioni indipendenti, leggibili e generabili anche in task separati.
 
 ## Procedura modulare
 
@@ -30,18 +30,18 @@ La Fase 2 non produce un singolo documento: produce una cartella strutturata in 
 4. generare sezioni core (`01_overview/`, `02_event_structure/`) con tracciabilita al caso;
 5. generare sezioni specialistiche (`03_daily_events/`, `04_multi_day_events/`, `05_collections/`, `06_seminars/`, `07_content_types/`) in modo modulare;
 6. produrre i file per agenti in `08_agent_ready_files/`;
-7. completare handoff in `09_phase_3_handoff/` includendo tool richiesti, provider e vincoli brand;
+7. completare handoff in `09_step_3_handoff/` includendo tool richiesti, provider e vincoli brand;
 8. validare la cartella con `wizard/cartella-master-validation.md`.
 
-## Gate Fase 2
+## Gate Step 2
 
-Il passaggio a Fase 3 e consentito solo se:
+Il passaggio a Step 3 e consentito solo se:
 
 1. la cartella contiene tutte le directory canoniche obbligatorie;
 2. ogni file obbligatorio e compilato in forma operativa;
 3. ogni sezione e tracciabile al `case.json` o ad assunzioni esplicite;
 4. non esistono contraddizioni tra file della cartella;
-5. `09_phase_3_handoff/` autorizza in modo esplicito la derivazione e specifica i metadati minimi Fase 3.
+5. `09_step_3_handoff/` autorizza in modo esplicito la derivazione e specifica i metadati minimi Step 3.
 
 ## Errori da bloccare
 
@@ -50,4 +50,4 @@ Il passaggio a Fase 3 e consentito solo se:
 - file generici senza valore operativo;
 - omissione limiti/cautele nelle sezioni critiche;
 - contraddizioni col `case.json` o tra file interni;
-- avvio derivazione senza gate Fase 2.
+- avvio derivazione senza gate Step 2.

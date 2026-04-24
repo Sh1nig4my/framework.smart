@@ -1,34 +1,34 @@
-# Prompt C: Framework Evolution
+# Prompt B: Framework Evolution
 
 ## Scopo
 
-Evolvere il framework con approccio docs-first: prima `documentation/`, poi solo se necessario allineare aree collegate.
+Evolvere il framework con approccio docs-first: prima `documentation/`, poi propagare automaticamente in app le modifiche rilevanti.
 
 ## Scope consentito
 
-- modifica, estensione, rifactor e ottimizzazione di file in `documentation/`;
-- aggiornamento di file collegati fuori `documentation/` quando richiesto per mantenere coerenza del framework (es. root docs, prompt hub, changelog);
-- aggiornamento lato app solo dopo l'evoluzione documentale e solo se indispensabile per riallineamento.
+- modifica, estensione, refactor e ottimizzazione di file in `documentation/`;
+- aggiornamento di file collegati fuori `documentation/` per mantenere coerenza del framework;
+- propagazione automatica su app quando la documentazione cambia.
 
 ## Scope vietato
 
-- non modificare codice app/backend prima di aver completato l'evoluzione documentale;
-- non procedere con implementazione lato app senza prima richiedere informazioni/conferma utente sul perimetro applicativo;
-- non introdurre regole in conflitto con artefatti canonici SMART.
+- non introdurre regole in conflitto con artefatti canonici SMART;
+- non lasciare disallineamenti tra framework e app dopo aggiornamenti documentali.
 
 ## Obiettivi operativi
 
-1. introdurre nuovi tool o regole nelle fasi del workflow (1/2/3);
+1. introdurre nuovi tool o regole negli step del workflow (1/2/3);
 2. migliorare struttura e leggibilita dei documenti;
 3. garantire coerenza metodologica globale;
-4. preservare significato e logiche canoniche SMART.
+4. preservare significato e logiche canoniche SMART;
+5. mantenere allineata la rappresentazione app del framework.
 
 ## Procedura obbligatoria
 
-1. definisci impatto del cambiamento sulle fasi;
+1. definisci impatto del cambiamento sugli step;
 2. pianifica file da aggiornare;
 3. implementa prima le modifiche in `documentation/` con allineamento incrociato;
-4. valuta se esiste una necessita reale di allineamento lato app;
-5. se necessario lato app, chiedi prima informazioni/conferma utente e solo dopo implementa;
-6. aggiorna riferimenti e gate dove necessario;
+4. esegui review obbligatoria dell'app;
+5. propaga automaticamente le modifiche nelle pagine coinvolte (`/`, `/workflow`, `/wizard`, `/wiki`, privacy/sicurezza);
+6. aggiorna riferimenti, gate e naming (`step`) dove necessario;
 7. rilascia riepilogo finale dei cambiamenti.

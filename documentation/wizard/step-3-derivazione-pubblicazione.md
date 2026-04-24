@@ -1,27 +1,27 @@
-# Fase 3 - Tool operativi e pubblicazione controllata
+# Step 3 - Tool operativi e pubblicazione controllata
 
 ## Scopo
 
-Produrre output operativi a partire dalla cartella master validata usando tool Fase 3 standardizzati, con modalita provider-aware e controllo pre-pubblicazione.
+Produrre output operativi a partire dalla cartella master validata usando tool Step 3 standardizzati, con modalita provider-aware e controllo pre-pubblicazione.
 
 ## Input
 
-- cartella master validata (gate Fase 2 superato)
-- handoff Fase 3 completo da `09_phase_3_handoff/`
+- cartella master validata (gate Step 2 superato)
+- handoff Step 3 completo da `09_step_3_handoff/`
 - richiesta utente aggiuntiva (scope, formato, obiettivo)
 - policy comunicative, limiti e confini SMART
 
 ## Output
 
-- output tool Fase 3 coerenti (prompt provider-specific o materiali finali)
+- output tool Step 3 coerenti (prompt provider-specific o materiali finali)
 - tracciabilita fonti cartella master -> output
 - checklist pre-pubblicazione compilata
 - eventuali revisioni richieste tracciate
 
 ## Regole centrali
 
-1. La cartella master validata resta l'unica fonte canonica della Fase 3.
-2. I tool Fase 3 possono produrre output finale diretto oppure prompt strutturati per provider esterni.
+1. La cartella master validata resta l'unica fonte canonica dello Step 3.
+2. I tool Step 3 possono produrre output finale diretto oppure prompt strutturati per provider esterni.
 3. La modalita provider-aware e ibrida: provider consigliati + valore custom.
 4. Se il provider non e indicato, usare default `non specificato` e produrre output provider-neutral adattabile.
 5. Nessun tool puo introdurre nuove promesse, policy o claim non supportati.
@@ -67,16 +67,16 @@ Produrre output operativi a partire dalla cartella master validata usando tool F
 
 ## Procedura
 
-1. leggere handoff Fase 3 e identificare tool richiesti, scope e vincoli;
+1. leggere handoff Step 3 e identificare tool richiesti, scope e vincoli;
 2. determinare `provider_target` per ogni output (`preset`, `custom`, o `non specificato`);
 3. generare output del tool usando solo fonti rilevanti della cartella master;
 4. integrare richiesta aggiuntiva utente senza alterare significato canonico;
 5. validare coerenza su promessa, limiti, tono, policy e vincoli brand;
 6. completare controllo pre-pubblicazione e registrare esito.
 
-## Gate Fase 3
+## Gate Step 3
 
-Un output Fase 3 e pubblicabile/riusabile solo se:
+Un output Step 3 e pubblicabile/riusabile solo se:
 
 1. e semanticamente coerente con la cartella master;
 2. dichiara tool usato e provider target (`non specificato` ammesso);

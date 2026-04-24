@@ -32,7 +32,7 @@ export default function WizardPage() {
             rallentano il workflow.
           </p>
           <p className="mt-3 max-w-3xl text-sm leading-relaxed text-[var(--ink-600)] md:text-base">
-            Nota di perimetro: questa pagina copre setup e avvio. La procedura completa Fase 1 -&gt; Fase 2 -&gt; Fase 3 e
+            Nota di perimetro: questa pagina copre setup e avvio. La procedura completa Step 1 -&gt; Step 2 -&gt; Step 3 e
             gestita nel Workflow SMART, nella Wiki SMART e nella documentazione canonica.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
@@ -51,12 +51,12 @@ export default function WizardPage() {
             <h2 className="mt-2 text-2xl font-semibold text-[var(--ink-900)]">Prima stabilita, poi velocita</h2>
             <p className="mt-3 text-sm leading-relaxed text-[var(--ink-700)] md:text-base">
               SMART funziona meglio quando il team parte con un contesto chiaro: ambiente allineato, strumenti
-              condivisi e regole comuni. Dopo questa fase di setup, tutta la parte operativa viene guidata in dettaglio
-              dal Workflow SMART e dalla Wiki SMART, con percorso completo fase per fase.
+              condivisi e regole comuni. Dopo questo step di setup, tutta la parte operativa viene guidata in dettaglio
+              dal Workflow SMART e dalla Wiki SMART, con percorso completo step per step.
             </p>
             <p className="mt-3 text-sm leading-relaxed text-[var(--ink-700)] md:text-base">
               In pratica: questa pagina ti aiuta ad accendere il motore; la Wiki governa i gate e i passaggi
-              metodologici; Workflow ti guida all&apos;avvio della Fase 1 con Create JSON Master.
+              metodologici; Workflow ti guida all&apos;avvio dello Step 1 con Create JSON Master.
             </p>
           </article>
 
@@ -86,11 +86,11 @@ export default function WizardPage() {
           <h2 className="text-2xl font-semibold">Passo successivo consigliato</h2>
           <p className="mt-3 max-w-3xl text-sm leading-relaxed text-white/80 md:text-base">
             Se l&apos;ambiente e pronto, apri la Wiki per il wizard operativo dettagliato e la guida completa al workflow.
-            Quando vuoi iniziare subito con dati reali, passa a Workflow e avvia la Fase 1.
+            Quando vuoi iniziare subito con dati reali, passa a Workflow e avvia lo Step 1.
           </p>
           <div className="mt-5 flex flex-wrap gap-3">
             <Link
-              href="/wiki#phase-one-guide"
+              href="/wiki#step-one-guide"
               className="rounded-full bg-white px-5 py-2.5 text-sm font-medium text-[var(--ink-900)] transition hover:bg-[var(--surface-2)]"
             >
               Vai alla Wiki

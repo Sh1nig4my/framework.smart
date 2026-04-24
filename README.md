@@ -1,4 +1,4 @@
-# SMART Framework v1.3.0
+# SMART Framework v1.4.0
 
 SMART e un framework agentico no-code per progettare, governare e diffondere iniziative formative con processi standardizzati, sicurezza operativa e uso responsabile dell'AI.
 
@@ -18,9 +18,9 @@ Il framework risolve un problema ricorrente: passare da richieste frammentarie a
 Catena canonica:
 
 ```text
-Fase 1: case-schema.json -> case.json
-Fase 2: case.json -> cartella-master/
-Fase 3: cartella-master validata -> output tool (prompt/materiali)
+Step 1: case-schema.json -> case.json
+Step 2: case.json -> cartella-master/
+Step 3: cartella-master validata -> output tool (prompt/materiali)
 ```
 
 SMART mantiene il controllo umano, rende tracciabile il lavoro degli agenti e protegge coerenza tra promessa, contenuti e diffusione.
@@ -29,9 +29,9 @@ SMART mantiene il controllo umano, rende tracciabile il lavoro degli agenti e pr
 
 1. Leggi `HOW_TO.md`.
 2. Consulta `documentation/wizard/README.md`.
-3. Usa `documentation/wizard/case-schema.json` per la Fase 1.
-4. Usa `documentation/wizard/cartella-master-template.md` e `documentation/wizard/cartella-master-schema.md` per la Fase 2.
-5. Usa `documentation/wizard/fase-3-derivazione-pubblicazione.md` per la Fase 3.
+3. Usa `documentation/wizard/case-schema.json` per lo Step 1.
+4. Usa `documentation/wizard/cartella-master-template.md` e `documentation/wizard/cartella-master-schema.md` per lo Step 2.
+5. Usa `documentation/wizard/step-3-derivazione-pubblicazione.md` per lo Step 3.
 
 Per avviare la web app locale:
 
@@ -47,7 +47,7 @@ Apri `http://localhost:3000`.
 Percorso consigliato per evitare errori di scope:
 
 1. leggi questo `README.md` per capire struttura e obiettivi;
-2. apri `prompts/README.md` e scegli il prompt corretto (A-H) in base al tipo di task;
+2. apri `prompts/README.md` e scegli il prompt corretto (A-D) in base al tipo di task;
 3. usa il formato standard:
 
 ```text
@@ -69,9 +69,9 @@ Pagine principali attive:
 
 - `/` homepage strategica;
 - `/wizard` setup wizard (configurazione e installazione ambiente);
-- `/workflow` pagina guida con storia standard e accesso operativo alle fasi;
+- `/workflow` pagina guida con storia standard e accesso operativo agli step;
 - `/wiki` documentazione interna ufficiale;
-- `/create-json-master` compilazione completa della Fase 1 con salvataggio e download JSON.
+- `/create-json-master` compilazione completa dello Step 1 con salvataggio e download JSON.
 
 Pagine legali di supporto:
 

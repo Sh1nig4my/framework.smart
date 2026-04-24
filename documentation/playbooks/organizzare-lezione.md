@@ -49,7 +49,7 @@ Prima della validazione finale verificare:
 ## Riferimenti
 
 - `HOW_TO.md`
-- `wizard/fase-1-intake.md`
-- `wizard/fase-2-generazione.md`
+- `wizard/step-1-intake.md`
+- `wizard/step-2-generazione.md`
 - `wizard/cartella-master-schema.md`
 - `wizard/cartella-master-validation.md`

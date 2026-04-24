@@ -13,7 +13,7 @@ Contesto obbligatorio:
 - usa `wizard/case-schema.json` come schema vincolante;
 - non inventare campi o valori fuori dalle opzioni ammesse;
 - se un'informazione non e abbastanza chiara, segnalala come nodo aperto invece di indovinare.
-- non passare alla Fase 2.
+- non passare allo Step 2.
 
 Obiettivo:
 - leggere il brief seguente;

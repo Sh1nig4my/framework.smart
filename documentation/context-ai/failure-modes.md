@@ -36,6 +36,6 @@ Azione: richiedere output con sezione obbligatoria `assunzioni` e `nodi_aperti`.
 
 ## Errore 6 - Provider non dichiarato o incoerente
 
-Sintomo: output Fase 3 senza `provider_target` o con struttura incompatibile col provider dichiarato.
+Sintomo: output Step 3 senza `provider_target` o con struttura incompatibile col provider dichiarato.
 
 Azione: bloccare rilascio, valorizzare `provider_target` (default `non specificato` se non deciso) e rigenerare output coerente.

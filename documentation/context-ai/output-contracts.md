@@ -2,9 +2,9 @@
 
 ## Scopo
 
-Stabilire il contratto minimo per output AI in Fase 1, Fase 2 e Fase 3.
+Stabilire il contratto minimo per output AI in Step 1, Step 2 e Step 3.
 
-## Contratto Fase 1 - `case.json`
+## Contratto Step 1 - `case.json`
 
 Vincoli:
 
@@ -19,7 +19,7 @@ Sezioni minime:
 3. `nodi_aperti`
 4. `esito_validazione_schema`
 
-## Contratto Fase 2 - cartella master
+## Contratto Step 2 - cartella master
 
 Vincoli:
 
@@ -34,7 +34,7 @@ Sezioni minime:
 3. `nodi_aperti`
 4. `esito_validazione_coerenza`
 
-## Contratto Fase 3 - output tool
+## Contratto Step 3 - output tool
 
 Vincoli:
 
@@ -51,3 +51,26 @@ Sezioni minime:
 4. `fonti_cartella_master`
 5. `vincoli_brand_policy`
 6. `esito_validazione_derivati`
+
+## Struttura output obbligatoria `workflow-output/`
+
+Ogni esecuzione operativa deve salvare artefatti in:
+
+```text
+workflow-output/<project-id>/
+|- status/
+|  |- progress.md
+|  |- latest-changes.md
+|  |- latest-runs.md
+|  |- tools-used.md
+|  `- documentation-state.md
+|- step-1/
+|- step-2/
+`- step-3/
+```
+
+Regole:
+
+- usare sempre naming `step`;
+- mantenere stato separato per progetto/evento;
+- salvare in ogni cartella `step-*` documenti generati, output richiesti, `case.json` e folder master.

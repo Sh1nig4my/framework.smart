@@ -2,11 +2,11 @@
 
 ## Scopo
 
-Definire in modo formale la funzione di `wizard/case-schema.json`, le regole di compilazione e i criteri minimi di validazione della Fase 1.
+Definire in modo formale la funzione di `wizard/case-schema.json`, le regole di compilazione e i criteri minimi di validazione dello Step 1.
 
 ## Cos'e
 
-`case-schema.json` e il file canonico della Fase 1. Definisce la struttura completa della raccolta requisiti e rappresenta il vincolo principale per ogni compilazione assistita o manuale.
+`case-schema.json` e il file canonico dello Step 1. Definisce la struttura completa della raccolta requisiti e rappresenta il vincolo principale per ogni compilazione assistita o manuale.
 
 Il file non contiene un caso. Contiene il modello ammissibile del caso.
 
@@ -47,7 +47,7 @@ Lo schema e utilizzato da:
 2. Compilare `wizard/case-template.json` o file equivalente con stessa struttura.
 3. Selezionare solo valori ammessi dal campo.
 4. Consolidare l'istanza finale in `case.json`.
-5. Eseguire validazione pre-Fase 2.
+5. Eseguire validazione pre-Step 2.
 
 ## Perche usa risposte chiuse
 
@@ -128,7 +128,7 @@ Un'AI puo assistere la compilazione solo in presenza di questi vincoli:
 
 ## Criteri minimi di validazione del caso
 
-Un `case.json` e idoneo alla Fase 2 solo se:
+Un `case.json` e idoneo allo Step 2 solo se:
 
 1. identifica chiaramente tipologia, obiettivo e pubblico;
 2. contiene impostazione didattica e narrativa compatibili;
@@ -136,19 +136,19 @@ Un `case.json` e idoneo alla Fase 2 solo se:
 4. definisce output e ampiezza della derivazione;
 5. non contiene valori fuori schema.
 
-## Collegamento con la Fase 2
+## Collegamento con lo Step 2
 
-La Fase 1 termina quando esiste un `case.json` sufficiente per alimentare la generazione.
+Lo Step 1 termina quando esiste un `case.json` sufficiente per alimentare la generazione.
 
 Da quel punto operativo:
 
 1. il `case.json` diventa la fonte primaria del caso;
-2. `wizard/cartella-master-template.md` + `wizard/cartella-master-schema.md` definiscono la struttura canonica della Fase 2;
+2. `wizard/cartella-master-template.md` + `wizard/cartella-master-schema.md` definiscono la struttura canonica dello Step 2;
 3. il caso viene trasformato in una cartella master modulare;
 4. i derivati vengono prodotti solo a valle della cartella master validata.
 
 ## Riferimenti
 
 - `HOW_TO.md`
-- `wizard/fase-1-intake.md`
-- `wizard/fase-2-generazione.md`
+- `wizard/step-1-intake.md`
+- `wizard/step-2-generazione.md`
