@@ -32,12 +32,12 @@ Usare questo playbook per:
 1. In Fase 1 seleziona con attenzione `beneficiary_context` e `tone_profile`.
 2. Privilegia obiettivi come `orientare`, `aggiornare` o `supportare_decisione` quando appropriato.
 3. Mantieni alta l'enfasi su limiti e uso responsabile di AI.
-4. Nello script master esplicita sempre cosa resta fuori perimetro.
+4. Nella cartella master esplicita sempre cosa resta fuori perimetro.
 5. Evita demo fragili o troppo dipendenti da strumenti specifici.
 
 ## Gate di controllo
 
-Prima della validazione dello script master verificare:
+Prima della validazione della cartella master verificare:
 
 - adeguatezza del registro istituzionale;
 - assenza di formulazioni sensazionalistiche;
@@ -53,12 +53,13 @@ Prima della validazione dello script master verificare:
 
 ## Criteri di successo
 
-- documento madre utilizzabile da stakeholder istituzionali senza interpretazioni implicite;
+- cartella master utilizzabile da stakeholder istituzionali senza interpretazioni implicite;
 - derivati coerenti con policy e tono dell'ente;
 - limiti e responsabilita chiaramente dichiarati.
 
 ## Riferimenti
 
 - `HOW_TO.md`
-- `wizard/script-master-schema.md`
+- `wizard/cartella-master-schema.md`
+- `wizard/cartella-master-validation.md`
 - `context-ai/validation-protocol.md`

@@ -29,7 +29,22 @@ type Fase1SchemaDocument = {
 
 export const fase1Schema = caseSchemaDocument as Fase1SchemaDocument;
 
+const optionLabelOverrides: Record<string, string> = {
+  cartella_master: "Cartella Master",
+  solo_cartella_master: "Solo Cartella Master",
+  cartella_master_e_brief_essenziali: "Cartella Master e Brief Essenziali",
+  cartella_master_e_brief_completi: "Cartella Master e Brief Completi",
+  script_master: "Cartella Master",
+  solo_script_master: "Solo Cartella Master",
+  script_master_e_brief_essenziali: "Cartella Master e Brief Essenziali",
+  script_master_e_brief_completi: "Cartella Master e Brief Completi",
+};
+
 export function optionToLabel(option: string) {
+  if (optionLabelOverrides[option]) {
+    return optionLabelOverrides[option];
+  }
+
   return option
     .split("_")
     .filter(Boolean)

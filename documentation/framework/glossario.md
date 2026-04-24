@@ -20,19 +20,19 @@ Istanza concreta del caso, validata e usata come input ufficiale della Fase 2.
 
 ### Fase 2
 
-Trasformazione del `case.json` in script master (`wizard/script-master.md`).
+Trasformazione del `case.json` in cartella master (`cartella-master/`) strutturata e modulare.
 
-### Script master / Documento madre
+### Cartella master
 
-Documento centrale dell'iniziativa. Governa tono, limiti, promesse, struttura e criteri di derivazione.
+Artefatto centrale dell'iniziativa in Fase 2. Governa tono, limiti, promesse, struttura e criteri di derivazione tramite sezioni e file modulari.
 
 ### Fase 3
 
-Derivazione e pubblicazione controllata di materiali secondari a partire da script master validato.
+Derivazione e pubblicazione controllata di materiali secondari a partire da cartella master validata.
 
 ### Derivati
 
-Slide, email, pagina evento, checklist, brief e altri asset canale-specifici coerenti con documento madre.
+Slide, email, pagina evento, checklist, brief e altri asset canale-specifici coerenti con cartella master.
 
 ### Gate
 

@@ -115,29 +115,29 @@ export const wikiSections: WikiSection[] = [
     chapterId: "architecture",
     title: "Mappa delle fasi",
     intro:
-      "Il framework segue una sequenza canonica a 3 fasi: intake strutturato, documento madre, derivazione pubblicabile. La sequenza non e opzionale: e il meccanismo che preserva coerenza e responsabilita.",
+      "Il framework segue una sequenza canonica a 3 fasi: intake strutturato, cartella master modulare, derivazione pubblicabile. La sequenza non e opzionale: e il meccanismo che preserva coerenza e responsabilita.",
     purpose:
       "Offrire una mappa unica per capire in pochi minuti cosa entra in ogni fase, cosa esce e quali controlli servono prima del passaggio successivo.",
     workflow: [
       "Fase 1: raccogli e normalizza dati con schema ufficiale.",
-      "Fase 2: trasforma il caso validato in documento madre completo.",
-      "Fase 3: crea derivati canale-specifici solo da script master validato.",
+      "Fase 2: trasforma il caso validato in cartella master completa.",
+      "Fase 3: crea derivati canale-specifici solo da cartella master validata.",
       "Esegui gate di fase prima di qualsiasi handoff.",
     ],
     highlights: [
       "Fase 1: case-schema.json -> case.json.",
-      "Fase 2: case.json -> script-master.md.",
-      "Fase 3: script-master validato -> derivati/materiali pubblicabili.",
+      "Fase 2: case.json -> cartella-master/.",
+      "Fase 3: cartella-master validata -> derivati/materiali pubblicabili.",
     ],
     qualityGates: [
       "Nessun salto di fase e nessun bypass dei gate.",
       "Ogni output intermedio deve essere completo e leggibile.",
-      "Ogni derivato finale deve essere semanticamente coerente col documento madre.",
+      "Ogni derivato finale deve essere semanticamente coerente con la cartella master validata.",
     ],
     antiPatterns: [
       "Entrare in Fase 2 con un case.json incompleto.",
       "Produrre output pubblicabili direttamente dalla Fase 1.",
-      "Aggiornare derivati senza allineare prima lo script master.",
+      "Aggiornare derivati senza allineare prima la cartella master.",
     ],
     outputs: [
       "Pipeline prevedibile end-to-end.",
@@ -168,7 +168,7 @@ export const wikiSections: WikiSection[] = [
     highlights: [
       "Case schema prevale sulla struttura Fase 1.",
       "Case JSON prevale sul contenuto del caso.",
-      "Script master governa struttura Fase 2 e base della Fase 3.",
+      "Cartella master governa struttura Fase 2 e base della Fase 3.",
     ],
     qualityGates: [
       "Ogni conflitto risolto deve citare esplicitamente la fonte prevalente.",
@@ -240,18 +240,18 @@ export const wikiSections: WikiSection[] = [
     chapterId: "workflow",
     title: "Guida Fase 2 passo-passo",
     intro:
-      "La Fase 2 costruisce lo script master, documento madre da cui dipendono tutti i materiali successivi. Qui si decide qualita narrativa, confini di promessa e robustezza editoriale.",
+      "La Fase 2 costruisce una cartella master modulare da cui dipendono tutti i materiali successivi. Qui si decide qualita narrativa, confini di promessa e robustezza editoriale.",
     purpose:
-      "Convertire il dato strutturato della Fase 1 in un documento strategico-operativo che possa governare derivati coerenti su canali diversi.",
+      "Convertire il dato strutturato della Fase 1 in una cartella strategico-operativa che possa governare derivati coerenti su canali diversi.",
     workflow: [
       "1) Leggi integralmente `case.json` validato e marca eventuali lacune residue.",
-      "2) Mappa ogni blocco del caso sulle sezioni del template `script-master.md`.",
-      "3) Compila tutte le sezioni in sequenza, includendo limiti, cautele e assunzioni.",
+      "2) Mappa ogni blocco del caso sulle directory e sui file canonici della cartella master.",
+      "3) Compila sezioni core e specialistiche in modo modulare, includendo limiti, cautele e assunzioni.",
       "4) Verifica coerenza narrativa, tono, policy e aderenza al pubblico target.",
       "5) Esegui gate Fase 2 e prepara handoff con evidenze tracciabili per Fase 3.",
     ],
     highlights: [
-      "Mappa `case.json` sulle sezioni del template script master.",
+      "Mappa `case.json` sulla struttura canonica della cartella master.",
       "Esplicita assunzioni, nodi aperti, limiti e cautele.",
       "Supera gate Fase 2 prima di ogni derivazione.",
     ],
@@ -263,17 +263,18 @@ export const wikiSections: WikiSection[] = [
     antiPatterns: [
       "Scrivere testo generico che non guida scelte operative.",
       "Saltare il controllo su rischi, limiti o policy del caso.",
-      "Iniziare derivazione prima della validazione finale del documento madre.",
+      "Iniziare derivazione prima della validazione finale della cartella master.",
     ],
     outputs: [
-      "Script master pronto per derivazioni multi-canale.",
+      "Cartella master pronta per derivazioni multi-canale.",
       "Registro chiaro di assunzioni e nodi aperti.",
       "Riduzione degli errori semantici in Fase 3.",
     ],
     references: [
       "documentation/wizard/fase-2-generazione.md",
-      "documentation/wizard/script-master.md",
-      "documentation/wizard/script-master-schema.md",
+      "documentation/wizard/cartella-master-template.md",
+      "documentation/wizard/cartella-master-schema.md",
+      "documentation/wizard/cartella-master-validation.md",
     ],
     related: ["phase-three-guide", "quality-gates"],
   },
@@ -282,12 +283,12 @@ export const wikiSections: WikiSection[] = [
     chapterId: "workflow",
     title: "Guida Fase 3 passo-passo",
     intro:
-      "La Fase 3 deriva e prepara i materiali pubblicabili mantenendo coerenza piena con script master validato. E la fase in cui forma e canale cambiano, ma il significato deve restare stabile.",
+      "La Fase 3 deriva e prepara i materiali pubblicabili mantenendo coerenza piena con cartella master validata. E la fase in cui forma e canale cambiano, ma il significato deve restare stabile.",
     purpose:
       "Produrre asset finali efficaci per ciascun canale, preservando contenuto, tono, limiti e promessa definiti nella fase strategica.",
     workflow: [
       "1) Definisci elenco derivati, canali target e obiettivo di ciascun output.",
-      "2) Deriva ogni contenuto esclusivamente dallo script master validato.",
+      "2) Deriva ogni contenuto esclusivamente dalla cartella master validata.",
       "3) Adatta struttura e lunghezza al canale senza cambiare significato.",
       "4) Applica checklist pre-pubblicazione su coerenza, promesse e policy.",
       "5) Completa revisione finale umana prima del rilascio esterno.",
@@ -298,12 +299,12 @@ export const wikiSections: WikiSection[] = [
       "Esegui controllo pre-pubblicazione su ogni output.",
     ],
     qualityGates: [
-      "Coerenza semantica completa con documento madre.",
+      "Coerenza semantica completa con cartella master validata.",
       "Assenza di nuove regole, promesse o claim non supportati.",
       "Revisione umana conclusiva con esito esplicito.",
     ],
     antiPatterns: [
-      "Derivare da appunti secondari invece che dal documento madre.",
+      "Derivare da appunti secondari invece che dalla cartella master.",
       "Semplificare troppo il messaggio fino a cambiarne il senso.",
       "Pubblicare output non verificati per urgenza di canale.",
     ],
@@ -448,7 +449,7 @@ export const wikiSections: WikiSection[] = [
     ],
     highlights: [
       "Gate Fase 1: validazione schema e coerenza caso.",
-      "Gate Fase 2: validazione documento madre.",
+      "Gate Fase 2: validazione cartella master.",
       "Gate Fase 3: validazione derivati pre-pubblicazione.",
     ],
     qualityGates: [
@@ -485,13 +486,13 @@ export const wikiSections: WikiSection[] = [
     workflow: [
       "Seleziona lo scenario piu vicino dal catalogo playbook.",
       "Identifica personalizzazioni di tono, profondita e canali.",
-      "Applica personalizzazioni nello script master, non direttamente nei derivati.",
+      "Applica personalizzazioni nella cartella master, non direttamente nei derivati.",
       "Valida risultati con gli stessi gate standard delle tre fasi.",
     ],
     highlights: [
       "Scegli tono e profondita in base al pubblico reale.",
       "Evita promessa eccessiva e claim non verificabili.",
-      "Mantieni tracciabilita dal documento madre ai derivati.",
+      "Mantieni tracciabilita dalla cartella master ai derivati.",
     ],
     qualityGates: [
       "Scenario scelto coerente con obiettivo e stakeholder.",

@@ -2,7 +2,7 @@
 
 ## Scopo
 
-Guidare l'avvio di una nuova iniziativa divulgativa mediante applicazione completa del framework SMART, garantendo coerenza tra requisiti, documento madre e derivati.
+Guidare l'avvio di una nuova iniziativa divulgativa mediante applicazione completa del framework SMART, garantendo coerenza tra requisiti, cartella master e derivati.
 
 ## Ambito di applicazione
 
@@ -22,7 +22,7 @@ Questo playbook e indicato quando:
 ## Output attesi
 
 - `case.json` validato;
-- script master completo;
+- cartella master completa;
 - elenco derivati prioritari autorizzati.
 
 ## Procedura operativa
@@ -32,7 +32,7 @@ Questo playbook e indicato quando:
 3. Definisci l'obiettivo prevalente del progetto.
 4. Compila la Fase 1 partendo da `wizard/case-schema.json`.
 5. Produci un `case.json` coerente.
-6. Genera lo script master in Fase 2.
+6. Genera la cartella master in Fase 2.
 7. Deriva solo i materiali davvero necessari.
 
 ## Gate di controllo
@@ -45,7 +45,7 @@ Prima della Fase 2 verificare:
 
 Prima dei derivati verificare:
 
-- script master completo;
+- cartella master completa;
 - presenza di assunzioni e nodi aperti;
 - coerenza tra promessa e contenuti.
 
@@ -58,7 +58,7 @@ Prima dei derivati verificare:
 
 ## Rischi ricorrenti
 
-- avvio diretto dei derivati senza documento madre validato;
+- avvio diretto dei derivati senza cartella master validata;
 - sovraccarico contenutistico non coerente con obiettivo e pubblico;
 - uso di linguaggio promozionale non supportato da evidenze.
 
@@ -67,3 +67,6 @@ Prima dei derivati verificare:
 - `HOW_TO.md`
 - `wizard/fase-1-intake.md`
 - `wizard/fase-2-generazione.md`
+- `wizard/cartella-master-template.md`
+- `wizard/cartella-master-validation.md`
+- `context-ai/prompt-templates/case-json-a-cartella-master.md`

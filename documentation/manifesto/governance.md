@@ -43,7 +43,7 @@ Ogni release documentale richiede:
 
 ## Stabilita attesa
 
-- `case-schema.json` e `script-master.md` cambiano raramente e solo per motivi forti;
+- `case-schema.json`, `cartella-master-template.md` e `cartella-master-schema.md` cambiano raramente e solo per motivi forti;
 - il glossario va mantenuto stabile;
 - i playbook possono evolvere piu facilmente, ma senza contraddire il metodo;
 - il contesto AI puo essere rifinito, ma deve restare minimale e ordinato.

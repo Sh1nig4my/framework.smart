@@ -1,4 +1,4 @@
-# SMART Framework v1.0.0
+# SMART Framework v1.2.0
 
 SMART e un framework agentico no-code per progettare, governare e diffondere iniziative formative con processi standardizzati, sicurezza operativa e uso responsabile dell'AI.
 
@@ -19,8 +19,8 @@ Catena canonica:
 
 ```text
 Fase 1: case-schema.json -> case.json
-Fase 2: case.json -> script-master.md
-Fase 3: script-master validato -> materiali derivati
+Fase 2: case.json -> cartella-master/
+Fase 3: cartella-master validata -> materiali derivati
 ```
 
 SMART mantiene il controllo umano, rende tracciabile il lavoro degli agenti e protegge coerenza tra promessa, contenuti e diffusione.
@@ -30,7 +30,7 @@ SMART mantiene il controllo umano, rende tracciabile il lavoro degli agenti e pr
 1. Leggi `HOW_TO.md`.
 2. Consulta `documentation/wizard/README.md`.
 3. Usa `documentation/wizard/case-schema.json` per la Fase 1.
-4. Usa `documentation/wizard/script-master.md` per la Fase 2.
+4. Usa `documentation/wizard/cartella-master-template.md` e `documentation/wizard/cartella-master-schema.md` per la Fase 2.
 5. Usa `documentation/wizard/fase-3-derivazione-pubblicazione.md` per la Fase 3.
 
 Per avviare la web app locale:

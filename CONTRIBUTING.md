@@ -10,24 +10,24 @@ Entrypoint ufficiale del progetto: `README.md` in root.
 
 Ogni contributo deve rispettare gli invarianti canonici:
 
-- `wizard/case-schema.json` resta source of truth della Fase 1;
-- `wizard/script-master.md` resta source of truth della Fase 2;
-- `wizard/fase-3-derivazione-pubblicazione.md` governa la Fase 3;
-- lo script master resta documento madre per ogni derivazione;
+- `documentation/wizard/case-schema.json` resta source of truth della Fase 1;
+- `documentation/wizard/cartella-master-template.md` + `documentation/wizard/cartella-master-schema.md` restano source of truth della Fase 2;
+- `documentation/wizard/fase-3-derivazione-pubblicazione.md` governa la Fase 3;
+- la cartella master resta artefatto centrale per ogni derivazione;
 - SMART integra framework documentale e web app operativa in un unico sistema.
 
 ## Ambiti di modifica
 
-- `manifesto/`: visione, principi, etica, policy, governance.
-- `framework/`: metodologia, modello operativo, processo, ruoli, glossario.
-- `wizard/`: processo operativo Fase 1/Fase 2/Fase 3 e documentazione di supporto.
-- `playbooks/`: applicazioni pratiche del metodo.
-- `context-ai/`: contesto AI, regole operative, protocolli di validazione, template.
+- `documentation/manifesto/`: visione, principi, etica, policy, governance.
+- `documentation/framework/`: metodologia, modello operativo, processo, ruoli, glossario.
+- `documentation/wizard/`: processo operativo Fase 1/Fase 2/Fase 3 e documentazione di supporto.
+- `documentation/playbooks/`: applicazioni pratiche del metodo.
+- `documentation/context-ai/`: contesto AI, regole operative, protocolli di validazione, template.
 
 ## Standard editoriali obbligatori
 
 - tono formale, professionale, non promozionale;
-- lessico coerente con `framework/glossario.md`;
+- lessico coerente con `documentation/framework/glossario.md`;
 - sezioni tracciabili e prive di ridondanza;
 - assenza di riferimenti tecnici non pertinenti al nucleo documentale;
 - priorita a pochi documenti robusti rispetto a molti documenti deboli.
@@ -44,12 +44,12 @@ Ogni contributo deve rispettare gli invarianti canonici:
 
 ## Regole specifiche per contesto AI
 
-Contributi in `context-ai/` devono:
+Contributi in `documentation/context-ai/` devono:
 
 - evitare prompt generici non governati;
 - definire output attesi, assunzioni e criteri di fallimento;
 - includere vincoli espliciti contro invenzioni fuori schema;
-- mantenere piena coerenza con `wizard/case-schema.json` e `wizard/script-master.md`.
+- mantenere piena coerenza con `documentation/wizard/case-schema.json`, `documentation/wizard/cartella-master-template.md` e `documentation/wizard/cartella-master-schema.md`.
 
 ## Contributi non ammessi
 

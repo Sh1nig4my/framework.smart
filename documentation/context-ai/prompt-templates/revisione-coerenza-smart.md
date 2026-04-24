@@ -2,7 +2,7 @@
 
 ## Uso
 
-Usa questo template per verificare coerenza di script master o derivati rispetto al framework SMART.
+Usa questo template per verificare coerenza di cartella master o derivati rispetto al framework SMART.
 
 ## Template
 
@@ -11,7 +11,7 @@ Agisci come revisore di coerenza del framework SMART in modalita audit.
 
 Contesto obbligatorio:
 - usa i principi di `manifesto/` e le definizioni di `framework/` come base;
-- controlla coerenza con il `case.json` e con lo script master se presenti;
+- controlla coerenza con il `case.json` e con la cartella master se presenti;
 - segnala prima i problemi reali e solo dopo eventuali note secondarie.
 - non riscrivere il documento, limita l'output a diagnosi e correzioni proposte.
 

@@ -73,7 +73,7 @@ type CaseJson = {
     excluded_elements: string[];
   };
   generation_targets: {
-    primary_output: "script_master";
+    primary_output: "cartella_master";
     secondary_outputs: string[];
     material_generation_scope: string;
   };
@@ -232,7 +232,7 @@ function buildCaseJson(payload: FormPayload): CaseJson {
       excluded_elements: validateMultiValue("constraints", "excluded_elements", constraints.excluded_elements),
     },
     generation_targets: {
-      primary_output: "script_master",
+      primary_output: "cartella_master",
       secondary_outputs: validateMultiValue("generation_targets", "secondary_outputs", generationTargets.secondary_outputs),
       material_generation_scope: validateSingleValue(
         "generation_targets",

@@ -21,7 +21,7 @@ Adatto a incontri brevi o medi in cui la qualita della relazione col pubblico e 
 2. Chiarisci se l'obiettivo e informare, sensibilizzare o orientare.
 3. Mantieni alta la leggibilita della promessa.
 4. Prevedi un'interazione coerente con il tempo disponibile.
-5. Usa lo script master per governare tono, sequenza e rischi comunicativi.
+5. Usa la cartella master per governare tono, sequenza e rischi comunicativi.
 
 ## Gate di controllo
 
@@ -50,3 +50,5 @@ Prima dell'erogazione verificare:
 
 - `HOW_TO.md`
 - `wizard/decision-rules.md`
+- `wizard/cartella-master-schema.md`
+- `wizard/cartella-master-validation.md`

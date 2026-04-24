@@ -495,7 +495,7 @@
           "required": true,
           "multiple": false,
           "options": [
-            "script_master"
+            "cartella_master"
           ]
         },
         {
@@ -521,9 +521,9 @@
           "required": true,
           "multiple": false,
           "options": [
-            "solo_script_master",
-            "script_master_e_brief_essenziali",
-            "script_master_e_brief_completi"
+            "solo_cartella_master",
+            "cartella_master_e_brief_essenziali",
+            "cartella_master_e_brief_completi"
           ]
         }
       ]

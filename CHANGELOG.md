@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.2.0] - 2026-04-24
+
+Refactor breaking della Fase 2: passaggio da documento unico a cartella master generativa modulare.
+
+- aggiornata la catena canonica in tutta la documentazione: `case.json -> cartella-master/`;
+- rimossi artefatti legacy Fase 2 `wizard/script-master.md` e `wizard/script-master-schema.md`;
+- introdotti `wizard/cartella-master-template.md`, `wizard/cartella-master-schema.md`, `wizard/cartella-master-validation.md`;
+- riallineati framework, manifesto, wizard, context-ai e playbooks al nuovo modello Fase 2/Fase 3;
+- aggiornati prompt template AI per generazione e derivazione da cartella master;
+- aggiornati root docs (`README.md`, `HOW_TO.md`, `CONTRIBUTING.md`) e prompt workflow operativo.
+
 ## [1.1.0] - 2026-04-24
 
 Refactor strutturale pre-release con consolidamento metodologia agentica, riallineamento route e revisione profonda documentazione.

@@ -21,7 +21,7 @@ Adatto a iniziative di durata breve o media con obiettivo prevalente di orientam
 2. Definisci un obiettivo principale unico.
 3. Mantieni il focus su pochi macro temi ben ordinati.
 4. Scegli una direzione narrativa leggibile.
-5. Genera uno script master con agenda chiara e pochi blocchi robusti.
+5. Compila `06_seminars/` e `02_event_structure/` nella cartella master con agenda chiara e pochi blocchi robusti.
 
 ## Gate di controllo
 
@@ -50,3 +50,5 @@ Verificare prima dell'erogazione:
 
 - `HOW_TO.md`
 - `wizard/scenari.md`
+- `wizard/cartella-master-schema.md`
+- `wizard/cartella-master-validation.md`

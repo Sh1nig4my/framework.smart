@@ -28,14 +28,14 @@ documentation/
 
 ```text
 Fase 1: case-schema.json -> case.json
-Fase 2: case.json -> script-master.md
-Fase 3: script-master validato -> derivati/materiali pubblicabili
+Fase 2: case.json -> cartella-master/
+Fase 3: cartella-master validata -> derivati/materiali pubblicabili
 ```
 
 ## Artefatti canonici
 
 - `wizard/case-schema.json` (source of truth Fase 1)
-- `wizard/script-master.md` (source of truth Fase 2)
+- `wizard/cartella-master-template.md` + `wizard/cartella-master-schema.md` (source of truth Fase 2)
 - `wizard/fase-3-derivazione-pubblicazione.md` (procedura canonica Fase 3)
 
 ## Protocollo prompt hub (allineamento operativo)

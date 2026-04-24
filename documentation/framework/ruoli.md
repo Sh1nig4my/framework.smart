@@ -17,13 +17,13 @@ Definire ruoli e responsabilita per mantenere il framework affidabile in tutte l
 
 ### Editor Strategico (Fase 2 owner)
 
-- produce/valida script master;
+- produce/valida cartella master;
 - controlla coerenza narrativa, limiti e promesse.
 
 ### Delivery Editor (Fase 3 owner)
 
 - crea e valida derivati;
-- garantisce coerenza tra canali e aderenza a documento madre.
+- garantisce coerenza tra canali e aderenza a cartella master.
 
 ### Revisore Qualita
 

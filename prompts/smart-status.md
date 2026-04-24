@@ -1,4 +1,4 @@
-# Prompt E: Framework Status
+# Prompt E: Smart Status
 
 ## Scopo
 

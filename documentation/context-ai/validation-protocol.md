@@ -25,14 +25,14 @@ Verificare:
 Verificare:
 
 1. `case.json` validato;
-2. disponibilita template/script schema;
+2. disponibilita template/schema cartella master;
 3. assenza blocchi aperti non gestiti.
 
 ## Gate D - Post-Fase 2
 
 Verificare:
 
-1. completezza script master;
+1. completezza cartella master;
 2. coerenza con caso;
 3. limiti/cautele espliciti;
 4. handoff pronto alla Fase 3.
@@ -41,7 +41,7 @@ Verificare:
 
 Verificare:
 
-1. script master validato;
+1. cartella master validata;
 2. elenco derivati richiesto e motivato;
 3. conformita a policy SMART.
 
@@ -49,7 +49,7 @@ Verificare:
 
 Verificare:
 
-1. allineamento derivati al documento madre;
+1. allineamento derivati alla cartella master;
 2. coerenza promessa/tono/pubblico;
 3. assenza di nuove affermazioni non supportate;
 4. idoneita pre-pubblicazione.

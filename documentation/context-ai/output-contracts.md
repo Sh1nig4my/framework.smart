@@ -19,17 +19,17 @@ Sezioni minime:
 3. `nodi_aperti`
 4. `esito_validazione_schema`
 
-## Contratto Fase 2 - script master
+## Contratto Fase 2 - cartella master
 
 Vincoli:
 
-- struttura aderente a `wizard/script-master.md`;
+- struttura aderente a `wizard/cartella-master-template.md`;
 - tracciabilita al `case.json`;
 - limiti e cautele espliciti.
 
 Sezioni minime:
 
-1. `script_master`
+1. `cartella_master`
 2. `assunzioni`
 3. `nodi_aperti`
 4. `esito_validazione_coerenza`
@@ -38,13 +38,13 @@ Sezioni minime:
 
 Vincoli:
 
-- origine esplicita da script master validato;
+- origine esplicita da cartella master validata;
 - coerenza con tono, pubblico, promessa e limiti;
 - assenza di nuove affermazioni non supportate.
 
 Sezioni minime:
 
 1. `derivati`
-2. `fonti_script_master`
+2. `fonti_cartella_master`
 3. `limiti_pubblicazione`
 4. `esito_validazione_derivati`

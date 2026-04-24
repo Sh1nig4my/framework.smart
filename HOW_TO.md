@@ -1,4 +1,4 @@
-# HOW TO - Uso operativo SMART v1.0.0
+# HOW TO - Uso operativo SMART v1.2.0
 
 ## Scopo
 
@@ -14,8 +14,8 @@ Guida pratica per applicare SMART in modo conforme, dalla preparazione del conte
 
 ```text
 Fase 1: case-schema.json -> case.json
-Fase 2: case.json -> script-master.md
-Fase 3: script-master validato -> derivati/materiali pubblicabili
+Fase 2: case.json -> cartella-master/
+Fase 3: cartella-master validata -> derivati/materiali pubblicabili
 ```
 
 ## Prerequisiti minimi
@@ -34,7 +34,8 @@ Condividi con team/agente almeno:
 - `README.md`
 - `HOW_TO.md`
 - `documentation/wizard/case-schema.json`
-- `documentation/wizard/script-master.md`
+- `documentation/wizard/cartella-master-template.md`
+- `documentation/wizard/cartella-master-schema.md`
 - `documentation/wizard/fase-3-derivazione-pubblicazione.md`
 - `documentation/context-ai/README.md`
 
@@ -47,12 +48,12 @@ Condividi con team/agente almeno:
 ### Passo 3 - Fase 2
 
 1. usa `case.json` come fonte primaria;
-2. compila script master completo;
+2. compila la cartella master completa;
 3. valida coerenza, limiti e cautele.
 
 ### Passo 4 - Fase 3
 
-1. deriva materiali solo dallo script master validato;
+1. deriva materiali solo dalla cartella master validata;
 2. valida ogni derivato prima della pubblicazione;
 3. blocca output con promesse non supportate.
 

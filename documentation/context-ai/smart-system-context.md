@@ -12,17 +12,17 @@ SMART è un framework documentale open source per progettare iniziative formativ
 
 ```text
 Fase 1: case-schema.json -> case.json
-Fase 2: case.json -> script-master.md
-Fase 3: script-master validato -> materiali derivati
+Fase 2: case.json -> cartella-master/
+Fase 3: cartella-master validata -> materiali derivati
 ```
 
 ## Fatti da trattare come stabili
 
 - `wizard/case-schema.json` e la source of truth della Fase 1;
-- `wizard/script-master.md` e la source of truth della Fase 2;
+- `wizard/cartella-master-template.md` + `wizard/cartella-master-schema.md` sono la source of truth della Fase 2;
 - `wizard/fase-3-derivazione-pubblicazione.md` governa la Fase 3;
-- lo script master e il documento madre;
-- i derivati vengono dopo e dipendono dallo script master;
+- la cartella master e l'artefatto centrale della Fase 2;
+- i derivati vengono dopo e dipendono dalla cartella master;
 - il repository attivo non deve essere contaminato dai materiali storici.
 
 ## Regime di generazione consentito
@@ -31,7 +31,7 @@ Un agente AI puo operare solo in questo ordine:
 
 1. validazione input del caso;
 2. generazione o revisione `case.json`;
-3. generazione o revisione script master;
+3. generazione o revisione cartella master;
 4. derivazione e controllo output secondari (Fase 3).
 
 Ogni salto di fase e considerato non conforme.
@@ -44,8 +44,7 @@ Usa in modo stabile questi termini:
 - case schema
 - case template
 - `case.json`
-- script master
-- documento madre
+- cartella master
 - materiali derivati
 - contesto AI
 
@@ -54,8 +53,8 @@ Usa in modo stabile questi termini:
 L'AI deve aiutare a:
 
 - compilare il caso senza inventare;
-- generare lo script master in modo coerente;
-- derivare materiali allineati al documento madre;
+- generare la cartella master in modo coerente;
+- derivare materiali allineati alla cartella master;
 - segnalare ambiguita, limiti e nodi aperti.
 
 ## Output minimi obbligatori nelle risposte AI
