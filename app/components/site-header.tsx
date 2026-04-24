@@ -3,7 +3,8 @@ import Link from "next/link";
 const navigation = [
   { href: "/", label: "Home" },
   { href: "/wizard", label: "Wizard" },
-  { href: "/fase-1-json", label: "Fase 1 JSON" },
+  { href: "/wiki", label: "Wiki" },
+  { href: "/download", label: "Download" },
 ];
 
 export function SiteHeader() {

@@ -1,14 +1,17 @@
 # Documentation SMART
 
-Questa cartella contiene la documentazione estesa del framework SMART.
+Questa cartella e la source of truth documentale del framework SMART.
 
-Entrypoint ufficiale del progetto: `../README.md`.
+Entrypoint di progetto: `../README.md`.
 
-## Ruolo di questa cartella
+## Obiettivo
 
-- dettaglia metodo, manifesto, wizard e contesto AI;
-- supporta contribuzione e manutenzione del framework;
-- mantiene la source of truth documentale per processi e artefatti.
+Definire in modo chiaro e verificabile:
+
+- principi e governance del framework;
+- architettura metodologica e workflow;
+- regole operative per persone e agenti AI;
+- procedure di fase e derivazione controllata.
 
 ## Mappa principale
 
@@ -21,34 +24,52 @@ documentation/
 `- context-ai/
 ```
 
-## Percorso consigliato
+## Workflow canonico SMART
 
-1. `../README.md`
-2. `../HOW_TO.md`
-3. `wizard/README.md`
-4. `wizard/case-schema.md`
-5. `wizard/script-master-schema.md`
-6. `context-ai/README.md`
+```text
+Fase 1: case-schema.json -> case.json
+Fase 2: case.json -> script-master.md
+Fase 3: script-master validato -> derivati/materiali pubblicabili
+```
 
 ## Artefatti canonici
 
 - `wizard/case-schema.json` (source of truth Fase 1)
 - `wizard/script-master.md` (source of truth Fase 2)
+- `wizard/fase-3-derivazione-pubblicazione.md` (procedura canonica Fase 3)
+
+## Protocollo prompt hub (allineamento operativo)
+
+Per operazioni agentiche, il riferimento e `prompts/README.md` con indice A-H.
+
+Regole per categoria:
+
+- Alignment e Evolution: possono aggiornare anche `documentation/` quando necessario per coerenza canonica.
+- Maintenance e Workflow: non possono modificare `documentation/` in nessun caso.
+
+## Ordine di lettura consigliato
+
+1. `../README.md`
+2. `../HOW_TO.md`
+3. `framework/process-overview.md`
+4. `wizard/README.md`
+5. `context-ai/README.md`
 
 ## Privacy e dati (coerenza con app)
 
-Stato corrente del progetto:
+Stato corrente:
 
-- nessun database attivo;
+- database attivo sul flusso operativo `/download`;
+- salvataggio richiesta e `case.json` per manutenzione e miglioramento framework;
+- blocco duplicati su stessa email + stesso JSON;
 - nessun analytics o profilazione;
 - solo storage tecnico locale per consenso cookie necessari.
 
-Evoluzione prevista:
+## Criterio di qualita documentale
 
-- eventuale raccolta minima di dati tecnici d'uso per manutenzione del framework;
-- nessuna vendita dei dati;
-- aggiornamento preventivo di policy e consenso prima dell'attivazione.
+La documentazione e conforme quando:
 
-## Versione corrente
-
-`v1.0.0`
+1. non contiene conflitti tra file canonici;
+2. mantiene integra la catena Fase 1 -> Fase 2 -> Fase 3;
+3. usa terminologia coerente con `framework/glossario.md`;
+4. resta leggibile e operativa per umani e agenti.

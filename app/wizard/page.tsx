@@ -4,31 +4,16 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Wizard",
   description:
-    "Guida operativa SMART: passaggi strutturati dalla Fase 1 alla derivazione dei materiali con controlli di coerenza e sicurezza.",
-  keywords: ["wizard smart", "fase 1", "script master", "framework operativo"],
+    "Wizard SMART: orientamento, configurazione ambiente e strumenti consigliati per iniziare a lavorare con il framework.",
 };
 
-const steps = [
-  {
-    title: "1. Definisci il caso",
-    body: "Parti da case-schema.json e raccogli i requisiti senza inventare campi o scorciatoie fuori standard.",
-  },
-  {
-    title: "2. Valida il case.json",
-    body: "Controlla obiettivo, pubblico, formato, limiti e conflitti logici prima di passare oltre.",
-  },
-  {
-    title: "3. Genera lo script master",
-    body: "Compila script-master.md usando il case.json come fonte primaria e dichiarando assunzioni o nodi aperti.",
-  },
-  {
-    title: "4. Applica i gate",
-    body: "Verifica coerenza, sicurezza comunicativa e aderenza al framework prima della derivazione dei materiali.",
-  },
-  {
-    title: "5. Deriva gli output",
-    body: "Produci slide, email, pagina evento e asset secondari solo dallo script master validato.",
-  },
+const softwareChecklist = [
+  "Node.js LTS + npm",
+  "Git (ForkGit consigliato per avere maggiore gestione a livello grafico)",
+  "Editor codice (WebStorm consigliato)",
+  "Accesso a MongoDBAtlas",
+  "Browser moderno aggiornato (consigliato Brave)",
+  "IDE agentico: OpenCode consigliato, con possibilita di usare agenti open anche senza abbonamento provider",
 ];
 
 export default function WizardPage() {
@@ -36,50 +21,82 @@ export default function WizardPage() {
     <div className="page-wrap">
       <div className="page-glow" />
       <section className="page-container space-y-10">
-        <header className="space-y-4">
-          <p className="text-xs font-semibold tracking-[0.22em] text-[var(--brand-700)] uppercase">
-            Wizard SMART
-          </p>
-          <h1 className="max-w-3xl text-4xl leading-tight font-semibold md:text-5xl">
-            Procedura guidata per usare il framework in modo affidabile
+        <header className="rounded-3xl border border-[var(--line)] bg-white/92 p-8 shadow-[0_20px_60px_-30px_rgba(7,21,35,0.45)] md:p-12">
+          <p className="text-xs font-semibold tracking-[0.22em] text-[var(--brand-700)] uppercase">Wizard SMART</p>
+          <h1 className="mt-3 max-w-4xl text-4xl leading-tight font-semibold md:text-5xl">
+            Il punto di partenza per attivare l&apos;ecosistema SMART nel modo giusto
           </h1>
-          <p className="max-w-3xl text-base leading-relaxed text-[var(--ink-700)]">
-            Questa pagina traduce il metodo SMART in passaggi operativi chiari,
-            adatti sia a team umani sia a workflow con agenti AI.
+          <p className="mt-4 max-w-3xl text-base leading-relaxed text-[var(--ink-700)] md:text-lg">
+            Questa pagina ti orienta su cosa serve davvero per iniziare: strumenti, ambiente e metodo operativo.
+            L&apos;obiettivo e metterti nelle condizioni di lavorare in modo ordinato, evitando setup improvvisati che poi
+            rallentano il workflow.
           </p>
+          <div className="mt-6 flex flex-wrap gap-3">
+            <Link href="/wiki#wizard-setup" className="sf-button-primary">
+              Apri guida completa in Wiki
+            </Link>
+            <Link href="/download" className="sf-button-secondary">
+              Vai a Download
+            </Link>
+          </div>
         </header>
 
-        <div className="grid gap-4 md:grid-cols-2">
-          {steps.map((step) => (
-            <article
-              key={step.title}
-              className="rounded-2xl border border-[var(--line)] bg-white/90 p-6"
-            >
-              <h2 className="text-lg font-semibold text-[var(--ink-900)]">{step.title}</h2>
-              <p className="mt-2 text-sm leading-relaxed text-[var(--ink-700)]">
-                {step.body}
-              </p>
-            </article>
-          ))}
-        </div>
+        <section className="grid gap-5 lg:grid-cols-[1.2fr_1fr]">
+          <article className="rounded-2xl border border-[var(--line)] bg-white p-6">
+            <p className="text-xs font-semibold tracking-[0.16em] text-[var(--ink-600)] uppercase">Come operare con SMART</p>
+            <h2 className="mt-2 text-2xl font-semibold text-[var(--ink-900)]">Prima stabilita, poi velocita</h2>
+            <p className="mt-3 text-sm leading-relaxed text-[var(--ink-700)] md:text-base">
+              SMART funziona meglio quando il team parte con un contesto chiaro: ambiente allineato, strumenti
+              condivisi e regole comuni. Dopo questa fase di setup, tutta la parte operativa viene guidata in dettaglio
+              dalla Wiki interna, con percorso completo fase per fase.
+            </p>
+            <p className="mt-3 text-sm leading-relaxed text-[var(--ink-700)] md:text-base">
+              In pratica: questa pagina ti aiuta ad accendere il motore; la Wiki ti guida nella guida avanzata del
+              framework; Download ti permette di avviare subito la compilazione della Fase 1.
+            </p>
+          </article>
 
-        <section className="rounded-2xl border border-[var(--line)] bg-[var(--surface-1)] p-6">
-          <h2 className="text-xl font-semibold">Risorse collegate</h2>
-          <div className="mt-4 flex flex-wrap gap-3">
+          <article className="rounded-2xl border border-[var(--line)] bg-[var(--surface-1)] p-6">
+            <p className="text-xs font-semibold tracking-[0.16em] text-[var(--ink-600)] uppercase">Setup rapido</p>
+            <h2 className="mt-2 text-xl font-semibold text-[var(--ink-900)]">Verifica minima consigliata</h2>
+            <ul className="mt-3 space-y-2 text-sm leading-relaxed text-[var(--ink-700)]">
+              <li>- Installa dipendenze: `npm install`</li>
+              <li>- Avvia locale: `npm run dev`</li>
+              <li>- Controllo qualita: `npm run lint`</li>
+              <li>- Controllo build: `npm run build`</li>
+            </ul>
+          </article>
+        </section>
+
+        <section className="rounded-2xl border border-[var(--line)] bg-white p-6 md:p-8">
+          <p className="text-xs font-semibold tracking-[0.16em] text-[var(--ink-600)] uppercase">Checklist software</p>
+          <h2 className="mt-2 text-2xl font-semibold text-[var(--ink-900)]">Cosa deve essere pronto prima di partire</h2>
+          <ul className="mt-4 space-y-3 text-sm leading-relaxed text-[var(--ink-700)] md:text-base">
+            {softwareChecklist.map((item) => (
+              <li key={item}>- {item}</li>
+            ))}
+          </ul>
+        </section>
+
+        <section className="rounded-2xl border border-[var(--line)] bg-[var(--ink-900)] p-6 text-white md:p-8">
+          <h2 className="text-2xl font-semibold">Passo successivo consigliato</h2>
+          <p className="mt-3 max-w-3xl text-sm leading-relaxed text-white/80 md:text-base">
+            Se l&apos;ambiente e pronto, apri la Wiki per il wizard operativo dettagliato e la guida completa al workflow.
+            Quando vuoi iniziare subito con dati reali, passa a Download e avvia la Fase 1.
+          </p>
+          <div className="mt-5 flex flex-wrap gap-3">
             <Link
-              href="/fase-1-json"
-              className="rounded-full bg-[var(--ink-900)] px-5 py-2.5 text-sm font-medium text-white transition hover:bg-[var(--ink-700)]"
+              href="/wiki#phase-one-guide"
+              className="rounded-full bg-white px-5 py-2.5 text-sm font-medium text-[var(--ink-900)] transition hover:bg-[var(--surface-2)]"
             >
-              Fase 1 JSON
+              Vai alla Wiki
             </Link>
-            <a
-              href="https://github.com/Sh1nig4my/framework.smart/blob/main/HOW_TO.md"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-full border border-[var(--line-strong)] bg-white px-5 py-2.5 text-sm font-medium text-[var(--ink-800)] transition hover:border-[var(--ink-900)]"
+            <Link
+              href="/download"
+              className="rounded-full border border-white/35 px-5 py-2.5 text-sm font-medium text-white transition hover:border-white"
             >
-              HOW_TO completo
-            </a>
+              Apri Download
+            </Link>
           </div>
         </section>
       </section>

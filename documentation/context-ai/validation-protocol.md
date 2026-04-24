@@ -2,56 +2,54 @@
 
 ## Scopo
 
-Definire i gate di controllo da applicare prima di accettare output prodotti o assistiti da AI.
+Definire gate di controllo da applicare prima e dopo ogni fase SMART.
 
-## Gate A - Pre-generazione `case.json`
-
-Verificare:
-
-1. presenza del case schema canonico;
-2. completezza minima delle informazioni di input;
-3. chiarezza del perimetro della richiesta.
-
-Se il gate fallisce, bloccare la generazione.
-
-## Gate B - Post-generazione `case.json`
+## Gate A - Pre-Fase 1
 
 Verificare:
 
-1. conformita dei campi al modello;
-2. conformita dei valori alle opzioni;
-3. assenza di conflitti logici principali;
-4. presenza di nodi aperti dichiarati.
+1. disponibilita schema canonico;
+2. completezza minima input;
+3. perimetro richiesta chiaro.
 
-## Gate C - Pre-generazione script master
-
-Verificare:
-
-1. disponibilita di `case.json` validato;
-2. disponibilita di template script master;
-3. assenza di conflitti bloccanti nel caso.
-
-## Gate D - Post-generazione script master
+## Gate B - Post-Fase 1
 
 Verificare:
 
-1. copertura completa delle sezioni principali;
-2. coerenza con `case.json`;
-3. esplicitazione di limiti e cautele;
-4. presenza assunzioni e nodi aperti.
+1. conformita campi/valori;
+2. assenza conflitti logici bloccanti;
+3. presenza nodi aperti e assunzioni.
 
-## Gate E - Pre-derivazione
+## Gate C - Pre-Fase 2
+
+Verificare:
+
+1. `case.json` validato;
+2. disponibilita template/script schema;
+3. assenza blocchi aperti non gestiti.
+
+## Gate D - Post-Fase 2
+
+Verificare:
+
+1. completezza script master;
+2. coerenza con caso;
+3. limiti/cautele espliciti;
+4. handoff pronto alla Fase 3.
+
+## Gate E - Pre-Fase 3
 
 Verificare:
 
 1. script master validato;
 2. elenco derivati richiesto e motivato;
-3. assenza di richieste fuori perimetro SMART.
+3. conformita a policy SMART.
 
-## Gate F - Post-derivazione
+## Gate F - Post-Fase 3
 
 Verificare:
 
-1. allineamento dei derivati al documento madre;
-2. tono e promessa coerenti;
-3. assenza di nuove affermazioni non supportate.
+1. allineamento derivati al documento madre;
+2. coerenza promessa/tono/pubblico;
+3. assenza di nuove affermazioni non supportate;
+4. idoneita pre-pubblicazione.

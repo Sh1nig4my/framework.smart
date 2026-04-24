@@ -31,7 +31,7 @@ export default function PrivacyPage() {
           <h2 className="mt-5 text-base font-semibold text-[var(--ink-900)]">Stato attuale del trattamento</h2>
           <p className="mt-2">
             Alla data di questo aggiornamento, l&apos;applicazione raccoglie e
-            salva su database i dati inviati nel flusso `/fase-1-json` per
+            salva su database i dati inviati nel flusso `/download` per
             finalita di manutenzione, tracciabilita operativa e miglioramento
             del framework. Non sono attivi strumenti analytics e non viene
             svolta profilazione.

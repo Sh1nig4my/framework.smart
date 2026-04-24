@@ -2,58 +2,42 @@
 
 ## Scopo
 
-Descrivere SMART come sistema documentale ripetibile, governabile e riusabile in contesti diversi.
+Definire come SMART trasforma un bisogno iniziale in output pubblicabili con controllo qualitativo.
 
 ## Input principali
 
-- un bisogno di progettazione formativa o divulgativa;
-- un perimetro tematico coerente con AI, automazioni, workflow o nuove tecnologie;
-- una raccolta requisiti strutturata nella Fase 1.
+- bisogno progettuale su divulgazione/formazione/eventi;
+- contesto e vincoli reali;
+- disponibilita a lavorare per fasi.
 
 ## Output principali
 
-- un `case.json` valido;
-- uno script master completo;
-- eventuali materiali derivati coerenti.
+- `case.json` valido (Fase 1);
+- script master completo (Fase 2);
+- derivati pubblicabili coerenti (Fase 3).
 
 ## Componenti del modello
 
-Il modello operativo si articola in:
+1. **Intake engine (Fase 1)**: raccolta strutturata e normalizzazione requisiti.
+2. **Master engine (Fase 2)**: costruzione documento madre e controllo semantico.
+3. **Delivery engine (Fase 3)**: derivazione, adattamento canale, pre-pubblicazione.
+4. **Governance engine**: regole, terminologia, gate, auditabilita.
 
-1. componente di raccolta strutturata (Fase 1);
-2. componente di trasformazione editoriale (Fase 2);
-3. componente di derivazione controllata (post-Fase 2);
-4. componente di governance e controllo qualita.
+## Catena operativa
 
-## Catena operativa canonica
+1. usare `wizard/case-schema.json`;
+2. compilare e validare `case.json`;
+3. generare/validare `wizard/script-master.md`;
+4. produrre derivati in Fase 3 con verifiche pre-pubblicazione.
 
-1. usare `wizard/case-schema.json` come schema di intake;
-2. compilare un caso concreto;
-3. consolidarlo in `case.json`;
-4. usare il `case.json` per compilare o generare `wizard/script-master.md`;
-5. usare lo script master per produrre i derivati necessari.
+## Rischi da evitare
 
-## Criteri di successo
+- intake incompleto con passaggio prematuro alla Fase 2;
+- script master debole o ambiguo;
+- derivati costruiti da appunti non canonici;
+- drift lessicale rispetto al glossario;
+- delega all'AI di decisioni non formalizzate.
 
-Il modello funziona quando:
+## Condizione di successo
 
-- il caso si capisce senza ricorrere a convenzioni nascoste;
-- lo script master basta a orientare il divulgatore o docente;
-- i derivati non introducono nuove regole non documentate;
-- persone e AI leggono il repository nello stesso modo sostanziale.
-
-## Rischi operativi da evitare
-
-- compilazione incompleta del caso con passaggio prematuro alla Fase 2;
-- script master privo di elementi operativi;
-- derivazione avviata prima della validazione del documento madre;
-- uso di terminologia non canonica.
-
-## Confini
-
-SMART non comprende:
-
-- sviluppo software;
-- automazioni implementative;
-- integrazioni con provider specifici;
-- gestione amministrativa completa dell'evento.
+Il modello funziona quando la catena resta leggibile e tracciabile end-to-end, con qualita stabile anche su team e contesti diversi.

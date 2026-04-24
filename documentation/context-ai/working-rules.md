@@ -2,36 +2,38 @@
 
 ## Scopo
 
-Definire le regole operative obbligatorie che un'AI deve seguire quando lavora su SMART.
+Definire regole operative obbligatorie per agenti AI su SMART.
 
 ## Regole principali
 
-1. Tratta `wizard/case-schema.json` come schema vincolante della Fase 1.
-2. Usa solo valori ammessi quando compili o validi un `case.json`.
-3. Tratta il `case.json` come fonte primaria del caso concreto.
-4. Tratta `wizard/script-master.md` come struttura canonica dello script master.
-5. Deriva slide, mail, brief o altri output solo a partire dallo script master.
-6. Se manca un'informazione, dichiarala come nodo aperto o assunzione.
-7. Mantieni un tono chiaro, sobrio, non promozionale.
-8. Non introdurre dettagli amministrativi irrilevanti nel documento madre.
-9. Non modificare terminologia canonica senza esplicita richiesta.
-10. Non omettere sezione di controllo quando la richiesta prevede validazione.
+1. tratta `wizard/case-schema.json` come schema vincolante Fase 1;
+2. usa solo valori ammessi in `case.json`;
+3. tratta `case.json` come fonte primaria del caso;
+4. tratta `wizard/script-master.md` come struttura canonica Fase 2;
+5. deriva materiali solo da script master validato (Fase 3);
+6. esplicita sempre assunzioni e nodi aperti se mancano dati;
+7. non introdurre promesse o policy non supportate;
+8. mantieni tono sobrio, chiaro, non sensazionalistico;
+9. non alterare lessico canonico senza richiesta esplicita;
+10. blocca avanzamento se il gate di fase non e superato.
 
-## Regole di revisione
+## Regole prompt hub (A-H)
 
-Quando controlli un output, verifica sempre:
+Quando il task richiede uso dei prompt:
 
-- coerenza con il caso;
-- coerenza con i principi SMART;
-- assenza di hype o promesse eccessive;
-- leggibilita per un umano;
-- riusabilita per la generazione di derivati.
+1. leggi sempre `prompts/README.md` prima dell'esecuzione;
+2. seleziona il prompt corretto per categoria o lettera (A-H);
+3. rispetta scope consentito/vietato del prompt selezionato;
+4. mantieni tracciabilita tra richiesta, file toccati e decisioni.
 
-## Formato minimo risposta AI in modalita controllata
+Vincoli categoria su `documentation/`:
 
-Quando il task e classificato come "controllato", la risposta deve rispettare:
+- Alignment e Evolution: modifica consentita se necessaria a mantenere coerenza canonica.
+- Maintenance e Workflow: modifica non consentita in nessun caso.
 
-1. `output`;
-2. `assunzioni`;
-3. `nodi_aperti`;
-4. `esito_validazione`.
+## Formato minimo risposta controllata
+
+1. `output`
+2. `assunzioni`
+3. `nodi_aperti`
+4. `esito_validazione`

@@ -2,112 +2,85 @@
 
 ## Scopo
 
-Guida pratica per applicare SMART con o senza agente AI, mantenendo ordine metodologico, sicurezza e standardizzazione.
+Guida pratica per applicare SMART in modo conforme, dalla preparazione del contesto alla pubblicazione dei derivati.
 
 ## Entrypoint
 
-Inizia sempre da `README.md` (entrypoint unico del progetto), poi usa questa guida per l'operativita.
-
-## Prerequisiti minimi
-
-1. accesso al repository;
-2. lettura file `.json` e `.md`;
-3. obiettivo generale dell'iniziativa;
-4. disponibilita a lavorare per fasi.
-
-## Modalita di utilizzo
-
-### Modalita A - Chat AI
-
-Carichi manualmente i file necessari e procedi step by step.
-
-### Modalita B - Agente AI locale
-
-L'agente legge il repository completo e supporta iterazioni continue tra documenti.
+1. leggi `README.md`;
+2. apri `documentation/README.md`;
+3. usa questa guida per l'esecuzione operativa.
 
 ## Sequenza canonica
 
 ```text
 Fase 1: case-schema.json -> case.json
 Fase 2: case.json -> script-master.md
-Post Fase 2: script-master.md -> materiali derivati
+Fase 3: script-master validato -> derivati/materiali pubblicabili
 ```
 
-## Passo 1 - Preparazione contesto
+## Prerequisiti minimi
 
-Condividi o fai leggere almeno:
+- accesso al repository;
+- lettura file `.json` e `.md`;
+- obiettivo dell'iniziativa dichiarato;
+- disponibilita a rispettare i gate di fase.
+
+## Procedura sintetica
+
+### Passo 1 - Preparazione
+
+Condividi con team/agente almeno:
 
 - `README.md`
 - `HOW_TO.md`
 - `documentation/wizard/case-schema.json`
 - `documentation/wizard/script-master.md`
+- `documentation/wizard/fase-3-derivazione-pubblicazione.md`
 - `documentation/context-ai/README.md`
 
-## Passo 2 - Fase 1 (intake)
+### Passo 2 - Fase 1
 
-1. usa `documentation/wizard/case-schema.json` come schema vincolante;
-2. compila `documentation/wizard/case-template.json`;
-3. salva output come `case.json`;
-4. dichiara nodi aperti se mancano dati.
+1. compila il caso sullo schema ufficiale;
+2. valida campi, valori e coerenza;
+3. consolida `case.json`.
 
-Gate minimo prima di proseguire:
+### Passo 3 - Fase 2
 
-- obiettivo chiaro;
-- pubblico definito;
-- formato coerente;
-- limiti/policy espliciti;
-- nessun valore fuori schema.
+1. usa `case.json` come fonte primaria;
+2. compila script master completo;
+3. valida coerenza, limiti e cautele.
 
-## Passo 3 - Fase 2 (documento madre)
+### Passo 4 - Fase 3
 
-1. apri `documentation/wizard/script-master.md`;
-2. usa solo `case.json` come fonte primaria del caso;
-3. compila lo script master completo;
-4. valida coerenza, limiti e cautele.
+1. deriva materiali solo dallo script master validato;
+2. valida ogni derivato prima della pubblicazione;
+3. blocca output con promesse non supportate.
 
-## Passo 4 - Derivazione controllata
+## Uso web app
 
-Solo dopo validazione dello script master puoi derivare:
+- `/wizard`: setup wizard (configurazione e installazione ambiente)
+- `/wiki`: documentazione interna navigabile
+- `/download`: compilazione/salvataggio/download `case.json`
+- `/privacy`, `/cookie-policy`, `/sicurezza-dati`: compliance
 
-- brief slide;
-- pagina evento;
-- email;
-- checklist;
-- follow-up.
-
-Regola: nessun derivato deve introdurre regole o promesse non presenti nello script master.
-
-## Uso web app (supporto operativo)
-
-- `/wizard` per percorso guidato;
-- manifesto e principi in `documentation/manifesto/`;
-- `/fase-1-json` area WIP per futura compilazione/download JSON;
-- pagine legali `/privacy`, `/cookie-policy`, `/sicurezza-dati`.
-
-## Privacy e gestione dati
+## Privacy e dati
 
 Stato corrente:
 
-- nessun DB attivo;
-- nessun analytics;
-- solo cookie/storage tecnico necessario per consenso banner.
-
-Predisposizione futura:
-
-- possibile raccolta minima dati d'uso (es. richieste download JSON) solo per manutenzione e miglioramento del framework;
-- nessuna vendita del dato;
-- aggiornamento preventivo di policy e consenso prima di ogni attivazione.
+- DB attivo sul flusso `/download`;
+- nessun analytics/profilazione;
+- storage tecnico locale per consenso cookie;
+- blocco duplicati su stessa email + stesso JSON.
 
 ## Errori da evitare
 
-- saltare i gate di validazione;
-- trattare lo schema come output finale;
-- delegare decisioni critiche all'AI;
-- passare ai derivati prima della Fase 2 validata.
+- saltare gate di fase;
+- trattare schema come output finale;
+- delegare all'AI decisioni critiche non documentate;
+- pubblicare derivati non validati.
 
 ## Riferimenti
 
-- `README.md`
-- `documentation/README.md`
 - `documentation/wizard/README.md`
-- `documentation/context-ai/README.md`
+- `documentation/framework/process-overview.md`
+- `documentation/context-ai/validation-protocol.md`

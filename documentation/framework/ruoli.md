@@ -2,38 +2,47 @@
 
 ## Scopo
 
-Definire i ruoli tipici coinvolti nell'uso del framework e le rispettive responsabilita operative.
+Definire ruoli e responsabilita per mantenere il framework affidabile in tutte le fasi.
 
 ## Ruoli principali
 
-### Committente o promotore
+### Committente / Promotore
 
-Porta il bisogno iniziale, il contesto e i vincoli dell'iniziativa.
+- fornisce obiettivi, vincoli, priorita e criteri di successo.
 
-### Progettista del caso
+### Progettista del caso (Fase 1 owner)
 
-Compila o guida la compilazione del `case-schema.json`, produce il `case.json` e verifica che il caso sia leggibile.
+- guida compilazione schema;
+- produce e valida `case.json`.
 
-### Divulgatore o docente
+### Editor Strategico (Fase 2 owner)
 
-Usa lo script master per preparare e condurre l'iniziativa.
+- produce/valida script master;
+- controlla coerenza narrativa, limiti e promesse.
 
-### Editor o revisore
+### Delivery Editor (Fase 3 owner)
 
-Controlla chiarezza, coerenza terminologica, tono e fedelta al framework.
+- crea e valida derivati;
+- garantisce coerenza tra canali e aderenza a documento madre.
+
+### Revisore Qualita
+
+- applica gate trasversali;
+- blocca output non conformi.
 
 ### Assistente AI
 
-Supporta compilazione, trasformazione e derivazione, ma non sostituisce la responsabilita umana. Deve operare entro i confini documentati in `context-ai/`.
+- supporta compilazione, trasformazione e derivazione;
+- non sostituisce responsabilita umana e non inventa regole.
 
-## Matrice sintetica responsabilita
+## Matrice sintetica
 
-- committente/promotore: accuratezza input e obiettivi;
-- progettista del caso: conformita Fase 1;
-- divulgatore/docente: efficacia di conduzione e aderenza allo script master;
-- editor/revisore: quality gate e coerenza;
-- assistente AI: supporto operativo entro vincoli.
+- accuratezza input: committente + progettista;
+- conformita Fase 1: progettista + revisore;
+- conformita Fase 2: editor strategico + revisore;
+- conformita Fase 3: delivery editor + revisore;
+- supporto operativo: assistente AI entro confini `context-ai/`.
 
 ## Regola trasversale
 
-Nessun ruolo puo trattare materiali storici come fonte primaria di verita.
+Nessun ruolo puo usare materiale storico o fonti non canoniche come verita primaria.

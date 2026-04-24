@@ -2,46 +2,40 @@
 
 ## Scopo
 
-Descrivere il metodo SMART come sequenza ordinata di decisioni con criteri di controllo espliciti.
+Descrivere il metodo SMART come sequenza di decisioni governate da standard, gate e validazioni esplicite.
 
-## Logica del metodo
+## Principio centrale
 
-SMART separa due fasi.
+SMART non ottimizza la velocita a scapito della coerenza: ottimizza la qualita ripetibile.
+
+## Struttura metodologica per fasi
 
 ### Fase 1 - Intake strutturato
 
-1. definire identita e tipologia dell'iniziativa;
-2. chiarire obiettivo principale e ambito;
-3. qualificare pubblico, bisogni e resistenze;
-4. fissare formato, interazione e direzione narrativa;
-5. definire contenuti, profondita e ruolo dei tool;
-6. esplicitare vincoli, policy e limiti;
-7. dichiarare quali output derivati servono davvero;
-8. produrre un `case.json` leggibile e coerente.
+- chiarisce obiettivo, pubblico, formato, limiti e policy;
+- obbliga scelta su valori ammessi dallo schema;
+- produce `case.json` valido e leggibile.
 
-### Fase 2 - Generazione dello script master
+### Fase 2 - Generazione documento madre
 
-1. leggere il `case.json` come fonte primaria;
-2. interpretare il caso alla luce del framework SMART;
-3. compilare o generare `script-master.md`;
-4. rendere espliciti tono, sequenza, cautele, supporti e rischi;
-5. derivare eventuali brief secondari a partire dallo script master.
+- trasforma `case.json` in script master;
+- esplicita assunzioni, limiti, cautele, rischi;
+- prepara base univoca per derivazioni.
 
-## Principi metodologici
+### Fase 3 - Derivazione e pubblicazione
 
-- linearita controllata: ogni fase dipende dalla precedente;
-- esplicitazione: assunzioni e nodi aperti devono essere dichiarati;
-- tracciabilita: ogni sezione dello script master deve avere base nel caso;
-- verificabilita: ogni output deve superare gate di qualita.
+- genera materiali secondari solo da script master validato;
+- adatta il formato senza alterare significato e promesse;
+- valida i derivati prima della pubblicazione.
 
-## Regole metodologiche
+## Regole metodologiche non negoziabili
 
-- prima il perche, poi il per chi, poi il cosa, poi il come;
-- le scelte a monte vincolano quelle a valle;
-- le assunzioni vanno dichiarate;
-- i campi mancanti non vanno riempiti in modo implicito;
-- lo script master non si scrive contro il caso, ma a partire dal caso.
+1. prima il perche, poi il per chi, poi il cosa, poi il come;
+2. nessuna assunzione implicita: va sempre dichiarata;
+3. nessun salto di fase;
+4. nessuna derivazione senza gate precedente superato;
+5. nessuna promessa esterna non tracciabile al documento madre.
 
-## Esito metodologico atteso
+## Esito atteso
 
-Il metodo e correttamente applicato quando un divulgatore puo condurre l'iniziativa usando lo script master come riferimento completo e quando i derivati restano allineati senza reinterpretazioni arbitrarie.
+Il metodo e applicato correttamente quando persone e agenti possono ottenere output coerenti, verificabili e riusabili mantenendo controllo umano sulle decisioni critiche.

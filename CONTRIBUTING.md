@@ -12,6 +12,7 @@ Ogni contributo deve rispettare gli invarianti canonici:
 
 - `wizard/case-schema.json` resta source of truth della Fase 1;
 - `wizard/script-master.md` resta source of truth della Fase 2;
+- `wizard/fase-3-derivazione-pubblicazione.md` governa la Fase 3;
 - lo script master resta documento madre per ogni derivazione;
 - SMART integra framework documentale e web app operativa in un unico sistema.
 
@@ -19,7 +20,7 @@ Ogni contributo deve rispettare gli invarianti canonici:
 
 - `manifesto/`: visione, principi, etica, policy, governance.
 - `framework/`: metodologia, modello operativo, processo, ruoli, glossario.
-- `wizard/`: processo operativo Fase 1/Fase 2 e documentazione di supporto.
+- `wizard/`: processo operativo Fase 1/Fase 2/Fase 3 e documentazione di supporto.
 - `playbooks/`: applicazioni pratiche del metodo.
 - `context-ai/`: contesto AI, regole operative, protocolli di validazione, template.
 
