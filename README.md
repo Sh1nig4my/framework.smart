@@ -46,12 +46,15 @@ Apri `http://localhost:3000`.
 
 La web app non e separata dal framework: ne e parte operativa.
 
-Pagine attive:
+Pagine principali attive:
 
 - `/` homepage strategica;
-- `/wizard` guida operativa;
-- manifesto e filosofia disponibili nella documentazione ufficiale (`documentation/manifesto/`);
-- `/fase-1-json` compilazione completa della Fase 1 con salvataggio e download JSON;
+- `/how-to` guida operativa;
+- `/wiki` documentazione interna ufficiale;
+- `/download` compilazione completa della Fase 1 con salvataggio e download JSON.
+
+Pagine legali di supporto:
+
 - `/privacy`, `/cookie-policy`, `/sicurezza-dati` per compliance e trasparenza.
 
 ## Privacy e dati (stato attuale)

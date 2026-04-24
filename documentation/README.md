@@ -39,15 +39,16 @@ documentation/
 
 Stato corrente del progetto:
 
-- nessun database attivo;
+- database attivo per il flusso operativo di compilazione Fase 1 (`/download`);
+- salvataggio richiesta e case JSON per finalita tecniche di manutenzione e miglioramento;
+- blocco duplicati su combinazione stessa email + stesso JSON;
 - nessun analytics o profilazione;
 - solo storage tecnico locale per consenso cookie necessari.
 
 Evoluzione prevista:
 
-- eventuale raccolta minima di dati tecnici d'uso per manutenzione del framework;
-- nessuna vendita dei dati;
-- aggiornamento preventivo di policy e consenso prima dell'attivazione.
+- eventuale estensione del trattamento solo con aggiornamento preventivo di policy e consenso;
+- nessuna vendita dei dati.
 
 ## Versione corrente
 

@@ -79,24 +79,24 @@ Regola: nessun derivato deve introdurre regole o promesse non presenti nello scr
 
 ## Uso web app (supporto operativo)
 
-- `/wizard` per percorso guidato;
-- manifesto e principi in `documentation/manifesto/`;
-- `/fase-1-json` area WIP per futura compilazione/download JSON;
+- `/how-to` per percorso guidato;
+- `/wiki` per documentazione interna ufficiale;
+- `/download` per compilazione/salvataggio/download del case JSON;
 - pagine legali `/privacy`, `/cookie-policy`, `/sicurezza-dati`.
 
 ## Privacy e gestione dati
 
 Stato corrente:
 
-- nessun DB attivo;
+- DB attivo per il flusso `/download` (raccolta richiesta e case JSON);
 - nessun analytics;
-- solo cookie/storage tecnico necessario per consenso banner.
+- solo storage tecnico locale necessario per consenso banner;
+- blocco duplicati su combinazione stessa email + stesso JSON.
 
-Predisposizione futura:
+Evoluzione futura:
 
-- possibile raccolta minima dati d'uso (es. richieste download JSON) solo per manutenzione e miglioramento del framework;
-- nessuna vendita del dato;
-- aggiornamento preventivo di policy e consenso prima di ogni attivazione.
+- eventuali nuove forme di raccolta verranno introdotte solo con aggiornamento preventivo di policy e consenso;
+- nessuna vendita del dato.
 
 ## Errori da evitare
 
