@@ -53,7 +53,7 @@ function buildInitialFormState(): FormState {
       if (field.multiple) {
         multi[field.id] = [];
       } else {
-        single[field.id] = field.id === "primary_output" ? "script_master" : "";
+        single[field.id] = field.id === "primary_output" ? "cartella_master" : "";
       }
     }
   }
@@ -264,7 +264,7 @@ export function Fase1JsonForm() {
         excluded_elements: state.multi.excluded_elements,
       },
       generation_targets: {
-        primary_output: "script_master",
+        primary_output: "cartella_master",
         secondary_outputs: state.multi.secondary_outputs,
         material_generation_scope: state.single.material_generation_scope,
       },
@@ -422,7 +422,7 @@ export function Fase1JsonForm() {
                     return (
                       <div key={field.id} className="sf-note">
                         <p className="sf-note-title">Output principale</p>
-                        <p>{optionToLabel("script_master")}. E l&apos;unico output principale ammesso in Fase 1.</p>
+                        <p>{optionToLabel("cartella_master")}. E l&apos;unico output principale ammesso in Fase 1.</p>
                       </div>
                     );
                   }

@@ -91,7 +91,7 @@
     ]
   },
   "generation_targets": {
-    "primary_output": "script_master",
+    "primary_output": "cartella_master",
     "secondary_outputs": [
       "slide_brief",
       "pagina_evento_brief",
@@ -99,6 +99,6 @@
       "checklist_docente",
       "followup_brief"
     ],
-    "material_generation_scope": "script_master_e_brief_essenziali"
+    "material_generation_scope": "cartella_master_e_brief_essenziali"
   }
 }

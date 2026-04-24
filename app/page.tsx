@@ -92,7 +92,7 @@ export default function HomePage() {
             <ol className="mt-4 space-y-3 text-sm leading-relaxed text-[var(--ink-700)]">
               <li>1. Standardizza l&apos;intake con lo schema di Fase 1.</li>
               <li>2. Consolida un case JSON verificabile.</li>
-              <li>3. Genera uno script master governabile.</li>
+              <li>3. Genera una cartella master governabile.</li>
               <li>4. Deriva materiali coerenti e personalizzati.</li>
             </ol>
             <p className="text-sm leading-relaxed text-[var(--ink-700)]">

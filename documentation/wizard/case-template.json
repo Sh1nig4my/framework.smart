@@ -46,7 +46,7 @@
     "excluded_elements": []
   },
   "generation_targets": {
-    "primary_output": "script_master",
+    "primary_output": "cartella_master",
     "secondary_outputs": [],
     "material_generation_scope": null
   }
