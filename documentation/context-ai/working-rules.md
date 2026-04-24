@@ -2,36 +2,24 @@
 
 ## Scopo
 
-Definire le regole operative obbligatorie che un'AI deve seguire quando lavora su SMART.
+Definire regole operative obbligatorie per agenti AI su SMART.
 
 ## Regole principali
 
-1. Tratta `wizard/case-schema.json` come schema vincolante della Fase 1.
-2. Usa solo valori ammessi quando compili o validi un `case.json`.
-3. Tratta il `case.json` come fonte primaria del caso concreto.
-4. Tratta `wizard/script-master.md` come struttura canonica dello script master.
-5. Deriva slide, mail, brief o altri output solo a partire dallo script master.
-6. Se manca un'informazione, dichiarala come nodo aperto o assunzione.
-7. Mantieni un tono chiaro, sobrio, non promozionale.
-8. Non introdurre dettagli amministrativi irrilevanti nel documento madre.
-9. Non modificare terminologia canonica senza esplicita richiesta.
-10. Non omettere sezione di controllo quando la richiesta prevede validazione.
+1. tratta `wizard/case-schema.json` come schema vincolante Fase 1;
+2. usa solo valori ammessi in `case.json`;
+3. tratta `case.json` come fonte primaria del caso;
+4. tratta `wizard/script-master.md` come struttura canonica Fase 2;
+5. deriva materiali solo da script master validato (Fase 3);
+6. esplicita sempre assunzioni e nodi aperti se mancano dati;
+7. non introdurre promesse o policy non supportate;
+8. mantieni tono sobrio, chiaro, non sensazionalistico;
+9. non alterare lessico canonico senza richiesta esplicita;
+10. blocca avanzamento se il gate di fase non e superato.
 
-## Regole di revisione
+## Formato minimo risposta controllata
 
-Quando controlli un output, verifica sempre:
-
-- coerenza con il caso;
-- coerenza con i principi SMART;
-- assenza di hype o promesse eccessive;
-- leggibilita per un umano;
-- riusabilita per la generazione di derivati.
-
-## Formato minimo risposta AI in modalita controllata
-
-Quando il task e classificato come "controllato", la risposta deve rispettare:
-
-1. `output`;
-2. `assunzioni`;
-3. `nodi_aperti`;
-4. `esito_validazione`.
+1. `output`
+2. `assunzioni`
+3. `nodi_aperti`
+4. `esito_validazione`

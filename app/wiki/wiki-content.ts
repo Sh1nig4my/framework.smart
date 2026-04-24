@@ -14,36 +14,11 @@ export type WikiChapter = {
 };
 
 export const wikiChapters: WikiChapter[] = [
-  {
-    id: "intro",
-    title: "Introduzione",
-    description: "Perche esiste SMART e come orientarti.",
-  },
-  {
-    id: "core",
-    title: "Concetti fondamentali",
-    description: "Principi, standard e lessico operativo.",
-  },
-  {
-    id: "architecture",
-    title: "Architettura",
-    description: "Fasi, artefatti canonici e precedenze.",
-  },
-  {
-    id: "workflow",
-    title: "Workflow",
-    description: "Come usare il framework in pratica.",
-  },
-  {
-    id: "guides",
-    title: "Guide operative",
-    description: "Pattern applicativi per contesti frequenti.",
-  },
-  {
-    id: "quality",
-    title: "Best practice",
-    description: "Qualita, validazione e gestione dei rischi.",
-  },
+  { id: "intro", title: "Introduzione", description: "Visione, scopo e valore del framework SMART." },
+  { id: "architecture", title: "Architettura", description: "Fasi, artefatti e precedenze canoniche." },
+  { id: "workflow", title: "Workflow guidato", description: "Guida operativa step-by-step dalla Fase 1 alla Fase 3." },
+  { id: "operations", title: "Operativita", description: "Wizard setup, Download e uso pratico con agenti." },
+  { id: "quality", title: "Qualita e governance", description: "Gate, best practice, limiti e sicurezza operativa." },
 ];
 
 export const wikiSections: WikiSection[] = [
@@ -52,168 +27,155 @@ export const wikiSections: WikiSection[] = [
     chapterId: "intro",
     title: "Cos'e SMART Framework",
     intro:
-      "SMART e un framework no-code e AI-native che converte richieste frammentarie in processi strutturati, verificabili e riutilizzabili.",
+      "SMART e un framework no-code e AI-native per trasformare esigenze frammentarie in output affidabili, tracciabili e riusabili.",
     highlights: [
-      "Non e un singolo template: e un sistema che collega metodo, documentazione e strumenti operativi.",
-      "Riduce incoerenze tra promessa, contenuti e materiali pubblicati.",
-      "Mantiene il giudizio umano al centro e usa gli agenti come supporto disciplinato.",
+      "Integra documentazione, metodo e app in un unico sistema.",
+      "Riduce incoerenze tra promessa comunicativa e contenuto reale.",
+      "Mantiene controllo umano e usa gli agenti come acceleratori disciplinati.",
     ],
-    related: ["why-standard", "operating-model"],
+    related: ["smart-standard", "phase-map"],
   },
   {
-    id: "why-standard",
-    chapterId: "core",
+    id: "smart-standard",
+    chapterId: "intro",
     title: "SMART come standard",
     intro:
-      "Nel framework lo standard non e burocrazia: e il meccanismo che rende affidabile la divulgazione, la creazione eventi e la produzione di contenuti strutturati.",
+      "In SMART lo standard e la base per scalare qualita e coerenza su divulgazione, eventi e contenuti strutturati.",
     highlights: [
-      "Stabilisce terminologia, schema e gate comuni tra team differenti.",
-      "Permette customizzazione tramite agenti senza perdere coerenza di fondo.",
-      "Facilita audit, manutenzione e scalabilita del processo.",
+      "Terminologia, gate e strutture comuni tra team differenti.",
+      "Customizzazione locale senza perdita di allineamento metodologico.",
+      "Auditabilita e manutenzione piu semplici nel tempo.",
     ],
-    related: ["glossary", "decision-rules"],
+    related: ["precedence", "quality-gates"],
   },
   {
-    id: "glossary",
-    chapterId: "core",
-    title: "Concetti base da conoscere",
-    intro:
-      "Per lavorare bene in SMART bastano pochi concetti chiave: case schema, case JSON, script master e derivati.",
-    highlights: [
-      "Il case schema definisce le scelte ammesse in Fase 1.",
-      "Il case JSON e l'istanza concreta da cui parte la Fase 2.",
-      "Lo script master e il documento madre: i derivati non devono introdurre nuove regole.",
-    ],
-    related: ["phase-one", "phase-two"],
-  },
-  {
-    id: "operating-model",
+    id: "phase-map",
     chapterId: "architecture",
-    title: "Architettura del framework",
+    title: "Mappa delle fasi",
     intro:
-      "L'architettura SMART segue una catena esplicita: intake strutturato, documento madre, derivazione controllata.",
+      "Il framework segue una sequenza canonica a 3 fasi: intake strutturato, documento madre, derivazione pubblicabile.",
     highlights: [
-      "Fase 1: raccolta requisiti con opzioni chiuse e verificabili.",
-      "Fase 2: consolidamento editoriale nello script master.",
-      "Post Fase 2: produzione asset secondari solo dopo gate di validazione.",
+      "Fase 1: case-schema.json -> case.json.",
+      "Fase 2: case.json -> script-master.md.",
+      "Fase 3: script-master validato -> derivati/materiali pubblicabili.",
     ],
-    related: ["phase-one", "phase-two", "decision-rules"],
+    related: ["phase-one-guide", "phase-two-guide", "phase-three-guide"],
   },
   {
-    id: "decision-rules",
+    id: "precedence",
     chapterId: "architecture",
     title: "Regole di precedenza",
     intro:
-      "Quando due fonti entrano in conflitto, SMART usa una precedenza esplicita per evitare interpretazioni arbitrarie.",
+      "Quando compaiono conflitti tra fonti, SMART applica precedenze fisse per evitare derive interpretative.",
     highlights: [
-      "In Fase 1 prevale lo schema canonico e i valori ammessi.",
-      "In Fase 2 prevale la struttura dello script master, alimentata dal case JSON validato.",
-      "Manifesto e framework fissano principi e confini stabili del sistema.",
+      "Case schema prevale sulla struttura Fase 1.",
+      "Case JSON prevale sul contenuto del caso.",
+      "Script master governa struttura Fase 2 e base della Fase 3.",
     ],
-    related: ["operating-model", "validation"],
+    related: ["quality-gates", "phase-map"],
   },
   {
-    id: "phase-one",
+    id: "phase-one-guide",
     chapterId: "workflow",
-    title: "Workflow Fase 1",
+    title: "Guida Fase 1 passo-passo",
     intro:
-      "La Fase 1 trasforma il bisogno iniziale in un case JSON completo, coerente e pronto alla generazione della Fase 2.",
+      "La Fase 1 raccoglie requisiti in formato strutturato per produrre un case JSON validabile e pronto alla Fase 2.",
     highlights: [
-      "Compila i campi obbligatori seguendo le opzioni dello schema.",
-      "Verifica obiettivo, pubblico, formato e limiti prima dell'invio.",
-      "Salva e scarica il case JSON solo dopo validazione e persistenza corretta.",
+      "Parti da schema canonico e compila solo valori ammessi.",
+      "Blocca campi inventati e assunzioni implicite.",
+      "Valida coerenza di obiettivo, pubblico, formato, policy e limiti.",
     ],
-    related: ["download-guide", "phase-two"],
+    related: ["download-guide", "phase-two-guide"],
   },
   {
-    id: "phase-two",
+    id: "phase-two-guide",
     chapterId: "workflow",
-    title: "Workflow Fase 2",
+    title: "Guida Fase 2 passo-passo",
     intro:
-      "La Fase 2 usa il case JSON come sorgente primaria per creare uno script master completo e operativo.",
+      "La Fase 2 costruisce lo script master, documento madre da cui dipendono tutti i materiali successivi.",
     highlights: [
-      "Definisce sequenza narrativa, tono, cautele, supporti e rischi.",
-      "Dichiara assunzioni e nodi aperti, senza inventare requisiti mancanti.",
-      "Prepara derivati consistenti per slide, pagina evento, email e checklist.",
+      "Mappa `case.json` sulle sezioni del template script master.",
+      "Esplicita assunzioni, nodi aperti, limiti e cautele.",
+      "Supera gate Fase 2 prima di ogni derivazione.",
     ],
-    related: ["validation", "use-cases"],
+    related: ["phase-three-guide", "quality-gates"],
+  },
+  {
+    id: "phase-three-guide",
+    chapterId: "workflow",
+    title: "Guida Fase 3 passo-passo",
+    intro:
+      "La Fase 3 deriva e prepara i materiali pubblicabili mantenendo coerenza piena con script master validato.",
+    highlights: [
+      "Definisci derivati richiesti e finalita di ciascun canale.",
+      "Adatta forma senza alterare significato, limiti e promessa.",
+      "Esegui controllo pre-pubblicazione su ogni output.",
+    ],
+    related: ["quality-gates", "use-cases"],
+  },
+  {
+    id: "wizard-setup",
+    chapterId: "operations",
+    title: "Wizard setup ambiente",
+    intro:
+      "La pagina `/wizard` e la guida di configurazione e installazione ambiente prima del lavoro operativo.",
+    highlights: [
+      "Copre prerequisiti hardware/software e setup locale.",
+      "Definisce controlli minimi (lint/build/dev) prima dell'operativita.",
+      "Riduce errori tecnici prima di avviare Fase 1.",
+    ],
+    related: ["download-guide", "prompt-method"],
   },
   {
     id: "download-guide",
-    chapterId: "guides",
-    title: "Guida rapida alla pagina Download",
+    chapterId: "operations",
+    title: "Download e compilazione Fase 1",
     intro:
-      "La pagina Download e il punto operativo della Fase 1: qui compili il form ufficiale e ottieni il file JSON.",
+      "La pagina `/download` e il punto operativo per generare e scaricare `case.json` dopo validazione e salvataggio.",
     highlights: [
-      "Il form rispetta lo schema canonicale della Fase 1.",
-      "Il backend blocca duplicati su stessa email e stesso contenuto JSON.",
-      "Il download viene avviato automaticamente dopo il salvataggio andato a buon fine.",
+      "Il form e allineato allo schema canonico Fase 1.",
+      "Il backend blocca duplicati su stessa email + stesso JSON.",
+      "Il file viene scaricato solo dopo persistenza riuscita.",
     ],
-    related: ["phase-one", "validation"],
+    related: ["phase-one-guide", "quality-gates"],
+  },
+  {
+    id: "prompt-method",
+    chapterId: "operations",
+    title: "Metodologia agentica con prompt hub",
+    intro:
+      "Il protocollo raccomandato prevede lettura di `prompts/README.md`, selezione del prompt target e applicazione di istruzioni custom.",
+    highlights: [
+      "Ogni prompt ha scope consentito e vietato.",
+      "Maintenance, Alignment, Evolution e Workflow sono separati.",
+      "L'agente deve restare conforme al perimetro del prompt scelto.",
+    ],
+    related: ["quality-gates", "wizard-setup"],
+  },
+  {
+    id: "quality-gates",
+    chapterId: "quality",
+    title: "Gate di qualita",
+    intro:
+      "I gate sono il meccanismo che garantisce affidabilita tra le fasi e blocca output non conformi.",
+    highlights: [
+      "Gate Fase 1: validazione schema e coerenza caso.",
+      "Gate Fase 2: validazione documento madre.",
+      "Gate Fase 3: validazione derivati pre-pubblicazione.",
+    ],
+    related: ["precedence", "phase-three-guide"],
   },
   {
     id: "use-cases",
-    chapterId: "guides",
-    title: "Use case ricorrenti",
-    intro:
-      "SMART supporta scenari diversi, dalla divulgazione in aula a collaborazioni con enti e imprese.",
-    highlights: [
-      "Nuovo progetto divulgativo con requisiti iniziali incompleti.",
-      "Seminari, lezioni e incontri con livelli diversi di interazione.",
-      "Collaborazioni istituzionali o aziendali con vincoli comunicativi specifici.",
-    ],
-    related: ["who-can-use", "best-practices"],
-  },
-  {
-    id: "who-can-use",
-    chapterId: "guides",
-    title: "Chi puo usarlo (e quando evitare)",
-    intro:
-      "SMART e pensato per team che vogliono ripetibilita e controllo. Non e ideale quando si rifiuta qualsiasi disciplina di processo.",
-    highlights: [
-      "Adatto a formatori, divulgatori, enti, aziende e team interdisciplinari.",
-      "Adatto anche a non tecnici, se accettano un workflow per fasi.",
-      "Meno adatto a richieste one-shot senza validazione o con promesse non verificabili.",
-    ],
-    related: ["how-agents-help", "validation"],
-  },
-  {
-    id: "how-agents-help",
     chapterId: "quality",
-    title: "Customizzazione tramite agenti",
+    title: "Use case e best practice",
     intro:
-      "Gli agenti permettono di adattare il framework al contesto locale mantenendo standard comuni e confini di sicurezza.",
+      "SMART e applicabile a seminari, lezioni, incontri, collaborazioni con enti e imprese mantenendo catena e controlli invariati.",
     highlights: [
-      "Gli agenti accelerano compilazione, revisione e derivazione.",
-      "Le regole restano nel framework: l'agente non deve inventare policy o campi.",
-      "L'autonomia agentica e utile solo se tracciabile, auditabile e supervisionata.",
+      "Scegli tono e profondita in base al pubblico reale.",
+      "Evita promessa eccessiva e claim non verificabili.",
+      "Mantieni tracciabilita dal documento madre ai derivati.",
     ],
-    related: ["validation", "best-practices"],
-  },
-  {
-    id: "validation",
-    chapterId: "quality",
-    title: "Validazione e best practice",
-    intro:
-      "La qualita in SMART dipende da gate chiari: controllo del caso, controllo dello script master, controllo dei derivati.",
-    highlights: [
-      "Non saltare mai i gate anche quando il caso sembra semplice.",
-      "Mantieni coerenza tra documentazione, form e output generato.",
-      "Usa linguaggio sobrio, no hype e trasparenza su limiti e responsabilita.",
-    ],
-    related: ["decision-rules", "download-guide"],
-  },
-  {
-    id: "best-practices",
-    chapterId: "quality",
-    title: "Pratiche consigliate di adozione",
-    intro:
-      "Per ottenere valore continuo dal framework serve disciplina operativa, non complessita tecnica.",
-    highlights: [
-      "Tratta lo script master come fonte primaria di tutti gli asset successivi.",
-      "Evita contenuti non supportati dal caso o inseriti solo per effetto comunicativo.",
-      "Aggiorna regole e documentazione in modo sincronizzato quando cambia il processo.",
-    ],
-    related: ["why-standard", "how-agents-help"],
+    related: ["smart-standard", "prompt-method"],
   },
 ];

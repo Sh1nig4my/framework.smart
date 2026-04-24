@@ -1,5 +1,8 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
+
+import smartLogo from "@/documentation/framework/logo/smart-img-text.png";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -64,10 +67,10 @@ export default function HomePage() {
               ambiguita, piu controllo, output riusabili e qualitativamente stabili.
             </p>
             <div className="flex flex-wrap gap-3">
-              <Link href="/how-to" className="sf-button-primary">
-                Come funziona
+              <Link href="/wizard" className="sf-button-primary">
+                Apri Wizard
               </Link>
-              <Link href="/wiki" className="sf-button-secondary">
+              <Link href="/wiki#what-is-smart" className="sf-button-secondary">
                 Esplora la Wiki
               </Link>
               <Link href="/download" className="sf-button-secondary">
@@ -76,7 +79,15 @@ export default function HomePage() {
             </div>
           </div>
 
-          <aside className="rounded-2xl border border-[var(--line)] bg-[var(--surface-1)] p-6">
+          <aside className="flex h-full flex-col gap-4 rounded-2xl border border-[var(--line)] bg-[var(--surface-1)] p-6">
+            <div className="inline-flex w-fit max-w-full rounded-2xl border border-[var(--line)] bg-white/95 p-3">
+              <Image
+                src={smartLogo}
+                alt="Logo SMART Framework"
+                priority
+                className="block h-auto w-auto max-h-16 max-w-full object-contain"
+              />
+            </div>
             <p className="text-xs font-semibold tracking-[0.16em] text-[var(--ink-700)] uppercase">Catena SMART</p>
             <ol className="mt-4 space-y-3 text-sm leading-relaxed text-[var(--ink-700)]">
               <li>1. Standardizza l&apos;intake con lo schema di Fase 1.</li>
@@ -84,7 +95,18 @@ export default function HomePage() {
               <li>3. Genera uno script master governabile.</li>
               <li>4. Deriva materiali coerenti e personalizzati.</li>
             </ol>
-            <Link href="/wiki" className="mt-5 inline-flex text-sm font-medium text-[var(--brand-700)] hover:text-[var(--ink-900)]">
+            <p className="text-sm leading-relaxed text-[var(--ink-700)]">
+              Ogni passaggio ha regole, gate e criteri di validazione. Nella Wiki trovi la guida completa sezione per
+              sezione, con riferimenti pratici per lavorare in modo conforme.
+            </p>
+            <p className="text-sm leading-relaxed text-[var(--ink-700)]">
+              Parti dalla mappa delle fasi per capire il flusso generale e passa poi ai dettagli operativi in base al
+              tuo obiettivo.
+            </p>
+            <Link
+              href="/wiki#phase-map"
+              className="mt-2 inline-flex text-sm font-medium text-[var(--brand-700)] hover:text-[var(--ink-900)]"
+            >
               Approfondisci il metodo nella Wiki
             </Link>
           </aside>
@@ -129,19 +151,19 @@ export default function HomePage() {
         </section>
 
         <section className="rounded-3xl border border-[var(--line)] bg-[var(--ink-900)] px-6 py-8 text-white md:px-10">
-          <h2 className="text-2xl font-semibold md:text-3xl">Inizia dal percorso piu adatto al tuo livello</h2>
+          <h2 className="text-2xl font-semibold md:text-3xl">Inizia dal percorso piu adatto alle tue esigenze</h2>
           <p className="mt-3 max-w-3xl text-sm leading-relaxed text-white/80 md:text-base">
-            Se vuoi una guida progressiva parti da Come funziona. Se vuoi le regole complete vai in Wiki. Se vuoi
+            Se vuoi configurare ambiente e strumenti parti dal Wizard. Se vuoi le regole complete vai in Wiki. Se vuoi
             applicarlo subito passa al Download della Fase 1.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link
-              href="/how-to"
+              href="/wizard"
               className="rounded-full bg-white px-5 py-2.5 text-sm font-medium text-[var(--ink-900)] transition hover:bg-[var(--surface-2)]"
             >
-              Apri Come funziona
+              Apri Wizard
             </Link>
-            <Link href="/wiki" className="rounded-full border border-white/35 px-5 py-2.5 text-sm font-medium text-white transition hover:border-white">
+            <Link href="/wiki#wizard-setup" className="rounded-full border border-white/35 px-5 py-2.5 text-sm font-medium text-white transition hover:border-white">
               Vai alla Wiki
             </Link>
             <Link

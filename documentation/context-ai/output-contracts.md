@@ -2,49 +2,49 @@
 
 ## Scopo
 
-Definire il contratto minimo atteso per gli output AI nelle diverse fasi del framework.
+Stabilire il contratto minimo per output AI in Fase 1, Fase 2 e Fase 3.
 
-## Contratto 1 - `case.json`
+## Contratto Fase 1 - `case.json`
 
 Vincoli:
 
-- struttura coerente al case schema;
+- struttura conforme al case schema;
 - soli valori ammessi;
 - nessun campo inventato.
 
-Sezioni di risposta richieste in modalita controllata:
+Sezioni minime:
 
-1. `case_json`;
-2. `assunzioni`;
-3. `nodi_aperti`;
-4. `esito_validazione_schema`.
+1. `case_json`
+2. `assunzioni`
+3. `nodi_aperti`
+4. `esito_validazione_schema`
 
-## Contratto 2 - script master
+## Contratto Fase 2 - script master
 
 Vincoli:
 
 - struttura aderente a `wizard/script-master.md`;
 - tracciabilita al `case.json`;
-- presenza di limiti e cautele.
+- limiti e cautele espliciti.
 
-Sezioni di risposta richieste in modalita controllata:
+Sezioni minime:
 
-1. `script_master`;
-2. `assunzioni`;
-3. `nodi_aperti`;
-4. `esito_validazione_coerenza`.
+1. `script_master`
+2. `assunzioni`
+3. `nodi_aperti`
+4. `esito_validazione_coerenza`
 
-## Contratto 3 - derivati
+## Contratto Fase 3 - derivati
 
 Vincoli:
 
-- origine esplicita dallo script master;
-- coerenza con tono, pubblico, perimetro e promessa;
+- origine esplicita da script master validato;
+- coerenza con tono, pubblico, promessa e limiti;
 - assenza di nuove affermazioni non supportate.
 
-Sezioni di risposta richieste in modalita controllata:
+Sezioni minime:
 
-1. `derivati`;
-2. `fonti_script_master`;
-3. `limiti_pubblicazione`;
-4. `esito_validazione_derivati`.
+1. `derivati`
+2. `fonti_script_master`
+3. `limiti_pubblicazione`
+4. `esito_validazione_derivati`

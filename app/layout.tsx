@@ -55,7 +55,7 @@ export default function RootLayout({
       lang="it"
       className={`${outfit.variable} ${ibmPlexMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body suppressHydrationWarning className="min-h-full flex flex-col">
         <SiteHeader />
         <main className="flex-1">{children}</main>
         <SiteFooter />

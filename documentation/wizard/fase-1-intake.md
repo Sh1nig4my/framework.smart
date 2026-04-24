@@ -2,62 +2,40 @@
 
 ## Scopo
 
-Produrre un `case.json` formalmente valido e sostanzialmente coerente, pronto per alimentare la Fase 2.
+Produrre un `case.json` formalmente valido e sostanzialmente coerente.
 
-## Input della fase
+## Input
 
-- `wizard/case-schema.json`;
-- `wizard/case-template.json`;
-- informazioni disponibili da promotore, committente o team progettuale.
+- `wizard/case-schema.json`
+- `wizard/case-template.json`
+- requisiti del promotore/committente
 
-## Output della fase
+## Output
 
-- `case.json` compilato;
-- elenco dei nodi aperti non risolti;
-- elenco delle assunzioni eventualmente adottate.
+- `case.json` pronto per Fase 2
+- nodi aperti esplicitati
+- assunzioni esplicitate
 
-## Procedura operativa
+## Procedura
 
-1. Leggere lo schema canonico e identificare sezioni obbligatorie.
-2. Compilare il template senza alterare struttura e naming dei campi.
-3. Convertire eventuali risposte libere nei valori ammessi dal modello.
-4. Verificare coerenza trasversale tra pubblico, obiettivo, formato e contenuti.
-5. Consolidare il file finale come `case.json`.
+1. leggere integralmente schema e campi obbligatori;
+2. compilare il caso senza alterare struttura e naming;
+3. convertire input liberi nei valori ammessi;
+4. verificare coerenza trasversale (obiettivo/pubblico/formato/limiti);
+5. salvare come `case.json` e avviare gate.
 
-## Regole obbligatorie
+## Gate Fase 1
 
-- usare esclusivamente valori previsti dallo schema;
-- non aggiungere campi o sezioni fuori modello;
-- non sostituire decisioni con frasi generiche;
-- non completare in modo arbitrario informazioni mancanti;
-- segnalare sempre nodi aperti e assunzioni.
+Il passaggio a Fase 2 e consentito solo se:
 
-## Definition of done - Fase 1
+1. tutti i campi obbligatori sono valorizzati;
+2. non ci sono valori fuori opzione;
+3. non ci sono conflitti logici evidenti;
+4. policy e limiti risultano espliciti.
 
-La Fase 1 e completata solo se:
+## Errori da bloccare
 
-1. tutte le aree centrali del caso sono compilate;
-2. non esistono conflitti logici evidenti;
-3. i vincoli editoriali e di policy sono espliciti;
-4. l'output principale risulta `script_master`;
-5. il file `case.json` e utilizzabile senza interpretazioni implicite.
-
-## Gate di validazione minima
-
-Prima di avviare la Fase 2 confermare:
-
-- tipologia iniziativa e obiettivo principale;
-- pubblico principale e livello di maturita;
-- direzione narrativa e stile didattico;
-- profondita contenutistica e ruolo dei tool;
-- tone profile, policy profile, excluded elements;
-- material generation scope.
-
-## Uso assistito da AI
-
-Se la compilazione e assistita da AI:
-
-1. fornire sempre `case-schema.json` come vincolo;
-2. richiedere output in formato `case.json` coerente al modello;
-3. richiedere sezione esplicita "nodi aperti";
-4. respingere output con campi inventati o valori fuori opzione.
+- campi inventati;
+- valori non ammessi dallo schema;
+- compilazione implicita senza assunzioni dichiarate;
+- passaggio prematuro alla Fase 2.

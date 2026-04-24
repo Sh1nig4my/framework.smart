@@ -179,7 +179,7 @@ button:focus-visible {
   }
 
   .sf-collapsible-trigger {
-    @apply flex w-full items-start justify-between gap-4 text-left;
+    @apply flex w-full items-center justify-between gap-3 text-left;
   }
 
   .sf-collapsible-main {
@@ -187,7 +187,7 @@ button:focus-visible {
   }
 
   .sf-status-chip {
-    @apply inline-flex shrink-0 items-center gap-2 rounded-full border px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[0.14em];
+    @apply inline-flex shrink-0 items-center gap-2 rounded-full border px-3.5 py-2 text-[11px] font-semibold uppercase tracking-[0.12em];
     border-color: var(--line-strong);
     background: color-mix(in srgb, white 70%, var(--surface-1) 30%);
     color: var(--ink-700);

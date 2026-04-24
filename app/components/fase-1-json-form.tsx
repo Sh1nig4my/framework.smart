@@ -336,8 +336,8 @@ export function Fase1JsonForm() {
       ) : null}
 
       <section className="sf-card">
-        <p className="sf-eyebrow">Regole compilazione</p>
-        <h2 className="sf-title">Compila la Fase 1 per generare il case JSON</h2>
+        <p className="sf-eyebrow">Regole invio</p>
+        <h2 className="sf-title">Indicazioni essenziali prima del submit</h2>
         <ul className="sf-list">
           <li>Usa solo le opzioni previste dal framework SMART.</li>
           <li>Ogni invio salva un nuovo record a database con data e ora.</li>
@@ -403,11 +403,11 @@ export function Fase1JsonForm() {
               onClick={() => toggleSection(sectionId)}
               aria-expanded={openSections[sectionId]}
             >
-              <span className="sf-collapsible-main">
-                <span className="sf-eyebrow">
-                  {index + 1}. {section.label}
-                </span>
-                <span className="sf-title">{section.label}</span>
+              <span className="flex w-20 shrink-0 items-center text-left md:w-28">
+                <span className="sf-eyebrow">{index + 1}. Sezione</span>
+              </span>
+              <span className="flex flex-1 items-center justify-center px-1 text-center">
+                <span className="sf-title !mt-0 leading-tight">{section.label}</span>
               </span>
               <span className="sf-status-chip">
                 {completed ? "Completa" : "Da compilare"}

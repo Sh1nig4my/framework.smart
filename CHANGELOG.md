@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.1.0] - 2026-04-24
+
+Refactor strutturale pre-release con consolidamento metodologia agentica, riallineamento route e revisione profonda documentazione.
+
+- eliminata la route `/how-to` e promosso `/wizard` come unica pagina guida setup/configurazione;
+- riscritta la pagina `/wizard` con focus installazione ambiente, prerequisiti hardware/software e verifiche tecniche;
+- aggiornata propagazione route su navbar, homepage e documentazione di supporto;
+- introdotta formalizzazione completa della Fase 3 in documentazione (`wizard/fase-3-derivazione-pubblicazione.md`);
+- rifattorizzati documenti core in `documentation/` (framework, wizard, context-ai) mantenendo logiche e artefatti canonici;
+- aggiornati `README.md`, `HOW_TO.md` e `CONTRIBUTING.md` alla catena Fase 1 -> Fase 2 -> Fase 3;
+- evoluta la Wiki app con contenuti piu esaustivi e guida passo-passo del workflow;
+- trasformata `prompts/` in prompt hub operativo con entrypoint unico e 8 prompt specialistici.
+
 ## [1.0.0] - 2026-04-22
 
 Prima release stabile del framework SMART con integrazione completa tra metodo documentale e web app operativa.

@@ -2,66 +2,50 @@
 
 ## Scopo
 
-Stabilizzare il lessico canonico del repository.
+Stabilizzare il lessico canonico SMART per ridurre ambiguita tra persone, documenti e agenti.
 
-## Termini canonici
+## Termini chiave
 
 ### Framework SMART
 
-Il sistema completo di manifesto, metodo, wizard operativo, playbook e contesto AI.
+Sistema integrato composto da manifesto, framework metodologico, wizard operativo, playbook, contesto AI e app di supporto.
 
-### Manifesto
+### Fase 1
 
-L'insieme dei documenti che spiegano perche SMART esiste, quali principi difende e quali limiti impone.
-
-### Metodologia
-
-L'ordine delle decisioni che porta da un bisogno iniziale a uno script master coerente.
-
-### Modello operativo
-
-La catena pratica che collega intake, `case.json`, script master e derivati.
-
-### Case schema
-
-`wizard/case-schema.json`, cioe lo schema guidato della Fase 1.
-
-### Case template
-
-Un file derivato dal case schema usato per facilitare la compilazione di un caso.
+Intake strutturato guidato da `wizard/case-schema.json` che produce `case.json`.
 
 ### `case.json`
 
-Il caso concreto risultante dalla Fase 1 e usato come input della Fase 2.
+Istanza concreta del caso, validata e usata come input ufficiale della Fase 2.
 
-### Case example
+### Fase 2
 
-Un esempio compilato che mostra come appare un caso plausibile.
+Trasformazione del `case.json` in script master (`wizard/script-master.md`).
 
-### Script master
+### Script master / Documento madre
 
-Il documento madre dell'iniziativa. E l'output centrale della Fase 2.
+Documento centrale dell'iniziativa. Governa tono, limiti, promesse, struttura e criteri di derivazione.
 
-### Documento madre
+### Fase 3
 
-Sinonimo operativo di script master. Nel repository la forma preferita resta `script master`.
+Derivazione e pubblicazione controllata di materiali secondari a partire da script master validato.
 
-### Materiali derivati
+### Derivati
 
-Asset generati a partire dallo script master: slide, naming, brief, pagina evento, email, checklist e simili.
+Slide, email, pagina evento, checklist, brief e altri asset canale-specifici coerenti con documento madre.
+
+### Gate
+
+Controllo formale obbligatorio che determina se una fase puo essere considerata valida e se si puo passare alla fase successiva.
 
 ### Contesto AI
 
-L'insieme di regole e documenti che aiutano un agente a lavorare correttamente sul framework SMART.
+Regole operative che definiscono limiti, output contracts e protocolli di validazione per l'uso di agenti.
 
 ### No-code agentico
 
-Progettazione di processi e framework governati da regole esplicite, senza sviluppo software custom come prerequisito operativo.
-
-### Agente di coding
-
-Assistente AI capace di leggere e modificare repository. In SMART opera come supporto esecutivo entro confini, gate e responsabilita umane definite.
+Progettazione rigorosa di workflow governati da regole esplicite senza richiedere sviluppo software custom come prerequisito metodologico.
 
 ### Legacy
 
-Materiale storico non canonico. Puo esistere come memoria separata, ma non guida l'area attiva del repository.
+Materiale storico non prescrittivo. Utile per memoria, non per guidare lavoro attivo.

@@ -2,55 +2,42 @@
 
 ## Scopo
 
-Fornire una vista formale del processo SMART, con ordine di esecuzione e regole di precedenza tra artefatti.
+Definire il processo SMART in forma compatta, con fasi, gate e precedenze ufficiali.
 
-## Sequenza essenziale
+## Catena canonica
 
 ```text
-case-schema.json
--> compilazione guidata
--> case.json
--> interpretazione Fase 2
--> script-master.md
--> materiali derivati
+Fase 1: case-schema.json -> case.json
+Fase 2: case.json -> script-master.md
+Fase 3: script-master validato -> derivati e materiali pubblicabili
 ```
 
 ## Lettura del processo
 
-### 1. Schema del caso
+1. **Fase 1 - Intake strutturato**
+   - usa `wizard/case-schema.json` come schema vincolante;
+   - produce un `case.json` completo e validabile.
+2. **Fase 2 - Documento madre**
+   - usa il `case.json` come sorgente primaria;
+   - produce `wizard/script-master.md` completo, con assunzioni e nodi aperti.
+3. **Fase 3 - Derivazione e pubblicazione**
+   - usa solo script master validato;
+   - produce derivati coerenti (slide, pagina evento, email, checklist, asset supporto).
 
-`wizard/case-schema.json` definisce cosa puo essere chiesto e come puo essere selezionato.
+## Gate minimi obbligatori
 
-### 2. Caso concreto
+1. gate Fase 1: validazione `case.json`;
+2. gate Fase 2: validazione script master;
+3. gate Fase 3 pre-pubblicazione: validazione derivati.
 
-Il risultato dell'intake e un `case.json` che raccoglie solo le scelte effettive del caso.
+## Regole di precedenza in conflitto
 
-### 3. Documento madre
-
-Il `case.json` viene trasformato nello script master, cioe nel documento principale dell'iniziativa.
-
-### 4. Derivazione
-
-Slide, naming, pagina evento, email, checklist e altri asset si derivano dallo script master, non direttamente dal rumore iniziale.
-
-## Gate di processo
-
-Il processo include tre gate minimi:
-
-1. validazione `case.json` prima della Fase 2;
-2. validazione script master prima della derivazione;
-3. validazione derivati prima della pubblicazione.
-
-## Regola di precedenza
-
-Se due documenti sono in conflitto, prevalgono in questo ordine:
-
-1. `wizard/case-schema.json` per la Fase 1;
-2. `wizard/script-master.md` per la Fase 2;
-3. `framework/` e `manifesto/` per principi, metodo e termini;
-4. `playbooks/` come applicazioni pratiche;
-5. nessuna area storica prescrittiva nel repository attivo.
+1. `wizard/case-schema.json` (struttura Fase 1)
+2. `case.json` (contenuto caso concreto)
+3. `wizard/script-master.md` (struttura Fase 2)
+4. `framework/` + `manifesto/` (principi e lessico)
+5. `playbooks/` (adattamento applicativo)
 
 ## Condizione di conformita
 
-Un progetto SMART e conforme quando la catena Fase 1 -> Fase 2 -> derivazione resta integra e tracciabile senza salti o sostituzioni.
+Un progetto SMART e conforme quando la sequenza Fase 1 -> Fase 2 -> Fase 3 resta tracciabile, senza salti, senza fonti alternative non canoniche e senza promesse fuori documento madre.

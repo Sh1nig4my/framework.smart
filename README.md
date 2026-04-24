@@ -18,10 +18,9 @@ Il framework risolve un problema ricorrente: passare da richieste frammentarie a
 Catena canonica:
 
 ```text
-case-schema.json
--> case.json
--> script-master.md
--> materiali derivati
+Fase 1: case-schema.json -> case.json
+Fase 2: case.json -> script-master.md
+Fase 3: script-master validato -> materiali derivati
 ```
 
 SMART mantiene il controllo umano, rende tracciabile il lavoro degli agenti e protegge coerenza tra promessa, contenuti e diffusione.
@@ -32,6 +31,7 @@ SMART mantiene il controllo umano, rende tracciabile il lavoro degli agenti e pr
 2. Consulta `documentation/wizard/README.md`.
 3. Usa `documentation/wizard/case-schema.json` per la Fase 1.
 4. Usa `documentation/wizard/script-master.md` per la Fase 2.
+5. Usa `documentation/wizard/fase-3-derivazione-pubblicazione.md` per la Fase 3.
 
 Per avviare la web app locale:
 
@@ -49,7 +49,7 @@ La web app non e separata dal framework: ne e parte operativa.
 Pagine principali attive:
 
 - `/` homepage strategica;
-- `/how-to` guida operativa;
+- `/wizard` setup wizard (configurazione e installazione ambiente);
 - `/wiki` documentazione interna ufficiale;
 - `/download` compilazione completa della Fase 1 con salvataggio e download JSON.
 
@@ -59,7 +59,7 @@ Pagine legali di supporto:
 
 ## Privacy e dati (stato attuale)
 
-- database applicativo attivo per il flusso `/fase-1-json`;
+- database applicativo attivo per il flusso `/download`;
 - salvataggio record con dati richiesta, JSON completo, data e ora per manutenzione e miglioramento del framework;
 - blocco duplicati su combinazione `stessa email + stesso JSON`;
 - nessun analytics;

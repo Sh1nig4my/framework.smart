@@ -2,63 +2,40 @@
 
 ## Scopo
 
-Trasformare il `case.json` in uno script master completo, coerente e immediatamente utilizzabile in conduzione.
+Trasformare `case.json` in script master completo, coerente e operativo.
 
-## Input della fase
+## Input
 
-- `case.json` validato;
-- `wizard/script-master.md`;
-- `wizard/script-master-schema.md`;
-- documenti canonici di `framework/` e `manifesto/` ove necessari.
+- `case.json` validato (gate Fase 1 superato)
+- `wizard/script-master.md`
+- `wizard/script-master-schema.md`
 
-## Output della fase
+## Output
 
-- script master completo;
-- elenco assunzioni esplicite;
-- elenco nodi aperti con impatto operativo.
+- script master completo
+- assunzioni dichiarate
+- nodi aperti con impatto operativo
 
-## Procedura operativa
+## Procedura
 
-1. Leggere integralmente `case.json`.
-2. Mappare i dati del caso sulle sezioni dello script master.
-3. Compilare la struttura `wizard/script-master.md` in sequenza.
-4. Verificare consistenza interna del documento.
-5. Integrare limiti, cautele e rischi senza omissioni.
-6. Validare il documento prima della derivazione materiali.
+1. leggere integralmente `case.json`;
+2. mappare i dati del caso sulle sezioni dello script master;
+3. compilare in sequenza tutte le sezioni canoniche;
+4. verificare consistenza narrativa, policy e limiti;
+5. preparare handoff a Fase 3.
 
-## Regole obbligatorie
+## Gate Fase 2
 
-- ogni sezione deve derivare da informazioni presenti nel caso o da assunzioni dichiarate;
-- non introdurre promesse non supportate;
-- non usare formulazioni generiche prive di valore operativo;
-- non trasformare il documento madre in una scheda amministrativa;
-- non derivare materiali secondari prima del gate di qualita.
+Il passaggio a Fase 3 e consentito solo se:
 
-## Definition of done - Fase 2
+1. il documento e completo e leggibile;
+2. ogni sezione e tracciabile al caso o ad assunzioni dichiarate;
+3. non sono presenti promesse non supportate;
+4. lessico e tono risultano coerenti col pubblico.
 
-La Fase 2 e completata solo se lo script master:
+## Errori da bloccare
 
-1. rappresenta integralmente il progetto;
-2. e utilizzabile da divulgatore o docente senza supporti esterni;
-3. esplicita limiti, rischi e confini della promessa;
-4. consente derivazioni coerenti e tracciabili;
-5. include nodi aperti e assunzioni residue.
-
-## Gate di validazione pre-derivazione
-
-Prima di generare asset derivati confermare:
-
-- coerenza con `case.json`;
-- completezza delle sezioni strategiche e operative;
-- tono e lessico allineati al pubblico;
-- cautele AI esplicite;
-- criteri di qualita soddisfatti.
-
-## Uso assistito da AI
-
-Se la generazione e assistita da AI:
-
-1. imporre come vincolo `wizard/script-master.md`;
-2. richiedere output con sezione "assunzioni" e "nodi aperti";
-3. eseguire revisione umana prima della validazione finale;
-4. respingere output non tracciabili al caso.
+- testo generico non operativo;
+- omissione limiti/cautele;
+- contraddizioni col `case.json`;
+- avvio derivazione senza gate Fase 2.

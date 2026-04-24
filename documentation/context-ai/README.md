@@ -2,19 +2,19 @@
 
 ## Scopo
 
-`context-ai/` definisce il perimetro operativo per l'uso di AI sul framework SMART. L'obiettivo è ridurre generazioni non conformi e rendere verificabile ogni output prodotto.
+Definire confini e protocolli per usare agenti AI in modo conforme al framework SMART.
 
-## Principio di controllo
+## Principio operativo
 
 Un output AI e valido solo se:
 
-1. rispetta i vincoli del case schema;
+1. rispetta schema e vincoli Fase 1;
 2. resta tracciabile al `case.json`;
-3. rispetta la struttura di `wizard/script-master.md`;
-4. dichiara assunzioni e nodi aperti;
-5. supera il protocollo di validazione.
+3. rispetta la struttura dello script master in Fase 2;
+4. rispetta la coerenza derivativa in Fase 3;
+5. supera i gate del validation protocol.
 
-## Ordine di lettura raccomandato
+## Ordine di lettura
 
 1. `context-ai/smart-system-context.md`
 2. `context-ai/working-rules.md`
@@ -23,18 +23,6 @@ Un output AI e valido solo se:
 5. `context-ai/validation-protocol.md`
 6. `context-ai/failure-modes.md`
 
-Poi consultare i file canonici del wizard.
-
-## Documenti della cartella
-
-- `smart-system-context.md`: mappa sintetica del sistema SMART.
-- `working-rules.md`: regole operative obbligatorie.
-- `boundaries.md`: confini e divieti.
-- `output-contracts.md`: formato atteso degli output principali.
-- `validation-protocol.md`: gate di controllo pre e post generazione.
-- `failure-modes.md`: errori ricorrenti e azioni correttive.
-- `prompt-templates/`: template guidati con vincoli espliciti.
-
 ## Regola di sicurezza
 
-L'AI non deve sostituire il giudizio umano. Deve supportare il processo entro i limiti formali del framework.
+L'AI supporta il processo ma non sostituisce giudizio e responsabilita umane.

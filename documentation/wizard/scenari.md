@@ -2,74 +2,42 @@
 
 ## Scopo
 
-Fornire casi d'uso ricorrenti per applicare SMART in modo coerente, mantenendo invariata la catena metodologica.
+Fornire pattern applicativi ricorrenti mantenendo invariata la catena Fase 1 -> Fase 2 -> Fase 3.
 
-## Regola trasversale
+## Vincolo trasversale
 
-In ogni scenario restano obbligatori:
+In ogni scenario sono obbligatori:
 
-- produzione di `case.json` validato;
-- generazione di script master completo;
-- derivazione materiali solo a valle del documento madre.
+- `case.json` validato;
+- script master validato;
+- derivati validati pre-pubblicazione.
 
 ## Scenario 1 - Seminario divulgativo
 
-Contesto tipico: orientamento su AI e automazioni per pubblico eterogeneo.
-
-Controlli prioritari:
-
-- chiarezza narrativa;
-- promessa prudente;
-- esempi ad alta concretezza;
-- gestione esplicita di limiti e rischi.
+- priorita: chiarezza narrativa, no hype, esempi concreti;
+- rischio principale: promessa superiore ai contenuti.
 
 ## Scenario 2 - Lezione formativa
 
-Contesto tipico: formazione in ambienti scolastici o professionali.
+- priorita: progressione didattica e verifica finale coerente;
+- rischio principale: mismatch livello pubblico/complessita.
 
-Controlli prioritari:
+## Scenario 3 - Incontro istituzionale
 
-- progressione didattica verificabile;
-- livello di profondita compatibile col gruppo;
-- modalita di verifica finale congruente.
+- priorita: registro sobrio, responsabilita esplicite, limiti chiari;
+- rischio principale: genericita eccessiva o claim non verificabili.
 
-## Scenario 3 - Incontro con enti pubblici
+## Scenario 4 - Collaborazione impresa
 
-Contesto tipico: divulgazione orientata a decisione e adozione consapevole.
-
-Controlli prioritari:
-
-- registro istituzionale chiaro;
-- centralita del giudizio umano;
-- assenza di hype;
-- perimetro e responsabilita esplicitati.
-
-## Scenario 4 - Collaborazione con imprese
-
-Contesto tipico: adozione operativa in contesto organizzativo.
-
-Controlli prioritari:
-
-- relazione diretta tra problema e valore atteso;
-- equilibrio tra visione e operativita;
-- esclusione di promesse non dimostrabili.
+- priorita: utilita operativa misurabile, contenuti riusabili;
+- rischio principale: taglio promozionale non conforme a policy SMART.
 
 ## Scenario 5 - Workshop pratico
 
-Contesto tipico: elevata presenza di dimostrazioni e applicazioni guidate.
-
-Controlli prioritari:
-
-- rapporto teoria-pratica definito;
-- gestione ordinata delle demo;
-- cautele su variabilita strumenti.
+- priorita: equilibrio teoria/pratica, gestione demo, sicurezza operativa;
+- rischio principale: derivati scollegati dal documento madre.
 
 ## Scenario 6 - Percorso multi-sessione
 
-Contesto tipico: iniziative distribuite su piu giornate o moduli.
-
-Controlli prioritari:
-
-- continuita progettuale tra sessioni;
-- milestone intermedie documentate;
-- derivati progressivi allineati allo script master.
+- priorita: continuita tra moduli e milestone documentate;
+- rischio principale: drift progressivo tra sessioni e asset pubblicati.

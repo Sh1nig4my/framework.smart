@@ -39,7 +39,7 @@ export function SiteFooter() {
               </li>
             ))}
             <li>
-              <a href="/wiki" className="transition hover:text-[var(--ink-900)]">
+              <a href="/wiki#what-is-smart" className="transition hover:text-[var(--ink-900)]">
                 Wiki SMART
               </a>
             </li>
