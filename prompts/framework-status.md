@@ -1,4 +1,4 @@
-# Prompt: Framework Status
+# Prompt E: Framework Status
 
 ## Scopo
 
@@ -7,7 +7,8 @@ Generare o aggiornare `FRAMEWORK-STATUS.md` in root con stato dettagliato del fr
 ## Scope consentito
 
 - lettura completa repository;
-- scrittura/aggiornamento del solo file `FRAMEWORK-STATUS.md` in root.
+- scrittura/aggiornamento del file `FRAMEWORK-STATUS.md` in root;
+- aggiornamento di `documentation/` quando indispensabile per correggere incoerenze bloccanti emerse durante il rilievo stato.
 
 ## Requisiti obbligatori output
 

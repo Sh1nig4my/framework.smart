@@ -1,17 +1,18 @@
-# Prompt: Framework Evolution
+# Prompt C: Framework Evolution
 
 ## Scopo
 
-Evolvere il framework agendo esclusivamente sulla documentazione in `documentation/`.
+Evolvere il framework con priorita su `documentation/`, aggiornando anche aree collegate quando necessario.
 
 ## Scope consentito
 
-- modifica, estensione, rifactor e ottimizzazione di file in `documentation/`.
+- modifica, estensione, rifactor e ottimizzazione di file in `documentation/`;
+- aggiornamento di file collegati fuori `documentation/` quando richiesto per mantenere coerenza del framework (es. root docs, prompt hub, changelog).
 
 ## Scope vietato
 
 - non modificare codice app/backend;
-- non alterare file fuori `documentation/`.
+- non introdurre regole in conflitto con artefatti canonici SMART.
 
 ## Obiettivi operativi
 

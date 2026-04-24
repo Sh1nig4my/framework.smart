@@ -38,6 +38,15 @@ Fase 3: script-master validato -> derivati/materiali pubblicabili
 - `wizard/script-master.md` (source of truth Fase 2)
 - `wizard/fase-3-derivazione-pubblicazione.md` (procedura canonica Fase 3)
 
+## Protocollo prompt hub (allineamento operativo)
+
+Per operazioni agentiche, il riferimento e `prompts/README.md` con indice A-H.
+
+Regole per categoria:
+
+- Alignment e Evolution: possono aggiornare anche `documentation/` quando necessario per coerenza canonica.
+- Maintenance e Workflow: non possono modificare `documentation/` in nessun caso.
+
 ## Ordine di lettura consigliato
 
 1. `../README.md`

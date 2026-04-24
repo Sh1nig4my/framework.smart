@@ -23,6 +23,8 @@ Esegui prompts/<nome-prompt>.md.
 Istruzioni custom: <eventuali vincoli o obiettivi extra>.
 ```
 
+In alternativa puoi indicare il prompt per lettera (A-H) usando l'indice rapido.
+
 ## Regole globali valide per tutti i prompt
 
 - non alterare terminologia canonica SMART;
@@ -32,38 +34,47 @@ Istruzioni custom: <eventuali vincoli o obiettivi extra>.
 - eseguire verifiche finali coerenti con lo scope;
 - non toccare aree vietate dal prompt selezionato.
 
+## Regole globali per categoria
+
+- Alignment: puo modificare anche `documentation/` quando serve per mantenere allineamento canonico.
+- Evolution: puo modificare anche `documentation/` quando serve per mantenere coerenza evolutiva del framework.
+- Maintenance: non puo modificare `documentation/` in nessun caso.
+- Workflow: non puo modificare `documentation/` in nessun caso.
+
 ## Catalogo prompt ufficiali
 
-### Maintenance
+Indice rapido (A-H):
 
-- `framework-maintenance.md`
+- A - `app-maintenance.md` (Maintenance)
+- B - `app-evolution.md` (Evolution)
+- C - `framework-evolution.md` (Evolution)
+- D - `framework-maintenance.md` (Maintenance)
+- E - `framework-status.md` (Evolution)
+- F - `homepage-wizard-alignment.md` (Alignment)
+- G - `wiki-alignment.md` (Alignment)
+- H - `workflow-execution.md` (Workflow)
+
+Ordine alfabetico file:
+
 - `app-maintenance.md`
-
-### Alignment
-
-- `wiki-alignment.md`
-- `homepage-wizard-alignment.md`
-
-### Evolution
-
-- `framework-status.md`
-- `framework-evolution.md`
 - `app-evolution.md`
-
-### Workflow
-
+- `framework-evolution.md`
+- `framework-maintenance.md`
+- `framework-status.md`
+- `homepage-wizard-alignment.md`
+- `wiki-alignment.md`
 - `workflow-execution.md`
 
 ## Mappa scope rapido
 
-- framework-maintenance: solo `documentation/`
-- app-maintenance: app + docs annesse fuori `documentation/`
-- wiki-alignment: allinea `/wiki` a `documentation/`
-- homepage-wizard-alignment: allinea `/` e `/wizard` a `documentation/`
-- framework-status: genera/aggiorna `FRAMEWORK-STATUS.md` in root
-- framework-evolution: evoluzione solo `documentation/`
-- app-evolution: evoluzione app + docs annesse fuori `documentation/`
-- workflow-execution: esecuzione operativa Fase 1/2/3 su singolo progetto
+- A `app-maintenance`: manutenzione app + root docs operative, senza modifiche in `documentation/`
+- B `app-evolution`: evoluzione app con possibilita di aggiornare `documentation/` se necessario
+- C `framework-evolution`: evoluzione framework con possibilita di aggiornare `documentation/` se necessario
+- D `framework-maintenance`: manutenzione framework operativo fuori `documentation/`
+- E `framework-status`: genera/aggiorna `FRAMEWORK-STATUS.md` (puo aggiornare `documentation/` se indispensabile)
+- F `homepage-wizard-alignment`: allinea `/` e `/wizard`, con possibilita di riallineare `documentation/` se necessario
+- G `wiki-alignment`: allinea `/wiki` e puo aggiornare `documentation/` se necessario
+- H `workflow-execution`: esecuzione operativa Fase 1/2/3 senza modifiche a `documentation/`
 
 ## Criterio di conformita finale
 

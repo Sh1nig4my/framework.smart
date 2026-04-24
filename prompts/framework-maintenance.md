@@ -1,24 +1,25 @@
-# Prompt: Framework Maintenance
+# Prompt D: Framework Maintenance
 
 ## Scopo
 
-Eseguire revisione profonda e manutenzione della documentazione SMART nella sola cartella `documentation/`.
+Eseguire revisione profonda e manutenzione del framework SMART nelle aree operative fuori `documentation/`.
 
 ## Scope consentito
 
 - puoi leggere tutto il repository;
-- puoi modificare solo file dentro `documentation/`.
+- puoi modificare file root e di supporto framework fuori `documentation/` (es. `README.md`, `HOW_TO.md`, `CONTRIBUTING.md`, `CHANGELOG.md`, `prompts/`, `FRAMEWORK-STATUS.md`).
 
 ## Scope vietato
 
-- nessuna modifica in `app/`, `server/`, `shared/`, root docs fuori `documentation/`.
+- nessuna modifica in `documentation/`;
+- nessuna modifica in `app/`, `server/`, `shared/` salvo fix minimi necessari a ripristinare coerenza framework-level dichiarata.
 
 ## Obiettivi operativi
 
 1. trovare disallineamenti, incongruenze, ambiguita e link interni non coerenti;
 2. identificare bug logici di workflow e conflitti tra fasi;
 3. proporre fix logiche/funzionali/editoriali;
-4. pianificare interventi e poi implementarli solo in `documentation/`.
+4. pianificare interventi e implementarli solo nelle aree consentite fuori `documentation/`.
 
 ## Procedura obbligatoria
 
@@ -31,6 +32,6 @@ Eseguire revisione profonda e manutenzione della documentazione SMART nella sola
 
 ## Output atteso
 
-- documentazione in `documentation/` riallineata e coerente;
+- framework operativo fuori `documentation/` riallineato e coerente;
 - elenco issue corrette;
 - eventuali nodi aperti espliciti.

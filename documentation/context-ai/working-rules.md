@@ -17,6 +17,20 @@ Definire regole operative obbligatorie per agenti AI su SMART.
 9. non alterare lessico canonico senza richiesta esplicita;
 10. blocca avanzamento se il gate di fase non e superato.
 
+## Regole prompt hub (A-H)
+
+Quando il task richiede uso dei prompt:
+
+1. leggi sempre `prompts/README.md` prima dell'esecuzione;
+2. seleziona il prompt corretto per categoria o lettera (A-H);
+3. rispetta scope consentito/vietato del prompt selezionato;
+4. mantieni tracciabilita tra richiesta, file toccati e decisioni.
+
+Vincoli categoria su `documentation/`:
+
+- Alignment e Evolution: modifica consentita se necessaria a mantenere coerenza canonica.
+- Maintenance e Workflow: modifica non consentita in nessun caso.
+
 ## Formato minimo risposta controllata
 
 1. `output`

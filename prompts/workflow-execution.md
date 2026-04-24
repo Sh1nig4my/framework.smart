@@ -1,4 +1,4 @@
-# Prompt: Workflow Execution
+# Prompt H: Workflow Execution
 
 ## Scopo
 
@@ -14,6 +14,10 @@ Eseguire il workflow SMART su un singolo progetto, coprendo Fase 1 e/o Fase 2 e/
 ## Regola chiave
 
 Non passare alla fase successiva senza validazione della fase corrente, anche quando l'input viene fornito gia compilato.
+
+## Scope vietato
+
+- non modificare file in `documentation/` in nessun caso durante questo prompt.
 
 ## Procedura per fasi
 

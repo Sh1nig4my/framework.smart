@@ -1,4 +1,4 @@
-# Prompt: App Maintenance
+# Prompt A: App Maintenance
 
 ## Scopo
 
@@ -12,6 +12,7 @@ Eseguire revisione profonda dell'app Next.js e della documentazione annessa fuor
 ## Scope vietato
 
 - non modificare file dentro `documentation/`.
+- non aggiornare regole canoniche del framework in `documentation/`.
 
 ## Obiettivi operativi
 

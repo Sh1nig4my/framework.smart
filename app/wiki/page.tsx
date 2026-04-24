@@ -5,7 +5,7 @@ import { WikiBrowser } from "@/app/components/wiki-browser";
 export const metadata: Metadata = {
   title: "Wiki",
   description:
-    "Wiki interna SMART: riferimento documentale ufficiale con navigazione gerarchica, contenuti modulari e link interni.",
+    "Wiki interna SMART: guida professionale del framework con workflow operativi, gate di qualita e riferimenti canonici tracciabili.",
 };
 
 export default function WikiPage() {
@@ -16,11 +16,11 @@ export default function WikiPage() {
         <header className="space-y-4">
           <p className="text-xs font-semibold tracking-[0.22em] text-[var(--brand-700)] uppercase">Wiki SMART</p>
           <h1 className="max-w-4xl text-4xl leading-tight font-semibold md:text-5xl">
-            La documentazione interna ufficiale del framework
+            La guida professionale ufficiale del framework SMART
           </h1>
           <p className="max-w-3xl text-base leading-relaxed text-[var(--ink-700)]">
-            Consulta capitoli e sottosezioni senza uscire dalla pagina. La Wiki e pensata come base unica per onboarding,
-            applicazione operativa e evoluzione futura dello standard SMART.
+            Consulta capitoli e sottosezioni senza uscire dalla pagina. Ogni sezione include contesto, workflow passo-passo,
+            quality gate, errori da evitare e riferimenti canonici per lavorare con standard enterprise.
           </p>
         </header>
 

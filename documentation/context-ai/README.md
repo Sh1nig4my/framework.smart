@@ -26,3 +26,7 @@ Un output AI e valido solo se:
 ## Regola di sicurezza
 
 L'AI supporta il processo ma non sostituisce giudizio e responsabilita umane.
+
+## Nota operativa prompt
+
+Quando il task e guidato da prompt, applicare il protocollo in `prompts/README.md` (indice A-H) e rispettare i vincoli di categoria su `documentation/`.

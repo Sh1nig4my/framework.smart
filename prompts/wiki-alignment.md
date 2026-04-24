@@ -1,4 +1,4 @@
-# Prompt: Wiki Alignment
+# Prompt G: Wiki Alignment
 
 ## Scopo
 
@@ -7,11 +7,12 @@ Allineare la pagina `/wiki` dell'app all'ultima versione della documentazione in
 ## Scope consentito
 
 - lettura completa `documentation/`;
+- aggiornamento di `documentation/` quando necessario per riallineare fonti canoniche e pagina wiki;
 - modifica dei file Wiki nell'app (es. `app/wiki/*`, `app/components/*wiki*`).
 
 ## Scope vietato
 
-- non cambiare contenuti canonici in `documentation/` (salvo istruzione esplicita separata).
+- non introdurre claim wiki non tracciabili ai contenuti canonici aggiornati.
 
 ## Procedura obbligatoria
 

@@ -12,6 +12,10 @@ Refactor strutturale pre-release con consolidamento metodologia agentica, rialli
 - aggiornati `README.md`, `HOW_TO.md` e `CONTRIBUTING.md` alla catena Fase 1 -> Fase 2 -> Fase 3;
 - evoluta la Wiki app con contenuti piu esaustivi e guida passo-passo del workflow;
 - trasformata `prompts/` in prompt hub operativo con entrypoint unico e 8 prompt specialistici.
+- estesa la pagina `/wiki` in formato guida professionale con workflow operativi, gate, anti-pattern e riferimenti canonici;
+- riallineate le regole del prompt hub: Alignment/Evolution possono aggiornare `documentation/` se necessario, Maintenance/Workflow no;
+- introdotto indice prompt A-H per invocazione rapida e tracciabile.
+- aggiornati `documentation/README.md` e `documentation/context-ai/` per allineare il protocollo prompt hub A-H e i vincoli categoria su `documentation/`.
 
 ## [1.0.0] - 2026-04-22
 

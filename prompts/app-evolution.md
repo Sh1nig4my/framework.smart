@@ -1,17 +1,18 @@
-# Prompt: App Evolution
+# Prompt B: App Evolution
 
 ## Scopo
 
-Evolvere app e documentazione annessa fuori `documentation/`.
+Evolvere app e documentazione di progetto, inclusa `documentation/` quando necessario.
 
 ## Scope consentito
 
 - `app/`, `server/`, `shared/`, file root di supporto;
-- UX/UI, routing, componenti, API, qualità tecnica.
+- `documentation/` quando serve per mantenere coerenza con l'evoluzione applicativa;
+- UX/UI, routing, componenti, API, qualita tecnica.
 
 ## Scope vietato
 
-- non modificare `documentation/`.
+- non introdurre cambiamenti canonici non tracciati tra app e documentazione.
 
 ## Obiettivi operativi
 
@@ -26,4 +27,4 @@ Evolvere app e documentazione annessa fuori `documentation/`.
 2. piano implementativo incrementale;
 3. modifica codice con attenzione a backward compatibility;
 4. validazione tecnica (lint/build/test disponibili);
-5. aggiornamento documenti annessi fuori `documentation/`.
+5. aggiornamento documenti annessi e, se necessario, aggiornamento coerente di `documentation/`.

@@ -1,4 +1,4 @@
-# Prompt: Homepage + Wizard Alignment
+# Prompt F: Homepage + Wizard Alignment
 
 ## Scopo
 
@@ -7,11 +7,12 @@ Allineare le pagine `/` e `/wizard` all'ultima documentazione ufficiale in `docu
 ## Scope consentito
 
 - modifica delle pagine UI e componenti correlati per Home/Wizard;
+- aggiornamento mirato di `documentation/` quando necessario a mantenere allineamento canonico;
 - aggiornamento copy e CTA coerenti con metodologia SMART.
 
 ## Scope vietato
 
-- non modificare `documentation/` in questo prompt.
+- non alterare principi canonici senza riallineamento esplicito dei riferimenti.
 
 ## Procedura obbligatoria
 
