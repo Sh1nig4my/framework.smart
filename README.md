@@ -1,4 +1,4 @@
-# SMART Framework v1.0.0
+# SMART Framework v1.2.0
 
 SMART e un framework agentico no-code per progettare, governare e diffondere iniziative formative con processi standardizzati, sicurezza operativa e uso responsabile dell'AI.
 

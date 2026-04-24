@@ -1,4 +1,4 @@
-# HOW TO - Uso operativo SMART v1.0.0
+# HOW TO - Uso operativo SMART v1.2.0
 
 ## Scopo
 
