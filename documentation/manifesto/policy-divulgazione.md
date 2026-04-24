@@ -31,4 +31,4 @@ SMART evita, salvo casi motivati:
 - taglio puramente commerciale;
 - abuso di jargon;
 - demo complesse senza reale utilita didattica;
-- materiali scollegati dal documento madre.
+- materiali scollegati dalla cartella master.

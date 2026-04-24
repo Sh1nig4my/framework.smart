@@ -1,41 +1,53 @@
-# Fase 2 - Generazione dello script master
+# Fase 2 - Generazione della cartella master
 
 ## Scopo
 
-Trasformare `case.json` in script master completo, coerente e operativo.
+Trasformare `case.json` in `cartella-master/` completa, coerente, modulare e pronta all'handoff verso Fase 3.
 
 ## Input
 
 - `case.json` validato (gate Fase 1 superato)
-- `wizard/script-master.md`
-- `wizard/script-master-schema.md`
+- `wizard/cartella-master-template.md`
+- `wizard/cartella-master-schema.md`
+- `wizard/cartella-master-validation.md`
 
 ## Output
 
-- script master completo
-- assunzioni dichiarate
+- `cartella-master/` completa secondo struttura canonica
+- assunzioni dichiarate e tracciate nei file di sezione
 - nodi aperti con impatto operativo
+- handoff Fase 3 compilato
 
-## Procedura
+## Regola centrale
+
+La Fase 2 non produce un singolo documento: produce una cartella strutturata in sezioni indipendenti, leggibili e generabili anche in task separati.
+
+## Procedura modulare
 
 1. leggere integralmente `case.json`;
-2. mappare i dati del caso sulle sezioni dello script master;
-3. compilare in sequenza tutte le sezioni canoniche;
-4. verificare consistenza narrativa, policy e limiti;
-5. preparare handoff a Fase 3.
+2. inizializzare la struttura canonica di `cartella-master/`;
+3. compilare `00_index/` con mappa, stato e ordine di lettura;
+4. generare sezioni core (`01_overview/`, `02_event_structure/`) con tracciabilita al caso;
+5. generare sezioni specialistiche (`03_daily_events/`, `04_multi_day_events/`, `05_collections/`, `06_seminars/`, `07_content_types/`) in modo modulare;
+6. produrre i file per agenti in `08_agent_ready_files/`;
+7. completare handoff in `09_phase_3_handoff/`;
+8. validare la cartella con `wizard/cartella-master-validation.md`.
 
 ## Gate Fase 2
 
 Il passaggio a Fase 3 e consentito solo se:
 
-1. il documento e completo e leggibile;
-2. ogni sezione e tracciabile al caso o ad assunzioni dichiarate;
-3. non sono presenti promesse non supportate;
-4. lessico e tono risultano coerenti col pubblico.
+1. la cartella contiene tutte le directory canoniche obbligatorie;
+2. ogni file obbligatorio e compilato in forma operativa;
+3. ogni sezione e tracciabile al `case.json` o ad assunzioni esplicite;
+4. non esistono contraddizioni tra file della cartella;
+5. `09_phase_3_handoff/` autorizza in modo esplicito la derivazione.
 
 ## Errori da bloccare
 
-- testo generico non operativo;
-- omissione limiti/cautele;
-- contraddizioni col `case.json`;
+- cartella piatta senza architettura di sezione;
+- compilazione monolitica non modulare;
+- file generici senza valore operativo;
+- omissione limiti/cautele nelle sezioni critiche;
+- contraddizioni col `case.json` o tra file interni;
 - avvio derivazione senza gate Fase 2.

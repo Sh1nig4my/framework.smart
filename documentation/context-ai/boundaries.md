@@ -12,7 +12,7 @@ Definire i confini non negoziabili che un'AI deve rispettare quando opera sul fr
 - non usare materiali storici come fonte normativa;
 - non simulare dati mancanti come se fossero certi;
 - non spostare il centro del processo dai documenti canonici a prompt occasionali.
-- non produrre derivati in assenza di script master validato;
+- non produrre derivati in assenza di cartella master validata;
 - non sostituire la revisione umana con autocertificazione AI.
 
 ## Cosa deve fare quando incontra incertezza

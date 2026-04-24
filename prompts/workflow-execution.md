@@ -8,7 +8,7 @@ Eseguire il workflow SMART su un singolo progetto, coprendo Fase 1 e/o Fase 2 e/
 
 - requisiti testuali del progetto;
 - `case.json` gia disponibile oppure da costruire;
-- script master gia disponibile oppure da generare;
+- cartella master gia disponibile oppure da generare;
 - istruzioni custom dell'utente.
 
 ## Regola chiave
@@ -22,8 +22,8 @@ Non passare alla fase successiva senza validazione della fase corrente, anche qu
 ## Procedura per fasi
 
 1. **Fase 1**: raccogli/valida requisiti contro schema canonico e produci o correggi `case.json`.
-2. **Fase 2**: genera o valida script master dal `case.json`.
-3. **Fase 3**: genera o revisiona derivati/materiali pubblicabili dal documento madre validato.
+2. **Fase 2**: genera o valida cartella master dal `case.json`.
+3. **Fase 3**: genera o revisiona derivati/materiali pubblicabili dalla cartella master validata.
 
 ## Funzioni obbligatorie
 

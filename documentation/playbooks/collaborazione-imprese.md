@@ -30,7 +30,7 @@ Usare questo playbook per:
 
 1. Inquadra il bisogno reale dell'impresa prima dei tool.
 2. Usa la Fase 1 per chiarire maturita del pubblico e priorita contenutistica.
-3. Nello script master esplicita cosa il pubblico potra fare dopo l'iniziativa.
+3. Nella cartella master esplicita cosa il pubblico potra fare dopo l'iniziativa.
 4. Se i tool sono centrali, chiarisci anche limiti e variabilita.
 5. Deriva solo materiali che aiutano davvero l'adozione o la continuita.
 
@@ -52,7 +52,7 @@ Prima della derivazione verificare:
 
 ## Criteri di successo
 
-- il documento madre orienta decisioni operative reali;
+- la cartella master orienta decisioni operative reali;
 - i derivati supportano implementazione e continuita;
 - il progetto resta coerente con limiti e confini dichiarati.
 

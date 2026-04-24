@@ -16,17 +16,17 @@ Sintomo: valori non presenti nelle liste ammesse.
 
 Azione: normalizzare i valori o riaprire chiarimento input.
 
-## Errore 3 - Script master generico
+## Errore 3 - Cartella master generica
 
-Sintomo: sezioni compilate con testo astratto e non operativo.
+Sintomo: sezioni compilate con testo astratto, non operativo o duplicate tra file.
 
 Azione: rigenerare sezione per sezione con mapping esplicito al caso.
 
 ## Errore 4 - Derivati non coerenti
 
-Sintomo: tono o promessa non allineati allo script master.
+Sintomo: tono o promessa non allineati alla cartella master.
 
-Azione: bloccare pubblicazione e rigenerare usando riferimento puntuale alle sezioni del documento madre.
+Azione: bloccare pubblicazione e rigenerare usando riferimento puntuale alle sezioni della cartella master.
 
 ## Errore 5 - Assunzioni non dichiarate
 

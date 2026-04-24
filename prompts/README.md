@@ -43,16 +43,34 @@ In alternativa puoi indicare il prompt per lettera (A-H) usando l'indice rapido.
 
 ## Catalogo prompt ufficiali
 
+Nomi prompt pronti per copia/incolla:
+
 Indice rapido (A-H):
 
-- A - `app-maintenance.md` (Maintenance)
-- B - `app-evolution.md` (Evolution)
-- C - `framework-evolution.md` (Evolution)
-- D - `framework-maintenance.md` (Maintenance)
-- E - `smart-status.md` (Evolution)
-- F - `homepage-wizard-alignment.md` (Alignment)
-- G - `wiki-alignment.md` (Alignment)
-- H - `workflow-execution.md` (Workflow)
+```text
+A - `app-maintenance.md` (Maintenance)
+```
+```text
+B - `app-evolution.md` (Evolution)
+```
+```text
+C - `framework-evolution.md` (Evolution)
+```
+```text
+D - `framework-maintenance.md` (Maintenance)
+```
+```text
+E - `smart-status.md` (Evolution)
+```
+```text
+F - `homepage-wizard-alignment.md` (Alignment)
+```
+```text
+G - `wiki-alignment.md` (Alignment)
+```
+```text
+H - `workflow-execution.md` (Workflow)
+```
 
 Ordine alfabetico file:
 

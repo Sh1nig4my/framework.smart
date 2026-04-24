@@ -21,7 +21,7 @@ Adatto a contesti scolastici, universitari o professionali in cui la sequenza di
 2. Calibra `audience_experience_level` e `content_depth` con attenzione.
 3. Scegli una progressione che eviti salti logici.
 4. Inserisci verifica finale o restituzione coerente con il livello del gruppo.
-5. Compila nello script master i blocchi in ordine progressivo.
+5. Compila in `03_daily_events/` i blocchi in ordine progressivo e completa `07_content_types/`.
 
 ## Gate di controllo
 

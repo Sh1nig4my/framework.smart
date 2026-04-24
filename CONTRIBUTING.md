@@ -11,9 +11,9 @@ Entrypoint ufficiale del progetto: `README.md` in root.
 Ogni contributo deve rispettare gli invarianti canonici:
 
 - `wizard/case-schema.json` resta source of truth della Fase 1;
-- `wizard/script-master.md` resta source of truth della Fase 2;
+- `wizard/cartella-master-template.md` + `wizard/cartella-master-schema.md` restano source of truth della Fase 2;
 - `wizard/fase-3-derivazione-pubblicazione.md` governa la Fase 3;
-- lo script master resta documento madre per ogni derivazione;
+- la cartella master resta artefatto centrale per ogni derivazione;
 - SMART integra framework documentale e web app operativa in un unico sistema.
 
 ## Ambiti di modifica
@@ -49,7 +49,7 @@ Contributi in `context-ai/` devono:
 - evitare prompt generici non governati;
 - definire output attesi, assunzioni e criteri di fallimento;
 - includere vincoli espliciti contro invenzioni fuori schema;
-- mantenere piena coerenza con `wizard/case-schema.json` e `wizard/script-master.md`.
+- mantenere piena coerenza con `wizard/case-schema.json`, `wizard/cartella-master-template.md` e `wizard/cartella-master-schema.md`.
 
 ## Contributi non ammessi
 

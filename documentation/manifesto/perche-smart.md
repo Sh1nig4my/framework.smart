@@ -19,7 +19,7 @@ Molte iniziative formative e divulgative nascono in modo frammentato:
 SMART introduce un processo documentale chiaro:
 
 - prima raccoglie i requisiti in modo strutturato;
-- poi genera un documento madre abbastanza forte da governare il resto;
+- poi genera una cartella master abbastanza forte da governare il resto;
 - solo dopo consente di derivare i materiali successivi.
 
 ## Risultato atteso
@@ -43,4 +43,4 @@ E un framework che:
 
 Il risultato principale non e una slide, una mail o una locandina.
 
-Il risultato principale e uno script master che consolida il senso dell'iniziativa e rende derivabili gli altri materiali senza perdita di coerenza.
+Il risultato principale e una cartella master che consolida il senso dell'iniziativa e rende derivabili gli altri materiali senza perdita di coerenza.

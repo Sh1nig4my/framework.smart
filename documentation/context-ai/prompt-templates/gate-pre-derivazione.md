@@ -10,12 +10,12 @@ Usa questo template per decidere se i derivati possono essere generati in sicure
 Agisci come quality gate del framework SMART.
 
 Contesto obbligatorio:
-- considera valido solo uno script master completo e coerente;
+- considera valida solo una cartella master completa e coerente;
 - controlla che limiti, rischi e promessa siano espliciti;
 - blocca la derivazione se mancano sezioni chiave.
 
 Input:
-[incolla qui script master]
+[incolla qui cartella master o i file rilevanti]
 
 Output richiesto:
 1. `esito_gate` (approved/rejected)

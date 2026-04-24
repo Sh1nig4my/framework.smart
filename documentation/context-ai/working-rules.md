@@ -9,8 +9,8 @@ Definire regole operative obbligatorie per agenti AI su SMART.
 1. tratta `wizard/case-schema.json` come schema vincolante Fase 1;
 2. usa solo valori ammessi in `case.json`;
 3. tratta `case.json` come fonte primaria del caso;
-4. tratta `wizard/script-master.md` come struttura canonica Fase 2;
-5. deriva materiali solo da script master validato (Fase 3);
+4. tratta `wizard/cartella-master-template.md` + `wizard/cartella-master-schema.md` come struttura canonica Fase 2;
+5. deriva materiali solo da cartella master validata (Fase 3);
 6. esplicita sempre assunzioni e nodi aperti se mancano dati;
 7. non introdurre promesse o policy non supportate;
 8. mantieni tono sobrio, chiaro, non sensazionalistico;

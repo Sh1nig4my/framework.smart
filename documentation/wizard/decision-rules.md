@@ -8,19 +8,21 @@ Stabilire regole di precedenza e criteri di accettazione output per tutte le fas
 
 1. `wizard/case-schema.json` (struttura Fase 1)
 2. `case.json` (contenuto caso concreto)
-3. `wizard/script-master.md` (struttura Fase 2)
+3. `wizard/cartella-master-template.md` + `wizard/cartella-master-schema.md` (struttura Fase 2)
 4. `framework/` + `manifesto/` (principi, lessico, governance)
 5. `playbooks/` (adattamento operativo)
 
 ## Regole Fase 1 -> Fase 2
 
 - il contenuto della Fase 2 deriva dal `case.json`;
+- la Fase 2 produce una cartella master modulare, non un documento unico;
 - assunzioni e nodi aperti devono essere espliciti;
 - nessuna contraddizione e nessuna invenzione fuori caso.
 
 ## Regole Fase 2 -> Fase 3
 
 - i derivati sono consentiti solo dopo gate Fase 2;
+- i derivati devono riferirsi a file/section source nella cartella master;
 - il significato non puo essere alterato nel cambio canale;
 - nessuna nuova promessa e nessuna nuova regola implicita.
 

@@ -143,9 +143,9 @@ La Fase 1 termina quando esiste un `case.json` sufficiente per alimentare la gen
 Da quel punto operativo:
 
 1. il `case.json` diventa la fonte primaria del caso;
-2. `wizard/script-master.md` diventa la struttura canonica dell'output finale;
-3. il caso viene trasformato nello script master;
-4. i derivati vengono prodotti solo a valle dello script master.
+2. `wizard/cartella-master-template.md` + `wizard/cartella-master-schema.md` definiscono la struttura canonica della Fase 2;
+3. il caso viene trasformato in una cartella master modulare;
+4. i derivati vengono prodotti solo a valle della cartella master validata.
 
 ## Riferimenti
 

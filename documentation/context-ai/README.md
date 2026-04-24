@@ -10,7 +10,7 @@ Un output AI e valido solo se:
 
 1. rispetta schema e vincoli Fase 1;
 2. resta tracciabile al `case.json`;
-3. rispetta la struttura dello script master in Fase 2;
+3. rispetta la struttura della cartella master in Fase 2;
 4. rispetta la coerenza derivativa in Fase 3;
 5. supera i gate del validation protocol.
 
