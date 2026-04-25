@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.5.1] - 2026-04-25
+
+Rifinitura pre-produzione con riallineamento versione framework e revisione completa framework+app.
+
+- aggiornato versioning a `1.5.1` in `package.json`, `package-lock.json`, `README.md` e `HOW_TO.md`;
+- consolidata UX della Wiki: riferimenti canonici in uscita verso GitHub blob ufficiali, navigazione interna con scroll contestuale e reset completo vista da navbar su `/wiki`;
+- migliorata navigazione globale con evidenza della pagina attiva in navbar (`aria-current` + stato visivo chiaro);
+- completata verifica pre-rilascio su app e framework con validazioni tecniche (`npm run lint`, `npm run build`) e controllo coerenza baseline versione/documentazione.
+
 ## [1.5.0] - 2026-04-25
 
 Refactor evolutivo completo di web app e backend con allineamento documentale pre-rilascio.
