@@ -1,21 +1,28 @@
 @import "tailwindcss";
 
 :root {
-  --surface-0: #f5f8f8;
-  --surface-1: #eaf1f1;
-  --surface-2: #d8e3e3;
-  --surface-3: #c2d4d4;
+  --surface-0: #fffdf9;
+  --surface-1: #fff9f2;
+  --surface-2: #fff4e9;
+  --surface-3: #fcead7;
 
   --ink-900: #0d2226;
   --ink-800: #1b3a40;
   --ink-700: #35545a;
   --ink-600: #567178;
 
-  --line: #cfdddd;
-  --line-strong: #9fb8b9;
-  --brand-700: #0f7b78;
-  --brand-500: #1ba19d;
-  --brand-400: #3fc1bb;
+  --line: #d7dde4;
+  --line-strong: #9cabbe;
+  --brand-700: #00a85f;
+  --brand-500: #00c978;
+  --brand-400: #44f29b;
+  --brand-300: #a3f7cb;
+  --accent-blue-700: #0e4f92;
+  --accent-blue-500: #1d6fd0;
+  --accent-blue-100: #dcebff;
+  --accent-red-700: #b54637;
+  --accent-red-500: #d05847;
+  --accent-red-100: #f9e2de;
   --danger-600: #b53333;
   --success-700: #17694f;
 }
@@ -48,9 +55,9 @@ button:focus-visible {
   pointer-events: none;
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 15% 15%, rgba(255, 161, 94, 0.3), transparent 48%),
-    radial-gradient(circle at 82% 18%, rgba(0, 148, 255, 0.2), transparent 42%),
-    radial-gradient(circle at 50% 90%, rgba(36, 210, 168, 0.16), transparent 46%);
+  background: radial-gradient(circle at 14% 12%, rgba(0, 201, 120, 0.18), transparent 46%),
+    radial-gradient(circle at 84% 18%, rgba(29, 111, 208, 0.12), transparent 42%),
+    radial-gradient(circle at 50% 92%, rgba(208, 88, 71, 0.08), transparent 48%);
 }
 
 .page-container {
@@ -68,6 +75,219 @@ button:focus-visible {
 }
 
 @layer components {
+  .sf-page-shell {
+    position: relative;
+    isolation: isolate;
+    min-height: 100%;
+    overflow: hidden;
+  }
+
+  .sf-page-glow {
+    pointer-events: none;
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 14% 12%, rgba(0, 201, 120, 0.18), transparent 46%),
+      radial-gradient(circle at 84% 18%, rgba(29, 111, 208, 0.12), transparent 42%),
+      radial-gradient(circle at 50% 92%, rgba(208, 88, 71, 0.08), transparent 48%);
+  }
+
+  .sf-container {
+    position: relative;
+    margin-inline: auto;
+    width: 100%;
+    max-width: 72rem;
+    padding: 2.5rem 1.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .sf-container {
+      padding: 4rem 2.5rem;
+    }
+  }
+
+  .sf-hero {
+    @apply rounded-3xl border p-6 shadow-[0_24px_70px_-40px_rgba(7,21,35,0.6)] md:p-8;
+    border-color: var(--line);
+    background: linear-gradient(
+      145deg,
+      color-mix(in srgb, white 95%, var(--surface-1) 5%),
+      color-mix(in srgb, white 88%, var(--surface-2) 12%)
+    );
+  }
+
+  .sf-hero-title {
+    @apply mt-3 max-w-4xl text-4xl leading-tight font-semibold md:text-5xl;
+  }
+
+  .sf-hero-copy {
+    @apply mt-4 max-w-4xl text-base leading-relaxed md:text-lg;
+    color: var(--ink-700);
+  }
+
+  .sf-hero-note {
+    @apply mt-3 max-w-4xl text-sm leading-relaxed md:text-base;
+    color: var(--ink-600);
+  }
+
+  .sf-section {
+    @apply rounded-2xl border p-6 md:p-7;
+    border-color: var(--line);
+    background: color-mix(in srgb, white 92%, var(--surface-1) 8%);
+  }
+
+  .sf-card-surface {
+    @apply rounded-2xl border p-6 md:p-7;
+    border-color: var(--line);
+    background: color-mix(in srgb, white 94%, var(--surface-1) 6%);
+  }
+
+  .sf-card-muted {
+    @apply rounded-2xl border p-6 md:p-7;
+    border-color: var(--line);
+    background: linear-gradient(160deg, color-mix(in srgb, white 78%, var(--surface-1) 22%), color-mix(in srgb, white 66%, var(--surface-2) 34%));
+  }
+
+  .sf-eyebrow-badge {
+    @apply inline-flex items-center rounded-full border px-3 py-1 text-[11px] font-semibold tracking-[0.13em] uppercase;
+    border-color: color-mix(in srgb, var(--brand-500) 38%, var(--line-strong) 62%);
+    color: color-mix(in srgb, var(--brand-700) 78%, var(--ink-700) 22%);
+    background: color-mix(in srgb, white 74%, var(--brand-300) 26%);
+  }
+
+  .sf-button-primary,
+  .sf-button-secondary,
+  .sf-btn-ghost {
+    @apply inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-semibold transition;
+  }
+
+  .sf-button-primary {
+    color: white;
+    border: 1px solid color-mix(in srgb, var(--brand-700) 65%, black 35%);
+    background: linear-gradient(120deg, var(--brand-700), var(--brand-500));
+    box-shadow: 0 10px 24px -14px color-mix(in srgb, var(--brand-700) 70%, transparent 30%);
+  }
+
+  .sf-button-primary:hover {
+    transform: translateY(-1px);
+    background: linear-gradient(120deg, color-mix(in srgb, var(--brand-700) 86%, black 14%), var(--brand-500));
+  }
+
+  .sf-button-secondary {
+    border: 1px solid color-mix(in srgb, var(--accent-blue-700) 35%, var(--line-strong) 65%);
+    color: color-mix(in srgb, var(--accent-blue-700) 78%, var(--ink-800) 22%);
+    background: color-mix(in srgb, white 82%, var(--accent-blue-100) 18%);
+  }
+
+  .sf-button-secondary:hover {
+    border-color: var(--accent-blue-500);
+    color: var(--ink-900);
+    background: color-mix(in srgb, white 66%, var(--accent-blue-100) 34%);
+  }
+
+  .sf-btn-ghost {
+    border: 1px solid color-mix(in srgb, var(--line-strong) 78%, var(--accent-blue-100) 22%);
+    color: color-mix(in srgb, var(--accent-blue-700) 52%, var(--ink-700) 48%);
+    background: color-mix(in srgb, white 62%, var(--surface-1) 38%);
+  }
+
+  .sf-btn-ghost:hover {
+    color: var(--ink-900);
+    border-color: var(--line-strong);
+  }
+
+  .sf-grid-2 {
+    @apply grid gap-6 md:grid-cols-2;
+  }
+
+  .sf-grid-3 {
+    @apply grid gap-6 md:grid-cols-3;
+  }
+
+  .sf-checklist {
+    @apply mt-4 space-y-3;
+  }
+
+  .sf-checklist-item {
+    @apply flex items-start gap-3 rounded-xl border px-4 py-3 text-sm leading-relaxed;
+    border-color: var(--line);
+    color: var(--ink-700);
+    background: color-mix(in srgb, white 86%, var(--surface-1) 14%);
+  }
+
+  .sf-checklist-icon {
+    @apply mt-0.5 inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full text-xs font-bold;
+    color: white;
+    background: var(--brand-700);
+  }
+
+  .sf-alert-note {
+    @apply rounded-xl border p-4 text-sm leading-6;
+    border-color: color-mix(in srgb, var(--accent-red-500) 42%, white 58%);
+    background: color-mix(in srgb, var(--accent-red-100) 56%, white 44%);
+    color: color-mix(in srgb, var(--accent-red-700) 62%, var(--ink-900) 38%);
+  }
+
+  .sf-step-card {
+    @apply rounded-2xl border;
+    border-color: var(--line);
+    background: linear-gradient(160deg, color-mix(in srgb, white 93%, var(--surface-1) 7%), color-mix(in srgb, white 86%, var(--surface-2) 14%));
+  }
+
+  .sf-step-head {
+    @apply flex flex-col gap-4 border-b p-6 md:flex-row md:items-start md:justify-between;
+    border-color: var(--line);
+  }
+
+  .sf-step-title {
+    @apply mt-2 text-2xl font-semibold;
+    color: var(--ink-900);
+  }
+
+  .sf-step-subtitle {
+    @apply mt-2 text-sm leading-relaxed;
+    color: var(--ink-700);
+  }
+
+  .sf-step-status {
+    @apply inline-flex h-fit items-center rounded-full border px-3 py-1 text-xs font-semibold uppercase tracking-[0.12em];
+    border-color: color-mix(in srgb, var(--accent-blue-500) 45%, var(--line-strong) 55%);
+    color: color-mix(in srgb, var(--accent-blue-700) 82%, var(--ink-700) 18%);
+    background: color-mix(in srgb, white 74%, var(--accent-blue-100) 26%);
+  }
+
+  .sf-collapsible {
+    @apply rounded-b-2xl;
+  }
+
+  .sf-collapsible-trigger {
+    @apply flex w-full items-center justify-between gap-3 px-6 py-4 text-left;
+    color: var(--ink-900);
+  }
+
+  .sf-step-toggle {
+    @apply inline-flex items-center justify-center rounded-full border px-4 py-2 text-sm font-semibold transition;
+    border-color: color-mix(in srgb, var(--accent-blue-700) 40%, var(--line-strong) 60%);
+    color: color-mix(in srgb, var(--accent-blue-700) 84%, var(--ink-700) 16%);
+    background: color-mix(in srgb, white 84%, var(--accent-blue-100) 16%);
+  }
+
+  .sf-step-toggle:hover {
+    border-color: var(--accent-blue-500);
+    color: var(--ink-900);
+  }
+
+  .sf-collapsible-panel {
+    @apply border-t px-6 pb-6;
+    border-color: var(--line);
+  }
+
+  .sf-cta-block {
+    @apply rounded-3xl border px-6 py-8 md:px-10;
+    border-color: color-mix(in srgb, var(--ink-900) 18%, white 82%);
+    background: linear-gradient(130deg, #07181a, #0b4c3b 52%, #00a85f 100%);
+    color: white;
+  }
+
   .sf-form {
     @apply space-y-5;
   }
@@ -117,7 +337,7 @@ button:focus-visible {
     @apply mt-4 grid gap-4;
   }
 
-  .sf-grid-2 {
+  .sf-form-grid-2 {
     @apply md:grid-cols-2;
   }
 
@@ -144,41 +364,16 @@ button:focus-visible {
     box-shadow: 0 0 0 3px color-mix(in srgb, var(--brand-400) 22%, transparent 78%);
   }
 
-  .sf-button-primary,
-  .sf-button-secondary {
-    @apply inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-semibold transition;
-  }
-
-  .sf-button-primary {
-    color: white;
-    background: linear-gradient(120deg, var(--brand-700), var(--brand-500));
-  }
-
-  .sf-button-primary:hover {
-    transform: translateY(-1px);
-  }
-
   .sf-button-primary:disabled {
     cursor: not-allowed;
     opacity: 0.72;
   }
 
-  .sf-button-secondary {
-    border: 1px solid var(--line-strong);
-    color: var(--ink-700);
-    background: white;
-  }
-
-  .sf-button-secondary:hover {
-    border-color: var(--brand-500);
-    color: var(--ink-900);
-  }
-
-  .sf-collapsible {
+  .sf-form-collapsible {
     @apply p-4 sm:p-6;
   }
 
-  .sf-collapsible-trigger {
+  .sf-form-collapsible-trigger {
     @apply flex w-full items-center justify-between gap-3 text-left;
   }
 

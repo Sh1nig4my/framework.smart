@@ -1,4 +1,4 @@
-# SMART Framework v1.4.0
+# SMART Framework v1.5.0
 
 SMART e un framework agentico no-code per progettare, governare e diffondere iniziative formative con processi standardizzati, sicurezza operativa e uso responsabile dell'AI.
 
@@ -73,6 +73,11 @@ Pagine principali attive:
 - `/wiki` documentazione interna ufficiale;
 - `/create-json-master` compilazione completa dello Step 1 con salvataggio e download JSON.
 
+Stato attuale degli step in app:
+
+- Step 1 operativo in interfaccia (`/create-json-master`);
+- Step 2 e Step 3 presenti nel workflow SMART ma gestiti via documentazione, workflow locale e supporto agentico.
+
 Pagine legali di supporto:
 
 - `/privacy`, `/cookie-policy`, `/sicurezza-dati` per compliance e trasparenza.
@@ -85,6 +90,25 @@ Pagine legali di supporto:
 - nessun analytics;
 - nessuna profilazione;
 - storage locale tecnico per consenso cookie necessari.
+
+## Convenzione backend (obbligatoria)
+
+Per tutte le API applicative SMART si applica questa struttura:
+
+```text
+API route (controller) -> service -> repository -> database
+```
+
+Regole:
+
+- le API route agiscono come controller HTTP;
+- i controller non chiamano mai direttamente i repository;
+- i controller chiamano i service;
+- i service orchestrano logica applicativa, controlli e gestione errori;
+- i repository eseguono accesso diretto al database;
+- la logica DB resta isolata in `app/server/lib` e `app/server/repositories`.
+
+Questa convenzione e adottata per scalabilita, chiarezza didattica, manutenibilita e gestione errori evolutiva.
 
 ## Percorso documentale consigliato
 

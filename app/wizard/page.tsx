@@ -1,6 +1,8 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 
+import { PageShell } from "@/app/components/layout/page-shell";
+
 export const metadata: Metadata = {
   title: "Wizard",
   description:
@@ -8,102 +10,135 @@ export const metadata: Metadata = {
 };
 
 const softwareChecklist = [
-  "Node.js LTS + npm",
-  "Git (ForkGit consigliato per avere maggiore gestione a livello grafico)",
-  "Editor codice (WebStorm consigliato)",
-  "Accesso a MongoDBAtlas",
-  "Browser moderno aggiornato (consigliato Brave)",
-  "IDE agentico: OpenCode consigliato, con possibilita di usare agenti open anche senza abbonamento provider",
+  {
+    group: "Runtime",
+    items: ["Node.js LTS", "npm"],
+  },
+  {
+    group: "Versionamento",
+    items: ["Git", "ForkGit consigliato per gestione visuale"],
+  },
+  {
+    group: "Editor / IDE",
+    items: ["Editor codice", "WebStorm consigliato"],
+  },
+  {
+    group: "Database",
+    items: ["Accesso a MongoDB Atlas"],
+  },
+  {
+    group: "Browser",
+    items: ["Browser moderno aggiornato", "Brave consigliato"],
+  },
+  {
+    group: "Agentic tooling",
+    items: [
+      "IDE agentico: OpenCode consigliato",
+      "Possibile usare agenti open anche senza abbonamento provider",
+    ],
+  },
+  {
+    group: "Qualita e validazione",
+    items: ["npm run lint", "npm run build"],
+  },
 ];
 
 export default function WizardPage() {
   return (
-    <div className="page-wrap">
-      <div className="page-glow" />
-      <section className="page-container space-y-10">
-        <header className="rounded-3xl border border-[var(--line)] bg-white/92 p-8 shadow-[0_20px_60px_-30px_rgba(7,21,35,0.45)] md:p-12">
-          <p className="text-xs font-semibold tracking-[0.22em] text-[var(--brand-700)] uppercase">Wizard SMART</p>
-          <h1 className="mt-3 max-w-4xl text-4xl leading-tight font-semibold md:text-5xl">
-            Il punto di partenza per attivare l&apos;ecosistema SMART nel modo giusto
-          </h1>
-          <p className="mt-4 max-w-3xl text-base leading-relaxed text-[var(--ink-700)] md:text-lg">
-            Questa pagina ti orienta su cosa serve davvero per iniziare: strumenti, ambiente e metodo operativo.
-            L&apos;obiettivo e metterti nelle condizioni di lavorare in modo ordinato, evitando setup improvvisati che poi
-            rallentano il workflow.
+    <PageShell>
+      <header className="sf-hero">
+        <span className="sf-eyebrow-badge">Wizard SMART</span>
+        <h1 className="sf-hero-title">Il punto di partenza per attivare l&apos;ecosistema SMART in modo ordinato</h1>
+        <p className="sf-hero-copy">
+          Questa pagina ti aiuta a preparare ambiente e strumenti prima di iniziare il lavoro operativo.
+        </p>
+        <p className="sf-hero-note">
+          Il Wizard copre avvio e preparazione. Il percorso completo Step 1 -&gt; Step 2 -&gt; Step 3 viene poi gestito in
+          Workflow SMART e nella Wiki.
+        </p>
+        <div className="mt-6 flex flex-wrap gap-3">
+          <Link href="/wiki#wizard-setup" className="sf-button-primary">
+            Apri guida completa in Wiki
+          </Link>
+          <Link href="/workflow" className="sf-button-secondary">
+            Apri Workflow
+          </Link>
+        </div>
+      </header>
+
+      <section className="grid gap-6 lg:grid-cols-[1.2fr_1fr]">
+        <article className="sf-card-surface">
+          <span className="sf-eyebrow-badge">Come operare con SMART</span>
+          <h2 className="mt-3 text-2xl font-semibold text-[var(--ink-900)]">Prima stabilita, poi velocita</h2>
+          <p className="mt-3 text-sm leading-relaxed text-[var(--ink-700)] md:text-base">
+            SMART funziona al meglio quando il team parte con un contesto chiaro, strumenti condivisi e regole comuni.
+            Dopo il setup, il lavoro prosegue nel Workflow SMART step dopo step.
           </p>
-          <p className="mt-3 max-w-3xl text-sm leading-relaxed text-[var(--ink-600)] md:text-base">
-            Nota di perimetro: questa pagina copre setup e avvio. La procedura completa Step 1 -&gt; Step 2 -&gt; Step 3 e
-            gestita nel Workflow SMART, nella Wiki SMART e nella documentazione canonica.
+          <p className="mt-3 text-sm leading-relaxed text-[var(--ink-700)] md:text-base">
+            In pratica: qui prepari il terreno, poi passi al workflow operativo e avvii lo Step 1 con Create JSON
+            Master.
           </p>
-          <div className="mt-6 flex flex-wrap gap-3">
-            <Link href="/wiki#wizard-setup" className="sf-button-primary">
-              Apri guida completa in Wiki
-            </Link>
-            <Link href="/workflow" className="sf-button-secondary">
-              Apri Workflow
-            </Link>
-          </div>
-        </header>
+        </article>
 
-        <section className="grid gap-5 lg:grid-cols-[1.2fr_1fr]">
-          <article className="rounded-2xl border border-[var(--line)] bg-white p-6">
-            <p className="text-xs font-semibold tracking-[0.16em] text-[var(--ink-600)] uppercase">Come operare con SMART</p>
-            <h2 className="mt-2 text-2xl font-semibold text-[var(--ink-900)]">Prima stabilita, poi velocita</h2>
-            <p className="mt-3 text-sm leading-relaxed text-[var(--ink-700)] md:text-base">
-              SMART funziona meglio quando il team parte con un contesto chiaro: ambiente allineato, strumenti
-              condivisi e regole comuni. Dopo questo step di setup, tutta la parte operativa viene guidata in dettaglio
-              dal Workflow SMART e dalla Wiki SMART, con percorso completo step per step.
-            </p>
-            <p className="mt-3 text-sm leading-relaxed text-[var(--ink-700)] md:text-base">
-              In pratica: questa pagina ti aiuta ad accendere il motore; la Wiki governa i gate e i passaggi
-              metodologici; Workflow ti guida all&apos;avvio dello Step 1 con Create JSON Master.
-            </p>
-          </article>
-
-          <article className="rounded-2xl border border-[var(--line)] bg-[var(--surface-1)] p-6">
-            <p className="text-xs font-semibold tracking-[0.16em] text-[var(--ink-600)] uppercase">Setup rapido</p>
-            <h2 className="mt-2 text-xl font-semibold text-[var(--ink-900)]">Verifica minima consigliata</h2>
-            <ul className="mt-3 space-y-2 text-sm leading-relaxed text-[var(--ink-700)]">
-              <li>- Installa dipendenze: `npm install`</li>
-              <li>- Avvia locale: `npm run dev`</li>
-              <li>- Controllo qualita: `npm run lint`</li>
-              <li>- Controllo build: `npm run build`</li>
-            </ul>
-          </article>
-        </section>
-
-        <section className="rounded-2xl border border-[var(--line)] bg-white p-6 md:p-8">
-          <p className="text-xs font-semibold tracking-[0.16em] text-[var(--ink-600)] uppercase">Checklist software</p>
-          <h2 className="mt-2 text-2xl font-semibold text-[var(--ink-900)]">Cosa deve essere pronto prima di partire</h2>
-          <ul className="mt-4 space-y-3 text-sm leading-relaxed text-[var(--ink-700)] md:text-base">
-            {softwareChecklist.map((item) => (
-              <li key={item}>- {item}</li>
-            ))}
+        <article className="sf-card-muted">
+          <span className="sf-eyebrow-badge">Setup rapido</span>
+          <h2 className="mt-3 text-xl font-semibold text-[var(--ink-900)]">Verifica minima consigliata</h2>
+          <ul className="sf-checklist">
+            <li className="sf-checklist-item">
+              <span className="sf-checklist-icon">1</span>
+              <span>Installa dipendenze: `npm install`</span>
+            </li>
+            <li className="sf-checklist-item">
+              <span className="sf-checklist-icon">2</span>
+              <span>Avvia locale: `npm run dev`</span>
+            </li>
+            <li className="sf-checklist-item">
+              <span className="sf-checklist-icon">3</span>
+              <span>Controllo qualita: `npm run lint`</span>
+            </li>
+            <li className="sf-checklist-item">
+              <span className="sf-checklist-icon">4</span>
+              <span>Controllo build: `npm run build`</span>
+            </li>
           </ul>
-        </section>
-
-        <section className="rounded-2xl border border-[var(--line)] bg-[var(--ink-900)] p-6 text-white md:p-8">
-          <h2 className="text-2xl font-semibold">Passo successivo consigliato</h2>
-          <p className="mt-3 max-w-3xl text-sm leading-relaxed text-white/80 md:text-base">
-            Se l&apos;ambiente e pronto, apri la Wiki per il wizard operativo dettagliato e la guida completa al workflow.
-            Quando vuoi iniziare subito con dati reali, passa a Workflow e avvia lo Step 1.
-          </p>
-          <div className="mt-5 flex flex-wrap gap-3">
-            <Link
-              href="/wiki#step-one-guide"
-              className="rounded-full bg-white px-5 py-2.5 text-sm font-medium text-[var(--ink-900)] transition hover:bg-[var(--surface-2)]"
-            >
-              Vai alla Wiki
-            </Link>
-            <Link
-              href="/workflow"
-              className="rounded-full border border-white/35 px-5 py-2.5 text-sm font-medium text-white transition hover:border-white"
-            >
-              Apri Workflow
-            </Link>
-          </div>
-        </section>
+        </article>
       </section>
-    </div>
+
+      <section className="sf-section">
+        <span className="sf-eyebrow-badge">Checklist software</span>
+        <h2 className="mt-3 text-2xl font-semibold text-[var(--ink-900)]">Prerequisiti organizzati per gruppo operativo</h2>
+        <div className="mt-5 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          {softwareChecklist.map((group) => (
+            <article key={group.group} className="rounded-xl border border-[var(--line)] bg-white/85 p-4">
+              <p className="text-sm font-semibold text-[var(--ink-900)]">{group.group}</p>
+              <ul className="mt-3 space-y-2 text-sm leading-relaxed text-[var(--ink-700)]">
+                {group.items.map((item) => (
+                  <li key={item} className="flex items-start gap-2">
+                    <span className="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-[var(--brand-700)]" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="sf-cta-block">
+        <h2 className="text-2xl font-semibold">Step successivo consigliato</h2>
+        <p className="mt-3 max-w-3xl text-sm leading-relaxed text-white/82 md:text-base">
+          Se l&apos;ambiente e pronto, passa al Workflow per la storia operativa completa e avvia lo Step 1 quando lavori
+          su un caso reale.
+        </p>
+        <div className="mt-5 flex flex-wrap gap-3">
+          <Link href="/wiki#step-one-guide" className="rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-[var(--ink-900)] transition hover:bg-[var(--surface-2)]">
+            Vai alla Wiki
+          </Link>
+          <Link href="/workflow" className="rounded-full border border-white/35 px-5 py-2.5 text-sm font-semibold text-white transition hover:border-white">
+            Apri Workflow
+          </Link>
+        </div>
+      </section>
+    </PageShell>
   );
 }

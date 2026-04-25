@@ -54,7 +54,7 @@ export function WikiBrowser() {
 
   return (
     <div className="grid gap-6 lg:grid-cols-[290px_minmax(0,1fr)]">
-      <aside className="rounded-2xl border border-[var(--line)] bg-white/92 p-4 lg:sticky lg:top-24 lg:h-fit">
+      <aside className="sf-card-surface p-4 lg:sticky lg:top-24 lg:h-fit">
         <p className="px-2 text-xs font-semibold tracking-[0.16em] text-[var(--ink-600)] uppercase">Capitoli wiki</p>
         <nav className="mt-3 space-y-3" aria-label="Navigazione Wiki SMART">
           {wikiChapters.map((chapter) => {
@@ -91,7 +91,7 @@ export function WikiBrowser() {
         </nav>
       </aside>
 
-      <article className="rounded-2xl border border-[var(--line)] bg-white p-6 md:p-8">
+      <article className="sf-card-surface md:p-8">
         <p className="text-xs font-semibold tracking-[0.16em] text-[var(--brand-700)] uppercase">
           {chapterById.get(activeSection.chapterId)?.title ?? activeSection.chapterId}
         </p>

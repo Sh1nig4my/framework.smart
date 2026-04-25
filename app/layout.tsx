@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Mono, Outfit } from "next/font/google";
-import { CookieConsentProvider } from "./components/coockie/cookie-consent-provider";
-import { SiteFooter } from "./components/site-footer";
-import { SiteHeader } from "./components/site-header";
+
+import { CookieConsentProvider } from "@/app/components/layout/cookie/cookie-consent-provider";
+import { SiteFooter } from "@/app/components/layout/site-footer";
+import { SiteHeader } from "@/app/components/layout/site-header";
 import "./globals.css";
 
 const outfit = Outfit({

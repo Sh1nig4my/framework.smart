@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.5.0] - 2026-04-25
+
+Refactor evolutivo completo di web app e backend con allineamento documentale pre-rilascio.
+
+- introdotto design system globale esteso in `app/globals.css` con palette triadica aggiornata (verde brillante, accenti blu e terracotta) e superfici neutre uniformi;
+- riorganizzati componenti frontend in `app/components/layout/` e `app/components/workflow/`, eliminando componenti legacy non piu usati;
+- migliorate UX e narrativa delle pagine `/`, `/wizard`, `/workflow` con card uniformate, CTA coerenti e collapsible step-by-step;
+- mantenuta `/wiki` con navigazione hash compatibile, riallineata al nuovo sistema visivo;
+- rifattorizzata API Step 1 secondo pattern `controller -> service -> repository -> database` con nuova struttura `app/server/{lib,repositories,services}`;
+- confermato flusso Step 1 invariato lato contratto esterno (`POST /api/step-1-json`), inclusi salvataggio Mongo, download JSON e blocco duplicati;
+- rimossa la cartella root `server/` in favore della sola struttura `app/server/`;
+- allineata documentazione di progetto con regola backend obbligatoria e stato reale degli step in app.
+
 ## [1.4.0] - 2026-04-25
 
 Riorganizzazione prompt hub e standardizzazione `step` su framework, app e output workflow.
