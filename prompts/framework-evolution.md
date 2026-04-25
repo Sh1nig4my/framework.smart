@@ -2,12 +2,12 @@
 
 ## Scopo
 
-Evolvere il framework con approccio docs-first: prima `documentation/`, poi propagare automaticamente in app le modifiche rilevanti.
+Evolvere il framework con approccio docs-first: prima `framework-documents/`, poi propagare automaticamente in app le modifiche rilevanti.
 
 ## Scope consentito
 
-- modifica, estensione, refactor e ottimizzazione di file in `documentation/`;
-- aggiornamento di file collegati fuori `documentation/` per mantenere coerenza del framework;
+- modifica, estensione, refactor e ottimizzazione di file in `framework-documents/`;
+- aggiornamento di file collegati fuori `framework-documents/` per mantenere coerenza del framework;
 - propagazione automatica su app quando la documentazione cambia.
 
 ## Scope vietato
@@ -27,7 +27,7 @@ Evolvere il framework con approccio docs-first: prima `documentation/`, poi prop
 
 1. definisci impatto del cambiamento sugli step;
 2. pianifica file da aggiornare;
-3. implementa prima le modifiche in `documentation/` con allineamento incrociato;
+3. implementa prima le modifiche in `framework-documents/` con allineamento incrociato;
 4. esegui review obbligatoria dell'app;
 5. propaga automaticamente le modifiche nelle pagine coinvolte (`/`, `/workflow`, `/wizard`, `/wiki`, privacy/sicurezza);
 6. aggiorna riferimenti, gate e naming (`step`) dove necessario;

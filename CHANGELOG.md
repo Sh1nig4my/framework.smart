@@ -13,13 +13,13 @@ Rifinitura pre-produzione con riallineamento versione framework e revisione comp
 
 Refactor evolutivo completo di web app e backend con allineamento documentale pre-rilascio.
 
-- introdotto design system globale esteso in `app/globals.css` con palette triadica aggiornata (verde brillante, accenti blu e terracotta) e superfici neutre uniformi;
-- riorganizzati componenti frontend in `app/components/layout/` e `app/components/workflow/`, eliminando componenti legacy non piu usati;
+- introdotto design system globale esteso in `src/app/globals.css` con palette triadica aggiornata (verde brillante, accenti blu e terracotta) e superfici neutre uniformi;
+- riorganizzati componenti frontend in `src/components/layout/` e `src/components/workflow/`, eliminando componenti legacy non piu usati;
 - migliorate UX e narrativa delle pagine `/`, `/wizard`, `/workflow` con card uniformate, CTA coerenti e collapsible step-by-step;
 - mantenuta `/wiki` con navigazione hash compatibile, riallineata al nuovo sistema visivo;
-- rifattorizzata API Step 1 secondo pattern `controller -> service -> repository -> database` con nuova struttura `app/server/{lib,repositories,services}`;
+- rifattorizzata API Step 1 secondo pattern `controller -> service -> repository -> database` con nuova struttura `src/server/{lib,repositories,services}`;
 - confermato flusso Step 1 invariato lato contratto esterno (`POST /api/step-1-json`), inclusi salvataggio Mongo, download JSON e blocco duplicati;
-- rimossa la cartella root `server/` in favore della sola struttura `app/server/`;
+- rimossa la cartella root `server/` in favore della sola struttura `src/server/`;
 - allineata documentazione di progetto con regola backend obbligatoria e stato reale degli step in app.
 
 ## [1.4.0] - 2026-04-25
@@ -62,14 +62,14 @@ Refactor strutturale pre-release con consolidamento metodologia agentica, rialli
 - riscritta la pagina `/wizard` con focus installazione ambiente, prerequisiti hardware/software e verifiche tecniche;
 - aggiornata propagazione route su navbar, homepage e documentazione di supporto;
 - introdotta formalizzazione completa dello Step 3 in documentazione (`wizard/step-3-derivazione-pubblicazione.md`);
-- rifattorizzati documenti core in `documentation/` (framework, wizard, context-ai) mantenendo logiche e artefatti canonici;
+- rifattorizzati documenti core in `framework-documents/` (framework, wizard, context-ai) mantenendo logiche e artefatti canonici;
 - aggiornati `README.md`, `HOW_TO.md` e `CONTRIBUTING.md` alla catena Step 1 -> Step 2 -> Step 3;
 - evoluta la Wiki app con contenuti piu esaustivi e guida passo-passo del workflow;
 - trasformata `prompts/` in prompt hub operativo con entrypoint unico e 8 prompt specialistici.
 - estesa la pagina `/wiki` in formato guida professionale con workflow operativi, gate, anti-pattern e riferimenti canonici;
-- riallineate le regole del prompt hub: Alignment/Evolution possono aggiornare `documentation/` se necessario, Maintenance/Workflow no;
+- riallineate le regole del prompt hub: Alignment/Evolution possono aggiornare `framework-documents/` se necessario, Maintenance/Workflow no;
 - introdotto indice prompt A-H per invocazione rapida e tracciabile.
-- aggiornati `documentation/README.md` e `documentation/context-ai/` per allineare il protocollo prompt hub A-H e i vincoli categoria su `documentation/`.
+- aggiornati `framework-documents/README.md` e `framework-documents/context-ai/` per allineare il protocollo prompt hub A-H e i vincoli categoria su `framework-documents/`.
 
 ## [1.0.0] - 2026-04-22
 
@@ -80,7 +80,7 @@ Prima release stabile del framework SMART con integrazione completa tra metodo d
 - aggiunto banner cookie con gestione "solo necessari" e persistenza locale;
 - aggiornata homepage con navigazione interna e CTA orientate all'adozione del framework-agentico;
 - reso `README.md` root l'entrypoint unico per umani e agenti AI;
-- aggiornati `HOW_TO.md`, `documentation/README.md` e `CONTRIBUTING.md` dopo refactor in root;
+- aggiornati `HOW_TO.md`, `framework-documents/README.md` e `CONTRIBUTING.md` dopo refactor in root;
 - formalizzata policy dati attuale (no DB, no analytics) e predisposizione futura per metriche tecniche non commerciali;
 - inizializzato `prompts/README.md` come base per prompt di evoluzione, refactor e maintenance.
 
@@ -90,7 +90,7 @@ Aggiornamento strutturale del repository con homepage standalone e revisione com
 
 - sostituito il README root template con onboarding SMART coerente al progetto;
 - realizzata homepage Next.js dedicata al framework con focus AI-native, no-code, sicurezza e standardizzazione;
-- revisionati `documentation/README.md`, `documentation/HOW_TO.md` e `documentation/wizard/README.md` con mappa repository reale e link aggiornati;
+- revisionati `framework-documents/README.md`, `framework-documents/HOW_TO.md` e `framework-documents/wizard/README.md` con mappa repository reale e link aggiornati;
 - rimosse sezioni placeholder e inserito il repository pubblico ufficiale;
 - rafforzati i documenti manifesto su ruolo degli agenti di coding, governance no-code e principi di sicurezza operativa;
 - allineato il versioning del package alla release documentale.
