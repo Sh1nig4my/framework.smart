@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 
+import { PageShell } from "@/app/components/layout/page-shell";
 import { WikiBrowser } from "@/app/components/wiki-browser";
 import packageJson from "@/package.json";
 
@@ -11,27 +12,22 @@ export const metadata: Metadata = {
 
 export default function WikiPage() {
   return (
-    <div className="page-wrap">
-      <div className="page-glow" />
-      <section className="page-container space-y-8">
-        <header className="space-y-4">
-          <div className="flex flex-wrap items-center gap-3">
-            <p className="text-xs font-semibold tracking-[0.22em] text-[var(--brand-700)] uppercase">Wiki SMART</p>
-            <span className="rounded-full border border-[var(--line-strong)] bg-white px-3 py-1 text-xs font-semibold tracking-[0.08em] text-[var(--ink-700)] uppercase">
-              Doc v{packageJson.version}
-            </span>
-          </div>
-          <h1 className="max-w-4xl text-4xl leading-tight font-semibold md:text-5xl">
-            La guida professionale ufficiale del framework SMART
-          </h1>
-          <p className="max-w-3xl text-base leading-relaxed text-[var(--ink-700)]">
-            Consulta capitoli e sottosezioni senza uscire dalla pagina. Ogni sezione include contesto, workflow passo-passo,
-            gate di qualita, errori da evitare e riferimenti canonici per lavorare con standard enterprise.
-          </p>
-        </header>
+    <PageShell>
+      <header className="sf-hero space-y-4">
+        <div className="flex flex-wrap items-center gap-3">
+          <span className="sf-eyebrow-badge">Wiki SMART</span>
+          <span className="sf-eyebrow-badge">Doc v{packageJson.version}</span>
+        </div>
+        <h1 className="max-w-4xl text-4xl leading-tight font-semibold md:text-5xl">
+          La guida professionale ufficiale del framework SMART
+        </h1>
+        <p className="max-w-3xl text-base leading-relaxed text-[var(--ink-700)]">
+          Consulta capitoli e sottosezioni senza uscire dalla pagina. Ogni sezione include contesto, workflow
+          step-by-step, gate di qualita, errori da evitare e riferimenti canonici.
+        </p>
+      </header>
 
-        <WikiBrowser />
-      </section>
-    </div>
+      <WikiBrowser />
+    </PageShell>
   );
 }

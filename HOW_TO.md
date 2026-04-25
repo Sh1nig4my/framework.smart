@@ -1,4 +1,4 @@
-# HOW TO - Uso operativo SMART v1.4.0
+# HOW TO - Uso operativo SMART v1.5.0
 
 ## Scopo
 
@@ -66,6 +66,11 @@ Condividi con team/agente almeno:
 - `/create-json-master`: compilazione/salvataggio/download `case.json`
 - `/privacy`, `/cookie-policy`, `/sicurezza-dati`: compliance
 
+Stato step in app:
+
+- Step 1 operativo in interfaccia;
+- Step 2 e Step 3 non ancora eseguiti direttamente in app (uso documentazione + workflow locale).
+
 ## Privacy e dati
 
 Stato corrente:
@@ -74,6 +79,19 @@ Stato corrente:
 - nessun analytics/profilazione;
 - storage tecnico locale per consenso cookie;
 - blocco duplicati su stessa email + stesso JSON.
+
+## Regola architetturale backend
+
+Pattern obbligatorio lato server:
+
+```text
+controller/API route -> service -> repository -> database
+```
+
+- il controller gestisce parsing request, risposta HTTP e validazione minima;
+- il service gestisce logica applicativa e orchestrazione;
+- il repository gestisce query e accesso a MongoDB;
+- la logica DB resta isolata nella cartella server dedicata.
 
 ## Errori da evitare
 

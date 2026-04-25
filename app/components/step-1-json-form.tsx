@@ -350,7 +350,7 @@ export function Step1JsonForm() {
         <p className="sf-eyebrow">Contatto</p>
         <h2 className="sf-title">Dati iniziali</h2>
         <p className="sf-description">Questa sezione resta sempre visibile.</p>
-        <div className="sf-grid sf-grid-2">
+        <div className="sf-grid sf-form-grid-2">
           <label className="sf-field sf-field-full">
             <span>Nome e cognome *</span>
             <input className="sf-input" value={state.contact.nome_cognome} onChange={(event) => setContact("nome_cognome", event.target.value)} />
@@ -396,10 +396,10 @@ export function Step1JsonForm() {
         const completed = isSectionCompleted(state, sectionId);
 
         return (
-          <section key={section.id} className="sf-card sf-collapsible">
+          <section key={section.id} className="sf-card sf-form-collapsible">
             <button
               type="button"
-              className="sf-collapsible-trigger"
+              className="sf-form-collapsible-trigger"
               onClick={() => toggleSection(sectionId)}
               aria-expanded={openSections[sectionId]}
             >

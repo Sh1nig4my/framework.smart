@@ -59,11 +59,21 @@ Regole per categoria:
 
 Stato corrente:
 
-- database attivo sul flusso operativo `/download`;
+- database attivo sul flusso operativo `/create-json-master`;
 - salvataggio richiesta e `case.json` per manutenzione e miglioramento framework;
 - blocco duplicati su stessa email + stesso JSON;
 - nessun analytics o profilazione;
 - solo storage tecnico locale per consenso cookie necessari.
+
+## Convenzione backend app
+
+Per la web app SMART la convenzione server e:
+
+```text
+controller/API route -> service -> repository -> database
+```
+
+Con vincolo: nessun controller puo chiamare direttamente un repository.
 
 ## Criterio di qualita documentale
 
