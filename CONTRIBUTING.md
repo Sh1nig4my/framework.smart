@@ -10,24 +10,24 @@ Entrypoint ufficiale del progetto: `README.md` in root.
 
 Ogni contributo deve rispettare gli invarianti canonici:
 
-- `documentation/wizard/case-schema.json` resta source of truth dello Step 1;
-- `documentation/wizard/cartella-master-template.md` + `documentation/wizard/cartella-master-schema.md` restano source of truth dello Step 2;
-- `documentation/wizard/step-3-derivazione-pubblicazione.md` governa lo Step 3;
+- `framework-documents/wizard/case-schema.json` resta source of truth dello Step 1;
+- `framework-documents/wizard/cartella-master-template.md` + `framework-documents/wizard/cartella-master-schema.md` restano source of truth dello Step 2;
+- `framework-documents/wizard/step-3-derivazione-pubblicazione.md` governa lo Step 3;
 - la cartella master resta artefatto centrale per ogni derivazione;
 - SMART integra framework documentale e web app operativa in un unico sistema.
 
 ## Ambiti di modifica
 
-- `documentation/manifesto/`: visione, principi, etica, policy, governance.
-- `documentation/framework/`: metodologia, modello operativo, processo, ruoli, glossario.
-- `documentation/wizard/`: processo operativo Step 1/Step 2/Step 3 e documentazione di supporto.
-- `documentation/playbooks/`: applicazioni pratiche del metodo.
-- `documentation/context-ai/`: contesto AI, regole operative, protocolli di validazione, template.
+- `framework-documents/manifesto/`: visione, principi, etica, policy, governance.
+- `framework-documents/framework/`: metodologia, modello operativo, processo, ruoli, glossario.
+- `framework-documents/wizard/`: processo operativo Step 1/Step 2/Step 3 e documentazione di supporto.
+- `framework-documents/playbooks/`: applicazioni pratiche del metodo.
+- `framework-documents/context-ai/`: contesto AI, regole operative, protocolli di validazione, template.
 
 ## Standard editoriali obbligatori
 
 - tono formale, professionale, non promozionale;
-- lessico coerente con `documentation/framework/glossario.md`;
+- lessico coerente con `framework-documents/framework/glossario.md`;
 - sezioni tracciabili e prive di ridondanza;
 - assenza di riferimenti tecnici non pertinenti al nucleo documentale;
 - priorita a pochi documenti robusti rispetto a molti documenti deboli.
@@ -44,12 +44,12 @@ Ogni contributo deve rispettare gli invarianti canonici:
 
 ## Regole specifiche per contesto AI
 
-Contributi in `documentation/context-ai/` devono:
+Contributi in `framework-documents/context-ai/` devono:
 
 - evitare prompt generici non governati;
 - definire output attesi, assunzioni e criteri di fallimento;
 - includere vincoli espliciti contro invenzioni fuori schema;
-- mantenere piena coerenza con `documentation/wizard/case-schema.json`, `documentation/wizard/cartella-master-template.md` e `documentation/wizard/cartella-master-schema.md`.
+- mantenere piena coerenza con `framework-documents/wizard/case-schema.json`, `framework-documents/wizard/cartella-master-template.md` e `framework-documents/wizard/cartella-master-schema.md`.
 
 ## Contributi non ammessi
 
@@ -60,7 +60,7 @@ Contributi in `documentation/context-ai/` devono:
 
 Nota: sono ammessi aggiornamenti documentali provider-aware in Step 3 (prompt/output contract/gate) quando restano no-code e tracciabili alla cartella master.
 
-Sono ammessi contributi alla web app (`app/`) quando migliorano esperienza, adozione e operativita del framework senza alterare gli invarianti metodologici.
+Sono ammessi contributi alla web app (`src/app/`) quando migliorano esperienza, adozione e operativita del framework senza alterare gli invarianti metodologici.
 
 ## Versioning
 

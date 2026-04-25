@@ -7,7 +7,7 @@ Guida pratica per applicare SMART in modo conforme, dalla preparazione del conte
 ## Entrypoint
 
 1. leggi `README.md`;
-2. apri `documentation/README.md`;
+2. apri `framework-documents/README.md`;
 3. usa questa guida per l'esecuzione operativa.
 
 ## Sequenza canonica
@@ -33,11 +33,11 @@ Condividi con team/agente almeno:
 
 - `README.md`
 - `HOW_TO.md`
-- `documentation/wizard/case-schema.json`
-- `documentation/wizard/cartella-master-template.md`
-- `documentation/wizard/cartella-master-schema.md`
-- `documentation/wizard/step-3-derivazione-pubblicazione.md`
-- `documentation/context-ai/README.md`
+- `framework-documents/wizard/case-schema.json`
+- `framework-documents/wizard/cartella-master-template.md`
+- `framework-documents/wizard/cartella-master-schema.md`
+- `framework-documents/wizard/step-3-derivazione-pubblicazione.md`
+- `framework-documents/context-ai/README.md`
 
 ### Passo 2 - Step 1
 
@@ -102,6 +102,6 @@ controller/API route -> service -> repository -> database
 
 ## Riferimenti
 
-- `documentation/wizard/README.md`
-- `documentation/framework/process-overview.md`
-- `documentation/context-ai/validation-protocol.md`
+- `framework-documents/wizard/README.md`
+- `framework-documents/framework/process-overview.md`
+- `framework-documents/context-ai/validation-protocol.md`

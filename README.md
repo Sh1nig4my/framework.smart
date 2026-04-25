@@ -6,8 +6,8 @@ Questo `README.md` e l'entrypoint unico del progetto per persone e agenti AI.
 
 ## Cosa include il repository
 
-- framework documentale in `documentation/`;
-- web app Next.js in `app/` per facilitare adozione, onboarding e operativita del framework;
+- framework documentale in `framework-documents/`;
+- web app Next.js in `src/app/` per facilitare adozione, onboarding e operativita del framework;
 - guida operativa in `HOW_TO.md`;
 - policy contributive e rilascio in `CONTRIBUTING.md` e `CHANGELOG.md`.
 
@@ -28,10 +28,10 @@ SMART mantiene il controllo umano, rende tracciabile il lavoro degli agenti e pr
 ## Avvio rapido
 
 1. Leggi `HOW_TO.md`.
-2. Consulta `documentation/wizard/README.md`.
-3. Usa `documentation/wizard/case-schema.json` per lo Step 1.
-4. Usa `documentation/wizard/cartella-master-template.md` e `documentation/wizard/cartella-master-schema.md` per lo Step 2.
-5. Usa `documentation/wizard/step-3-derivazione-pubblicazione.md` per lo Step 3.
+2. Consulta `framework-documents/wizard/README.md`.
+3. Usa `framework-documents/wizard/case-schema.json` per lo Step 1.
+4. Usa `framework-documents/wizard/cartella-master-template.md` e `framework-documents/wizard/cartella-master-schema.md` per lo Step 2.
+5. Usa `framework-documents/wizard/step-3-derivazione-pubblicazione.md` per lo Step 3.
 
 Per avviare la web app locale:
 
@@ -106,18 +106,18 @@ Regole:
 - i controller chiamano i service;
 - i service orchestrano logica applicativa, controlli e gestione errori;
 - i repository eseguono accesso diretto al database;
-- la logica DB resta isolata in `app/server/lib` e `app/server/repositories`.
+- la logica DB resta isolata in `src/server/lib` e `src/server/repositories`.
 
 Questa convenzione e adottata per scalabilita, chiarezza didattica, manutenibilita e gestione errori evolutiva.
 
 ## Percorso documentale consigliato
 
 - `HOW_TO.md`
-- `documentation/README.md`
-- `documentation/framework/`
-- `documentation/manifesto/`
-- `documentation/wizard/`
-- `documentation/context-ai/`
+- `framework-documents/README.md`
+- `framework-documents/framework/`
+- `framework-documents/manifesto/`
+- `framework-documents/wizard/`
+- `framework-documents/context-ai/`
 
 ## Contatti e repository
 

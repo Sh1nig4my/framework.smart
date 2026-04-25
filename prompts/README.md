@@ -36,7 +36,7 @@ D - workflow-execution.md
 ## Come scegliere il prompt giusto
 
 - `alignment.md`: riallinea framework e app rispetto alla documentazione ufficiale e alla sua versione.
-- `framework-evolution.md`: evolve il framework docs-first in `documentation/`, poi propaga in app in modo automatico.
+- `framework-evolution.md`: evolve il framework docs-first in `framework-documents/`, poi propaga in app in modo automatico.
 - `maintenance.md`: revisione completa di coerenza (link, ambiguita, incoerenze) e proposta/implementazione fix.
 - `workflow-execution.md`: esecuzione operativa Step 1/2/3 con tracciabilita completa, interrompibilita e output in `workflow-output/`.
 
@@ -52,7 +52,7 @@ D - workflow-execution.md
 
 ## Regola framework-app obbligatoria
 
-Dopo ogni modifica in `documentation/`:
+Dopo ogni modifica in `framework-documents/`:
 
 1. eseguire review dell'app;
 2. propagare le modifiche nelle pagine applicative;
@@ -60,12 +60,12 @@ Dopo ogni modifica in `documentation/`:
 
 Pagine minime obbligatorie:
 
-- `app/page.tsx` (home)
-- `app/workflow/page.tsx`
-- `app/wizard/page.tsx`
-- `app/wiki/*`
-- `app/privacy/page.tsx`
-- `app/sicurezza-dati/page.tsx`
+- `src/app/page.tsx` (home)
+- `src/app/workflow/page.tsx`
+- `src/app/wizard/page.tsx`
+- `src/app/wiki/*`
+- `src/app/privacy/page.tsx`
+- `src/app/sicurezza-dati/page.tsx`
 
 ## Criterio di conformita finale
 

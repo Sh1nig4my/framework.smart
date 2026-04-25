@@ -17,7 +17,7 @@ Non passare allo step successivo senza validazione dello step corrente, anche qu
 
 ## Scope vietato
 
-- non modificare file in `documentation/` in nessun caso durante questo prompt.
+- non modificare file in `framework-documents/` in nessun caso durante questo prompt.
 
 ## Procedura per step
 
