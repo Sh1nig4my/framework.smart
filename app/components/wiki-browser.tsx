@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 
-import { wikiChapters, wikiSections } from "@/app/wiki/wiki-content";
+import { wikiChapters, wikiSections } from "@/app/wiki/content/wiki-content";
 
 const legacyHashMap: Record<string, string> = {
   "phase-map": "step-map",
