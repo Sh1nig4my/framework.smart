@@ -27,7 +27,9 @@ export default function WikiPage() {
         </p>
       </header>
 
-      <WikiBrowser />
+      <div id="wiki-content-start">
+        <WikiBrowser />
+      </div>
     </PageShell>
   );
 }

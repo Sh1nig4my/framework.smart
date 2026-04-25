@@ -4,6 +4,10 @@ import { useEffect, useMemo, useState } from "react";
 
 import { wikiChapters, wikiSections } from "@/app/wiki/content/wiki-content";
 
+const GITHUB_BLOB_BASE = "https://github.com/Sh1nig4my/framework.smart/blob/main";
+const WIKI_CONTENT_START_ID = "wiki-content-start";
+const WIKI_SCROLL_OFFSET = 88;
+
 const legacyHashMap: Record<string, string> = {
   "phase-map": "step-map",
   "phase-one-guide": "step-one-guide",
@@ -15,16 +19,78 @@ function isKnownSection(id: string) {
   return wikiSections.some((section) => section.id === id);
 }
 
+function toGithubBlobUrl(reference: string) {
+  if (reference.startsWith("http://") || reference.startsWith("https://")) {
+    return reference;
+  }
+
+  const normalizedReference = reference.startsWith("/") ? reference.slice(1) : reference;
+  return `${GITHUB_BLOB_BASE}/${normalizedReference}`;
+}
+
 export function WikiBrowser() {
-  const [activeSectionId, setActiveSectionId] = useState(() => {
-    if (typeof window === "undefined") {
-      return wikiSections[0]?.id ?? "";
+  const [activeSectionId, setActiveSectionId] = useState(wikiSections[0]?.id ?? "");
+
+  const scrollToWikiContentStart = () => {
+    const target = document.getElementById(WIKI_CONTENT_START_ID);
+
+    if (!target) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      return;
     }
 
-    const hash = window.location.hash.replace("#", "");
-    const normalizedHash = legacyHashMap[hash] ?? hash;
-    return normalizedHash && isKnownSection(normalizedHash) ? normalizedHash : (wikiSections[0]?.id ?? "");
-  });
+    const targetTop = Math.max(0, window.scrollY + target.getBoundingClientRect().top - WIKI_SCROLL_OFFSET);
+    window.scrollTo({ top: targetTop, behavior: "smooth" });
+  };
+
+  const goToSection = (sectionId: string) => {
+    setActiveSectionId(sectionId);
+    scrollToWikiContentStart();
+  };
+
+  useEffect(() => {
+    const resetWikiView = () => {
+      window.sessionStorage.removeItem("wiki-nav-scroll");
+      setActiveSectionId(wikiSections[0]?.id ?? "");
+      window.history.replaceState(null, "", "/wiki");
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+
+    window.addEventListener("wiki:reset-view", resetWikiView);
+
+    return () => {
+      window.removeEventListener("wiki:reset-view", resetWikiView);
+    };
+  }, []);
+
+  useEffect(() => {
+    const syncActiveSectionFromHash = () => {
+      const hash = window.location.hash.replace("#", "");
+      const normalizedHash = legacyHashMap[hash] ?? hash;
+      const navScrollMode = window.sessionStorage.getItem("wiki-nav-scroll");
+
+      if (navScrollMode === "top") {
+        window.sessionStorage.removeItem("wiki-nav-scroll");
+        setActiveSectionId(wikiSections[0]?.id ?? "");
+        window.history.replaceState(null, "", "/wiki");
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        return;
+      }
+
+      if (normalizedHash && isKnownSection(normalizedHash)) {
+        setActiveSectionId(normalizedHash);
+        scrollToWikiContentStart();
+      }
+    };
+
+    window.addEventListener("hashchange", syncActiveSectionFromHash);
+    const timer = window.setTimeout(syncActiveSectionFromHash, 0);
+
+    return () => {
+      window.clearTimeout(timer);
+      window.removeEventListener("hashchange", syncActiveSectionFromHash);
+    };
+  }, []);
 
   useEffect(() => {
     if (!activeSectionId) {
@@ -72,7 +138,7 @@ export function WikiBrowser() {
                       <li key={section.id}>
                         <button
                           type="button"
-                          onClick={() => setActiveSectionId(section.id)}
+                          onClick={() => goToSection(section.id)}
                           className={`w-full rounded-lg px-2 py-2 text-left text-sm transition ${
                             selected
                               ? "bg-[var(--ink-900)] text-white"
@@ -155,7 +221,15 @@ export function WikiBrowser() {
           <ul className="mt-3 space-y-2 text-sm leading-relaxed text-[var(--ink-700)] md:text-base">
             {activeSection.references.map((reference) => (
               <li key={reference}>
-                - <code className="rounded bg-[var(--surface-1)] px-1 py-0.5 text-xs">{reference}</code>
+                -{" "}
+                <a
+                  href={toGithubBlobUrl(reference)}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="break-all rounded bg-[var(--surface-2)] px-1 py-0.5 text-xs font-medium text-[var(--ink-800)] underline underline-offset-2 transition hover:text-[var(--brand-700)]"
+                >
+                  {reference}
+                </a>
               </li>
             ))}
           </ul>
@@ -175,7 +249,7 @@ export function WikiBrowser() {
                 <button
                   key={relatedId}
                   type="button"
-                  onClick={() => setActiveSectionId(relatedId)}
+                  onClick={() => goToSection(relatedId)}
                   className="rounded-full border border-[var(--line-strong)] bg-white px-4 py-2 text-sm font-medium text-[var(--ink-800)] transition hover:border-[var(--ink-900)] hover:text-[var(--ink-900)]"
                 >
                   {relatedSection.title}
