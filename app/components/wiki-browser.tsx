@@ -16,15 +16,26 @@ function isKnownSection(id: string) {
 }
 
 export function WikiBrowser() {
-  const [activeSectionId, setActiveSectionId] = useState(() => {
-    if (typeof window === "undefined") {
-      return wikiSections[0]?.id ?? "";
-    }
+  const [activeSectionId, setActiveSectionId] = useState(wikiSections[0]?.id ?? "");
 
-    const hash = window.location.hash.replace("#", "");
-    const normalizedHash = legacyHashMap[hash] ?? hash;
-    return normalizedHash && isKnownSection(normalizedHash) ? normalizedHash : (wikiSections[0]?.id ?? "");
-  });
+  useEffect(() => {
+    const syncActiveSectionFromHash = () => {
+      const hash = window.location.hash.replace("#", "");
+      const normalizedHash = legacyHashMap[hash] ?? hash;
+
+      if (normalizedHash && isKnownSection(normalizedHash)) {
+        setActiveSectionId(normalizedHash);
+      }
+    };
+
+    window.addEventListener("hashchange", syncActiveSectionFromHash);
+    const timer = window.setTimeout(syncActiveSectionFromHash, 0);
+
+    return () => {
+      window.clearTimeout(timer);
+      window.removeEventListener("hashchange", syncActiveSectionFromHash);
+    };
+  }, []);
 
   useEffect(() => {
     if (!activeSectionId) {

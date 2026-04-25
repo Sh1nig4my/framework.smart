@@ -9,7 +9,7 @@ const navigation = [
 
 export function SiteHeader() {
   return (
-    <header className="sticky top-0 z-40 border-b border-[var(--line)] bg-white/85 backdrop-blur">
+    <header className="sticky top-0 z-40 border-b border-[var(--line)] bg-[var(--surface-1)] shadow-[0_10px_24px_-20px_rgba(0,0,0,0.5)]">
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-6 py-4 md:px-10">
         <Link href="/" className="sf-eyebrow-badge hover:border-[var(--brand-500)] hover:text-[var(--ink-900)]">
           SMART Framework

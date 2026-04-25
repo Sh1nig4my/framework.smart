@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, type ReactNode } from "react";
+import { useId, useState, type ReactNode } from "react";
 
 type WorkflowStepCardProps = {
   step: string;
@@ -22,6 +22,8 @@ export function WorkflowStepCard({
   defaultOpen = false,
 }: WorkflowStepCardProps) {
   const [isOpen, setIsOpen] = useState(defaultOpen);
+  const panelId = useId();
+  const buttonId = `${panelId}-button`;
 
   return (
     <article className="sf-step-card">
@@ -36,12 +38,23 @@ export function WorkflowStepCard({
       </header>
 
       <div className="sf-collapsible px-6 py-4">
-        <button type="button" className="sf-step-toggle" onClick={() => setIsOpen((current) => !current)} aria-expanded={isOpen}>
+        <button
+          id={buttonId}
+          type="button"
+          className="sf-step-toggle"
+          onClick={() => setIsOpen((current) => !current)}
+          aria-expanded={isOpen}
+          aria-controls={panelId}
+        >
           {isOpen ? "Nascondi dettagli operativi" : "Visualizza dettagli operativi"}
         </button>
       </div>
 
-      {isOpen ? <div className="sf-collapsible-panel">{details}</div> : null}
+      {isOpen ? (
+        <div id={panelId} role="region" aria-labelledby={buttonId} className="sf-collapsible-panel">
+          {details}
+        </div>
+      ) : null}
     </article>
   );
 }
